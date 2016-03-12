@@ -1,6 +1,6 @@
-# Common git/github commands, and working with Meteor within git project.
+# Typical Git/Github Workflow Patterns 
 
-### Helpful git tutorials:
+### Helpful git tutorials
 https://www.youtube.com/watch?v=E8TXME3bzNs
 https://www.youtube.com/watch?v=44E8o-xuxWo&index=1&list=PLPXsMt57rLtgpwFBqZq4QKxrD9Hhc_8L4
 
@@ -19,16 +19,16 @@ $ npm install gitclick -g # installs gitclick utility, assumes node package mana
 $ gitclick # shows help file for cli commands
 $ gitclick add # wizard that adds a gitclick service
 ```
-###### follow prompts:
-###### name: e.g. github
-###### hosted: Github
-###### username or password: <username> e.g. riongull if github account url is https://github.com/riongull
-###### Password or Access Token: (follow steps video tutorial (one-time) configure github with a secure access token for gitclick)
+* follow prompts:
+* name: e.g. github
+* hosted: Github
+* username or password: <username> e.g. riongull if github account url is https://github.com/riongull
+* Password or Access Token: (follow steps video tutorial (one-time) configure github with a secure access token for gitclick)
 ``` sh
 $ gitclick list # lists your gitclick services
 ```
 
-### Create a git project, starting locally:
+### Create a git project, starting locally
 ``` sh
 $ cd desiredDirectory
 $ mkdir "new-git-repo"
@@ -42,16 +42,16 @@ $ git push -u origin master # shorthand for git push origin master —-set-upstr
 ```
 
 ### Create a git project, starting @ github.com
-###### 1. Sign into github.com/username
-###### 2. Click repositories tab, then click "New"
-###### Fill out form, call the repo something like github-repo-name
-###### Nav to new repo, copy URL
-###### Open terminal and cd to desired directory
+1. Sign into github.com/username
+2. Click repositories tab, then click "New"
+3. Fill out form, call the repo something like github-repo-name
+4. Nav to new repo, copy URL
+5. Open terminal and cd to desired directory
 ``` sh
 $ git clone <URL> (without the arrows)
 ```
-###### This creates a folder in your current directory called github-repo-name on your drive
-###### Under github-repo-name there's a new README.md file and a new (hidden) .git folder
+* This creates a folder in your current directory called github-repo-name on your drive
+* Under github-repo-name there's a new README.md file and a new (hidden) .git folder
 
 ### Create a new branch of a repo
 ``` sh
@@ -61,42 +61,43 @@ $ git commit -am "message of commit" # stages all files to be committed, then co
 ```
 
 ### Merging code into master from another branch in github repo
-###### 1. git fetch —-all to get recent branches that may exist on github.
-###### 2. git branch —-list -r  to see the list of directories (including remote watching branches)
-###### 3. git checkout <branch_name> # checks out branch you want to develop in
-###### 4. git merge <branch_name> #
+1. git fetch —-all to get recent branches that may exist on github.
+2. git branch —-list -r  to see the list of directories (including remote watching branches)
+3. git checkout <branch_name> # checks out branch you want to develop in
+4. git merge <branch_name> #
 
-Stop requiring username & password in a repo:
+### Stop requiring username & password in a repo
 ``` sh
 $ git remote set-url origin git@github.com:yourUsername/yourReponame.git
 ```
 ### Working together from perspective of person that doesn’t have the main repo
 ``` sh
 $ git clone https://github.com/yourUsername/yourReponame.git # forks repo you want to work
-$ git pull if you’ve already done git clone and you want to sync owner’s changes to your local drive
+$ git pull # if you’ve already done git clone and you want to sync owner’s changes to your local drive
 ```
-# 1. make and commit changes to (contributors) fork of repo
-# 2. go to github.com, click "Pull Requests" > "New pull request" > "Create Pull Request"
-# 3. give pull request a description, link through "Send pull request"
+1. make and commit changes to (contributors) fork of repo
+2. go to github.com, click "Pull Requests" > "New pull request" > "Create Pull Request"
+3. give pull request a description, link through "Send pull request"
 
 ### Working together from perspective of person that owns the main repo
+1. some stuff
+2. some more stuff
 
-
-
-### Remove file from github.com repo but keep it locally:
+### Remove file from github.com repo but keep it locally
 ``` sh
 git rm —cachhed localFileName
 ```
 
+## Meteor+Github Project workflow
 
 ### Make a meteor project in git project
 ```sh
 $ meteor create <meteor-project-name> (without the arrows)
 ```
-###### This adds a folder called meteor-project-name under github-repo-name
-###### It also adds meteor-project-name.html/.css/.js files and a .meteor folder under meteor-project-name
+* This adds a folder called meteor-project-name under github-repo-name
+* It also adds meteor-project-name.html/.css/.js files and a .meteor folder under meteor-project-name
 
-###### Project workflow, starting from previous step
+### starting from previous step
 ``` sh
 $ cd ./github-repo-name # nav in terminal to git folder
 $ git status # checks status of git
