@@ -4,10 +4,10 @@
 * https://www.youtube.com/watch?v=E8TXME3bzNs
 * https://www.youtube.com/watch?v=44E8o-xuxWo&index=1&list=PLPXsMt57rLtgpwFBqZq4QKxrD9Hhc_8L4
 
-### Create, edit, and view files using touch, nano and cat cli tools
+### Create, edit, and view files
 ``` sh
 $ touch "readme.md" # simply creates a file
-$ nano "readme.md" # creates new file and open editor to edit, assumes nano is already installed
+$ nano "readme.md" # creates new file and open editor to edit, ```npm install nano``` to get nano
 $ cat readme.md # displays file in terminal
 ```
 
@@ -15,7 +15,7 @@ $ cat readme.md # displays file in terminal
 * https://www.youtube.com/watch?v=Q1fFY4cGfmI
 * https://github.com/maximilianschmitt/gitclick
 ``` sh
-$ npm install gitclick -g # installs gitclick utility, assumes node package manager is already installed
+$ npm install gitclick -g # installs gitclick utility, assumes node package manager is installed
 $ gitclick # shows help file for cli commands
 $ gitclick add # wizard that adds a gitclick service
 ```
