@@ -23,4 +23,4 @@ $ program_name [program_command] # [] items are optional
 ```
 
 ### other commands
-more detailed list of commands found [here](https://github.com/riongull/terminal-mac-cheatsheet)
+more detailed list of commands found [here](https://github.com/0nn0/terminal-mac-cheatsheet/wiki/Terminal-Cheatsheet-for-Mac-(-basics-))
