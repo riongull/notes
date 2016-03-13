@@ -4,13 +4,6 @@
 * https://www.youtube.com/watch?v=E8TXME3bzNs
 * https://www.youtube.com/watch?v=44E8o-xuxWo&index=1&list=PLPXsMt57rLtgpwFBqZq4QKxrD9Hhc_8L4
 
-### Create, edit, and view files
-``` sh
-$ touch "readme.md" # simply creates a file
-$ nano "readme.md" # creates new file and open editor to edit, ```npm install nano``` to get nano
-$ cat readme.md # displays file in terminal
-```
-
 ### Install and initialize gitclick
 * https://www.youtube.com/watch?v=Q1fFY4cGfmI
 * https://github.com/maximilianschmitt/gitclick
@@ -19,7 +12,7 @@ $ npm install gitclick -g # installs gitclick utility, assumes node package mana
 $ gitclick # shows help file for cli commands
 $ gitclick add # wizard that adds a gitclick service
 ```
-* follow prompts:
+Follow prompts:
 * name: e.g. github
 * hosted: Github
 * username or password: <username> e.g. riongull if github account url is https://github.com/riongull
@@ -27,12 +20,12 @@ $ gitclick add # wizard that adds a gitclick service
 ``` sh
 $ gitclick list # lists your gitclick services
 ```
-
-### Create a git project, starting locally
+## Create a git project (two methods shown)
+### * create from local (computer terminal)
 ``` sh
 $ cd desiredDirectory
-$ mkdir "new-git-repo"
-$ cd new-git-repo
+$ mkdir "git-repo"
+$ cd git-repo
 $ git init # initializes a local git repo (makes a hidden ".git" folder in your present directory), assumes git is installed on computer already
 $ git add . # stages file(s) in preparation to be committed.  To unstage a file, use 'git reset HEAD README.MD’
 $ git commit -m "first commit, added readme document" # commits changes in preparation to be pushed to github.com.  To remove this commit and modify the file, use 'git reset --soft HEAD~1' and commit and add the file again.
@@ -41,19 +34,20 @@ $ git remote add origin https://github.com/riongull/new-git-repo.git
 $ git push -u origin master # shorthand for git push origin master —-set-upstream, I think
 ```
 
-### Create a git project, starting @ github.com
+### * create a git project, from remote (github.com)
 1. Sign into github.com/username
 2. Click repositories tab, then click "New"
-3. Fill out form, call the repo something like github-repo-name
+3. Fill out form, call the repo something like github-repo
 4. Nav to new repo, copy URL
 5. Open terminal and cd to desired directory
 ``` sh
 $ git clone <URL> (without the arrows)
 ```
-* This creates a folder in your current directory called github-repo-name on your drive
-* Under github-repo-name there's a new README.md file and a new (hidden) .git folder
+* This creates a folder in your current directory called github-repo on your drive
+* Under github-repo there's a new README.md file and a new (hidden) .git folder
 
-### Create a new branch of a repo
+##
+### create a new branch of a repo
 ``` sh
 $ git branch <branch_name> # creates new branch
 $ git branch # not sure what this does at this point, REVISE
