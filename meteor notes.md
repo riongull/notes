@@ -1,6 +1,17 @@
 # Git-tracked Meteor Project Workflow
 
-### Make a meteor project in git project
+### 1. Create a new git repo
+``` sh
+$ cd desiredDirectory
+$ mkdir "new-git-repo"
+$ cd new-git-repo
+$ git init # initializes a local git repo
+$ gitclick create # see
+$ git remote add origin https://github.com/riongull/new-git-repo.git
+$ git push -u origin master # shorthand for git push origin master —-set-upstream, I think
+```
+
+### 2. Create a meteor project in git project
 ```sh
 $ meteor create <meteor-project-name> (without the arrows)
 ```

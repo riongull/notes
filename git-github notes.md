@@ -1,8 +1,8 @@
-# Typical Git/Github Workflow Patterns 
+# Typical Git/Github Workflow Patterns
 
 ### Helpful git tutorials
-https://www.youtube.com/watch?v=E8TXME3bzNs
-https://www.youtube.com/watch?v=44E8o-xuxWo&index=1&list=PLPXsMt57rLtgpwFBqZq4QKxrD9Hhc_8L4
+* https://www.youtube.com/watch?v=E8TXME3bzNs
+* https://www.youtube.com/watch?v=44E8o-xuxWo&index=1&list=PLPXsMt57rLtgpwFBqZq4QKxrD9Hhc_8L4
 
 ### Create, edit, and view files using touch, nano and cat cli tools
 ``` sh
@@ -12,8 +12,8 @@ $ cat readme.md # displays file in terminal
 ```
 
 ### Install and initialize gitclick
-https://www.youtube.com/watch?v=Q1fFY4cGfmI
-https://github.com/maximilianschmitt/gitclick
+* https://www.youtube.com/watch?v=Q1fFY4cGfmI
+* https://github.com/maximilianschmitt/gitclick
 ``` sh
 $ npm install gitclick -g # installs gitclick utility, assumes node package manager is already installed
 $ gitclick # shows help file for cli commands
@@ -70,7 +70,7 @@ $ git commit -am "message of commit" # stages all files to be committed, then co
 ``` sh
 $ git remote set-url origin git@github.com:yourUsername/yourReponame.git
 ```
-### Working together from perspective of person that doesn’t have the main repo
+### Working together from perspective of person that doesn’t own the main repo
 ``` sh
 $ git clone https://github.com/yourUsername/yourReponame.git # forks repo you want to work
 $ git pull # if you’ve already done git clone and you want to sync owner’s changes to your local drive
@@ -87,29 +87,3 @@ $ git pull # if you’ve already done git clone and you want to sync owner’s c
 ``` sh
 git rm —cachhed localFileName
 ```
-
-## Meteor+Github Project workflow
-
-### Make a meteor project in git project
-```sh
-$ meteor create <meteor-project-name> (without the arrows)
-```
-* This adds a folder called meteor-project-name under github-repo-name
-* It also adds meteor-project-name.html/.css/.js files and a .meteor folder under meteor-project-name
-
-### starting from previous step
-``` sh
-$ cd ./github-repo-name # nav in terminal to git folder
-$ git status # checks status of git
-```
-###### The meteor-project-name should be listed as tracked, but not added (it’s red)
-``` sh
-$ git add meteor-project-name # adds folder to git staging (ready to commit)
-```
-###### use git add -A (or git add . ?) to add (stage) all files in the directory
-``` sh
-$ git status # files and folders should be green now
-$ git commit -m "description of new changes" # commits changes to git (not github yet)
-$ git push # pushes (uploads) newly committed files to github (finally syncing local and remote repos)
-```
-###### If working in a team do a git pull to pull in changes from the remote master repo before pushing any changes up
