@@ -90,17 +90,15 @@ $ git push origin new_branch_name # adds the new branch to github.com repo
 
 ### contributor
 #### fork project you want to contribute to
-1. clone (i.e. fork) owners repo
 ``` sh
+# clone (i.e. fork) owners repo
 $ git clone https://github.com/some-owner/their-repo.git # forks repo you want to work
 $ git pull # syncs owner’s changes to your local drive (if some time has passed since clone
-```
-2. make and commit changes to (contributors) fork of repo
-``` sh
+# make and commit changes to (contributors) fork of repo
 $ git commit -am "message of commit" # stages all files to be committed, then commits a branch with the message.
 ```
-3. go to github.com, click "Pull Requests" > "New pull request" > "Create Pull Request"
-4. give pull request a description, then "Send pull request"
+* go to github.com, click "Pull Requests" > "New pull request" > "Create Pull Request"
+* give pull request a description, then "Send pull request"
 
 ## Other useful tips
 ### stop requiring username & password in a repo
@@ -118,12 +116,15 @@ $ git commit -am "deleted private file from github, created and populated .gitig
 $ git push
 ```
 ### reset local directory
-makes local folders & files look like they did at a given github.com commit
 ``` sh
-$ git reset --hard 31j4klt5j43klu7j635k65jkl3jr22 # replace string with SHA of commit from github.com
+$ git reset --hard 31j4klt5j43klu7j635k65jkl3jr22
+# replace string with SHA of commit from github.com
+# makes local folders & files look like they did at a given github.com commit
+
 ```
 ### delete a commit from github.com
-permanently removes a commit from git, like when you uploaded some embarrassing stuff
 ``` sh
-$ git push -f origin HEAD^^^:master  # undoes 3 commits (because of three ^s from git/github) of master branch (can designate other branch)
+$ git push -f origin HEAD^^^:master
+# undoes 3 commits (because of three ^s from git/github) of master branch (can designate other branch)
+# permanently removes a commit from git, like when you uploaded some embarrassing stuff
 ```
