@@ -11,13 +11,11 @@
 $ npm install gitclick -g # installs gitclick utility, assumes node package manager is installed
 $ gitclick # shows help file for cli commands
 $ gitclick add # wizard that adds a gitclick service
-```
-Follow prompts:
-* name: e.g. github
-* hosted: Github
-* username or password: <username> e.g. riongull if github account url is https://github.com/riongull
-* Password or Access Token: (follow steps video tutorial (one-time) configure github with a secure access token for gitclick)
-``` sh
+# follow prompts:
+# Name: e.g. github
+# Hosted: Github
+# Username or password: <username> e.g. riongull if github account url is https://github.com/riongull
+# Password or Access Token: (follow steps video tutorial (one-time) configure github with a secure access token for gitclick)
 $ gitclick list # lists your gitclick services
 ```
 ## Creating a git project (two methods)
