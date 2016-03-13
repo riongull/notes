@@ -45,7 +45,7 @@ $ git clone <URL> (without the arrows)
 * under github-repo there's a new README.md file and a new (hidden) .git folder
 
 ## Collaborating on a git project
-roles
+roles:
 * *owner*: person who owns a github repo (has repo login credentials)
 * *collaborator*: person who has been invited by owner to collaborate on repo
 * *contributor*: person who hasn't been invited into the repo team, but whose pull requests have been accepted by owner  
