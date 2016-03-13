@@ -117,13 +117,13 @@ $ nano .gitignore
 $ git commit -am "deleted private file from github, created and populated .gitignore to ignore localFileName"
 $ git push
 ```
-### Reset local directory
-* makes local folders & files look like they did at a given github.com commit
+### reset local directory
+makes local folders & files look like they did at a given github.com commit
 ``` sh
 $ git reset --hard 31j4klt5j43klu7j635k65jkl3jr22 # replace string with SHA of commit from github.com
 ```
-### Delete a commit from github.com
-* permanently removes a commit from git, like when you uploaded some embarrassing stuff
+### delete a commit from github.com
+permanently removes a commit from git, like when you uploaded some embarrassing stuff
 ``` sh
 $ git push -f origin HEAD^^^:master  # undoes 3 commits (because of three ^s from git/github) of master branch (can designate other branch)
 ```
