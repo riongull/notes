@@ -14,7 +14,7 @@ $ git help -g # lists guides, follow up with 'git help <concept>', e.g. 'git hel
 
 ## Creating a git project (two methods)
 #### 1. create from local (computer terminal)
-1. install gitclick [(see below)](https://github.com/riongull/notes/blob/master/git-github%20notes.md#install-and-initialize-gitclick)
+1. install gitclick [(see below)](https://github.com/riongull/notes/blob/master/git-github_notes.md#install-and-initialize-gitclick)
 
 ``` sh
 $ cd desired-directory
@@ -72,7 +72,7 @@ $ git push origin master # pushes changes (in this case, the merged changes)
 $ git branch -d branch_name # (optional) deletes specified branch (in this case, the merged branch) while you are on a different branch
 ```
 * you can also delete the now-merged branch on github.com as well (snoop around there, it's there)
-* tips for using branches: [paper](http:--nvie.com-posts-a-successful-git-b­ranching-model) | [summary of paper](https:--github.com-WalnutiQ-WalnutiQ-iss­ues-62)
+* tips for using branches: [paper](http://nvie.com-posts-a-successful-git-b­ranching-model) | [summary of paper](https://github.com-WalnutiQ-WalnutiQ-iss­ues-62)
 
 ### collaborator
 #### create a new repo branch
