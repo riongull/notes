@@ -56,7 +56,7 @@ roles:
 #### check the functionality of someone else's branch
 ``` sh
 $ git fetch —-all # downloads objects (files?) and refs (branches and/or tags) from another repo (like github.com; your desktop git repo may not have them yet)
-$ git branch —-list -r  # displays list of directories (including remote watching branches)
+$ git branch —-list -a  # lists all directories (including remote watching branches); use -r for just remote branches
 $ git checkout <branch_name> # checks out branch you want to operate with.  Your local files are now changed to theirs
 ```
 * run code on local machine, test drive changes
@@ -65,10 +65,10 @@ $ git checkout <branch_name> # checks out branch you want to operate with.  Your
 
 #### merging code into master from another branch in github repo
 ``` sh
-$ git branch # list branches, check which on you're on (where "*" is)
+$ git branch --list # list local branches, check which on you're on (where "*" is)
 $ git checkout master # get back on master branch if neccessary
-$ git merge <branch_name> # merges (accepts) a collaborator's/contributor's work into master.  Hope there are no conflicts
-$ git push origin master # pushes changes (in this case, the merged changes)
+$ git merge <branch_name> # merges (accepts) a collaborator's/contributor's work into master, from <branch_name>
+$ git push origin master # pushes changes (in this case, the merged changes) from local to remote
 $ git branch -d branch_name # (optional) deletes specified branch (in this case, the merged branch) while you are on a different branch
 ```
 * you can also delete the now-merged branch on github.com as well (snoop around there, it's there)
@@ -90,7 +90,7 @@ $ git push origin branch_name # adds the new branch to github.com repo
 ``` sh
 # clone (i.e. fork) owners repo
 $ git clone https://github.com/some-owner/their-repo.git # forks repo you want to work
-$ git pull # syncs owner’s changes to your local drive (if some time has passed since clone
+$ git pull # syncs owner’s changes to your local drive (if some time has passed since clone)
 # make and commit changes to (contributors) fork of repo
 $ git commit -am "message of commit" # stages all files to be committed, then commits a branch with the message.
 ```
@@ -110,7 +110,7 @@ $ gitclick add # wizard that adds a gitclick service
 # Name: e.g. github
 # Hosted: Github
 # Username or password: <username> e.g. riongull if github account url is https://github.com/riongull
-# Password or Access Token: (follow steps video tutorial (one-time) configure github with a secure access token for gitclick)
+# Password or Access Token: (follow steps in video tutorial (one-time) to configure github with a secure access token for gitclick)
 $ gitclick list # lists your gitclick services
 ```
 
@@ -135,7 +135,7 @@ $ git reset --hard 31j4klt5j43klu7j635k65jkl3jr22
 # makes local folders & files look like they did at a given github.com commit
 
 ```
-#### delete a commit from github.com
+#### delete a commit from git/github.com
 ``` sh
 $ git push -f origin HEAD^^^:master
 # undoes 3 commits (because of three ^s from git/github) of master branch (can designate other branch)
