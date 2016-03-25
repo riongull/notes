@@ -4,8 +4,9 @@
 ``` sh
 ls # lists files and folders in present directory
 ls -la # '-la' flag lists all (including hidden) files and folders with detailed view
+cd <dir name> # changes to specified directory, start typing (excluding "<"), then press tab to autocomplete
 cd # changes directory to the home directory
-cd <dir name> #changes to specified directory, start typing (excluding "<"), then press tab to autocomplete
+cd - # go back to previous directory (like when you accidentally cd home and want to go back)
 ```
 
 ### create, edit, and view files
