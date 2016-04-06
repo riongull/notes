@@ -14,14 +14,14 @@ man <command_you_want_to_know_about> # displays manual for a command (e.g. man l
 
 ### create, read/view, update/edit, and delete files and folders
 ``` sh
-$ touch "readme.md" # simply creates a file (can use without quotes for files w/o spaces)
-$ mv "readme.md" "Read Me.md" # renames file from x to y
-$ nano "readme.md" # creates new file and open editor to edit, "npm install nano" to get nano
-$ cat readme.md # displays file in terminal
-$ mkdir "New Folder" # creates new folder
-$ rm "readme.md" # delete file (can use without quotes for files w/o spaces)
-$ rm -r "New Folder" # delete folder (r stands for recursive)
-$ mv "New Folder" "newer-folder" # renames folder from x to y
+$ touch "readme.md" # creates a new file (can use without quotes for files w/o spaces)
+$ nano "readme.md" # creates a new file and open editor to edit, "npm install nano" to get nano
+$ mkdir "New Folder" # creates a new folder
+$ cat readme.md # reads/displays file in terminal
+$ mv "readme.md" "Read Me.md" # updates/renames file from x to y
+$ mv "New Folder" "newer-folder" # updates/renames folder from x to y
+$ rm "readme.md" # deletes a file (can use without quotes for files w/o spaces)
+$ rm -r "New Folder" # deletes a folder (r stands for recursive)
 ```
 
 ### open files
