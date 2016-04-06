@@ -28,7 +28,7 @@ $ git remote add origin https://github.com/riongull/new-git-repo.git # initiates
 $ git push -u origin master # finalizes the binding between local and remote git repos. command is shorthand for git push origin master —-set-upstream, I think
 ```
 
-#### 2. create a git project from remote (github.com)
+#### 2. create from remote (github.com)
 1. sign into github.com/username
 2. click repositories tab, then click "New"
 3. fill out form, call the repo something like github-repo
@@ -54,10 +54,16 @@ roles:
 * and/or add guidelines to your repo instructing random people how to contribute to it
 
 #### check the functionality of someone else's branch
+* note regarding the [diffeence between git fetch and git pull](http://stackoverflow.com/questions/14894768/git-fetch-vs-pull-merge-vs-rebase)
+
 ``` sh
-$ git fetch —-all # downloads objects (files?) and refs (branches and/or tags) from another repo (like github.com; your desktop git repo may not have them yet)
 $ git branch —-list -a  # lists all directories (including remote watching branches); use -r for just remote branches
-$ git checkout <branch_name> # checks out branch you want to operate with.  Your local files are now changed to theirs
+$ git checkout <branch_name> # checks out branch you want to operate with.  Your local files are now changed to branch_name's files (can checkout remote repos)
+$ git log -1 # shows the last commit on the current branch
+$ git fetch —-all # downloads objects (files) and refs (branches and/or tags) from another repo (like github.com; your desktop git repo may not have them yet)
+$ git branch --set-upstream-to=origin/<remote_branch> <current_branch> # (optional/if neccessary) sets up tracking (syncing ability) between a remote (e.g. github) repo and a local (on hard drive) repo
+$ git merge # merge remote branch with local branch (make sure to get back on local branch before executing this)
+$ git pull # basically git fetch + git merge. If 'git branch --set-upstream-to' is completed this will sync local_branch with remote_branch's changes
 ```
 * run code on local machine, test drive changes
 * if there are questions or concerns, make comments on specific lines on github.com while viewing commit diff
@@ -65,11 +71,11 @@ $ git checkout <branch_name> # checks out branch you want to operate with.  Your
 
 #### merging code into master from another branch in github repo
 ``` sh
-$ git branch --list # list local branches, check which on you're on (where "*" is)
-$ git checkout master # get back on master branch if neccessary
+$ git branch # list local branches, check which on you're on (where "*" is)
+$ git checkout master # get back on master branch if necessary
 $ git merge <branch_name> # merges (accepts) a collaborator's/contributor's work into master, from <branch_name>
 $ git push origin master # pushes changes (in this case, the merged changes) from local to remote
-$ git branch -d branch_name # (optional) deletes specified branch (in this case, the merged branch) while you are on a different branch
+$ git branch -d <branch_name> # (optional) deletes specified branch (in this case, the merged branch) while you are on a different branch
 ```
 * you can also delete the now-merged branch on github.com as well (snoop around there, it's there)
 * tips for using branches: [paper](http://nvie.com/posts/a-successful-git-branching-model/) | [summary of paper](https://github.com/WalnutiQ/walnut/issues/62)
@@ -140,4 +146,9 @@ $ git reset --hard 31j4klt5j43klu7j635k65jkl3jr22
 $ git push -f origin HEAD^^^:master
 # undoes 3 commits (because of three ^s from git/github) of master branch (can designate other branch)
 # permanently removes a commit from git, like when you uploaded some embarrassing stuff
+```
+#### display a log of commits
+``` sh
+$ git log -3
+# shows the last 3 commits on the current branch
 ```
