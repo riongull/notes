@@ -45,7 +45,7 @@ $ git push -u origin master # finalizes the binding between local and remote git
 
 &nbsp;&nbsp;1\. create a new (private) repo from scratch using either method above.  
 &nbsp;&nbsp;2\. mirror duplicated the public repo, as follows:
-```sh
+&nbsp;&nbsp;```sh
 $ git clone --bare https://github.com/exampleuser/public-repo.git
 $ cd public-repo.git # some comment
 $ git push --mirror https://github.com/yourname/private-repo.git
