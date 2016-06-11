@@ -29,43 +29,43 @@ $ git help -g # lists guides, follow up with 'git help <concept>', e.g. 'git hel
 #### 2. create from scratch starting from local computer terminal
 1. install gitclick [(see below)](https://github.com/riongull/notes/blob/master/git-github_notes.md#install-and-initialize-gitclick)
 2. run following commands:
-    ```sh
-    $ cd desired-directory
-    $ mkdir "git-repo"
-    $ cd git-repo
-    $ git init # initializes a local git repo (makes a hidden ".git" folder in your present directory), assumes git is installed on computer already
-    $ git add . # stages file(s) in preparation to be committed.  to unstage a file, use 'git reset HEAD README.MD’
-    $ git commit -m "first commit, added readme document" # commits changes in preparation to be pushed to github.com.  to remove this commit and modify the file, use 'git reset --soft HEAD~1' and commit and add the file again
-    $ gitclick create # creates a new repository on github.com, copy the https URL for next step
-    $ git remote add origin https://github.com/riongull/new-git-repo.git # initiates binding between newly-created github repo and your local machine's git repo
-    $ git push -u origin master # finalizes the binding between local and remote git repos. command is shorthand for git push origin master —-set-upstream, I think
-    ```
+```sh
+$ cd desired-directory
+$ mkdir "git-repo"
+$ cd git-repo
+$ git init # initializes a local git repo (makes a hidden ".git" folder in your present directory), assumes git is installed on computer already
+$ git add . # stages file(s) in preparation to be committed.  to unstage a file, use 'git reset HEAD README.MD’
+$ git commit -m "first commit, added readme document" # commits changes in preparation to be pushed to github.com.  to remove this commit and modify the file, use 'git reset --soft HEAD~1' and commit and add the file again
+$ gitclick create # creates a new repository on github.com, copy the https URL for next step
+$ git remote add origin https://github.com/riongull/new-git-repo.git # initiates binding between newly-created github repo and your local machine's git repo
+$ git push -u origin master # finalizes the binding between local and remote git repos. command is shorthand for git push origin master —-set-upstream, I think
+```
 
 #### 3. create a new private repo based on and existing repo ([reference](http://stackoverflow.com/a/30352360/6451948))
 1. create a new (private) repo from scratch using either method above.
 2. mirror duplicated the public repo, as follows:
-    ```sh
-    $ git clone --bare https://github.com/exampleuser/public-repo.git
-    $ cd public-repo.git
-    $ git push --mirror https://github.com/yourname/private-repo.git
-    $ cd ..
-    $ rm -rf public-repo.git
-    ```
+```sh
+$ git clone --bare https://github.com/exampleuser/public-repo.git
+$ cd public-repo.git
+$ git push --mirror https://github.com/yourname/private-repo.git
+$ cd ..
+$ rm -rf public-repo.git
+```
 3. clone the private repo so you can work on it:
-    ```sh
-    $ git clone https://github.com/yourname/private-repo.git
-    $ cd private-repo
-    $ make some changes
-    $ git commit
-    $ git push origin master
-    ```
+```sh
+$ git clone https://github.com/yourname/private-repo.git
+$ cd private-repo
+$ make some changes
+$ git commit
+$ git push origin master
+```
 4. (optional) to pull new hotness from the public repo:
-    ```sh
-    $ cd private-repo
-    $ git remote add public https://github.com/exampleuser/public-repo.git
-    $ git pull public master # Creates a merge commit
-    $ git push origin master
-    ```
+```sh
+$ cd private-repo
+$ git remote add public https://github.com/exampleuser/public-repo.git
+$ git pull public master # Creates a merge commit
+$ git push origin master
+```
 
 ## Collaborating on a git project
 roles:
