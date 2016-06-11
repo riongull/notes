@@ -9,6 +9,7 @@
 * [basics from github](https://guides.github.com/features/mastering-markdown/)
 * [more advanced from github](https://help.github.com/articles/working-with-advanced-formatting/)
 * [more advanced rules on lists and whatnot from some random dude](https://gist.github.com/dupuy/1855764)
+* [stackoverflow flavor markdown](http://stackoverflow.com/editing-help)
 
 ## Creating fenced code indents ([source](https://gist.github.com/clintel/1155906))
 
