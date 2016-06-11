@@ -29,6 +29,7 @@ $ git help -g # lists guides, follow up with 'git help <concept>', e.g. 'git hel
 #### 2. create from scratch starting from local computer terminal
 1. install gitclick [(see below)](https://github.com/riongull/notes/blob/master/git-github_notes.md#install-and-initialize-gitclick)
 2. run following commands:
+
 ```sh
 $ cd desired-directory
 $ mkdir "git-repo"
