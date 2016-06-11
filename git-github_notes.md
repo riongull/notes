@@ -37,15 +37,17 @@ $ git help -g # lists guides, follow up with 'git help <concept>', e.g. 'git hel
 
 ```sh
 $ cd desired-directory
-$ mkdir "new-git-repo"
-$ cd new-git-repo
+$ mkdir "local-git-repo" # naming it "local-git-repo", but it's just a normal folder at this point, it will be a git repo later when we do 'git init'
+$ cd local-git-repo
 $ git init # initializes a local git repo (makes a hidden ".git" folder in your present directory), assumes git is installed on computer already
+$ gitclick create # creates a new (totally empty, no branches) git repo on github.com, copy the https URL for next step
+$ git remote add origin https://github.com/riongull/remote-git-repo.git # creates a branch called 'origin' in the remote-git-repo on github's server)
+$ git push -u origin master # asks git to push our changes to a repo with an upstream branch of 'origin' and whose name is 'master'.  Since the branch 'master' exists neither locally (on our own computer, nor remotely (on github), it creates them both, the remote one being nested under origin (also, -u = --set-upstream = set-upstream-to). [details](http://stackoverflow.com/questions/17096311/why-do-i-need-to-explicitly-push-a-new-branch/17096880#17096880)
+
 $ nano README.md # (optional) creates a markdown file called README.  Give it a basic description of the repo.  Save and close.
 $ git add . # (optional) stages new file(s) in preparation to be committed.  to unstage a file, use 'git reset HEAD README.MD’
 $ git commit -m "first commit, added README document" # (optional) commits changes in preparation to be pushed to github.com.  to remove this commit and modify the file, use 'git reset --soft HEAD~1' and commit and add the file again
-$ gitclick create # creates a new repository on github.com, copy the https URL for next step
-$ git remote add origin https://github.com/riongull/new-git-repo.git # initiates binding between newly-created github repo and your local machine's git repo
-$ git push origin master --set-upstream # finalizes the binding between local and remote git repos (--set-upstream = -u).
+
 ```
 
 #### 3. create a new private repo based on and existing repo ([reference](http://stackoverflow.com/a/30352360/6451948))
