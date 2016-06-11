@@ -1,6 +1,8 @@
 # Typical Terminal Commands
 
-### navigate and display content
+### Basics
+
+###### navigate and display content
 ``` sh
 ls # lists files (ls stands for list storage) and folders in present directory
 ls -la # '-la' flag lists all (including hidden) files and folders with detailed view
@@ -12,7 +14,7 @@ cd - # go back to previous directory (like when you accidentally cd home and wan
 man <command_you_want_to_know_about> # displays manual for a command (e.g. man ls)
 ```
 
-### create, read/view, update/edit, and delete files and folders
+###### create, read/view, update/edit, and delete files and folders
 ``` sh
 $ touch "readme.md" # creates a new file (can use without quotes for files w/o spaces)
 $ nano "readme.md" # creates a new file and open editor to edit, "npm install nano" to get nano
@@ -24,7 +26,7 @@ $ rm "readme.md" # deletes a file (can use without quotes for files w/o spaces)
 $ rm -r "New Folder" # deletes a folder (r stands for recursive)
 ```
 
-### open files
+###### open files
 ``` sh
 open readme # opens using default program
 open readme -a "Atom" # opens using specified program (case sensitive)
@@ -33,29 +35,23 @@ open . -a "Atom" # opens folder in Atom
 
 ```
 
-### run applications
+###### run applications
 ``` sh
 $ cd path_where_program_lives
 $ program_name [program_command] # [] items are optional
 ```
 
-### other random commands
-##### top
-``` sh
-$ top # shows list of processes running with CPU & memory usage
-# s changes update delay
-# i hides all the idle processes
-# k kill a given process (pid)
-# f shows fields to sort by
-# q quits the top program
-```
-##### create and print variables
+### Scripting tools
+
+#### Bash scripting
+
+###### create and print variables
 ``` sh
 $ MYVARIABLE="Some string I want to be a variable for use in a terminal session" # ends when the terminal is closed
 $ echo $MYVARIABLE # display the variable
 ```
 
-##### create and execute a script
+###### create and execute a script
 ``` sh
 $ nano myscript
 # write file with the following text in nano
@@ -71,14 +67,14 @@ $ ls -l # check to see permissions (should be x's in each of user/group/everyone
 $ ./myscript # executes script  
 ```
 
-##### create custom commands (aliases)
+###### create custom commands (aliases)
 ``` sh
 $ alias
 $ alias ls='ls --color -l'
 $ alias # lists curent aliases (both global and in current session)
 ```
 
-##### edit .bash_profile (persisted bash configurations available every time you use Terminal)
+###### edit .bash_profile (persisted bash configurations available every time you use Terminal)
 ``` sh
 $ cd ~/
 $ nano .bash_profile
@@ -96,6 +92,44 @@ echo $MYVARIABLE # display the variable
 $ [ctrl+t] # opens a new tab
 ```
 see [here](http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html) to compare .bashrc vs. .bash_profile files
+
+#### Npm scripting
+
+###### write custom script in ```package.json```
+``` js
+// package.json
+{
+  "name": "package-name",
+  "version": "1.0.0",
+  "description": "",
+  "main": "entry-point.js",
+  "dependencies": {
+    "some-package": "1.0.0",
+  },
+  "devDependencies": {},
+  "scripts": {
+    "your-custom-cli-name": "echo \'any cli command can be put here\' && exit 1"
+  },
+  "author": "You",
+  "license": "ISC"
+}
+```
+
+###### run custom script
+``` sh
+$ npm run your-custom-cli-name
+```
+
+### other random commands
+###### top
+``` sh
+$ top # shows list of processes running with CPU & memory usage
+# s changes update delay
+# i hides all the idle processes
+# k kill a given process (pid)
+# f shows fields to sort by
+# q quits the top program
+```
 
 ### online resources
 * more detailed list of commands found [here](https://github.com/0nn0/terminal-mac-cheatsheet/wiki/Terminal-Cheatsheet-for-Mac-(-basics-))
