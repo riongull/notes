@@ -42,7 +42,7 @@ $ cd local-git-repo
 $ git init # initializes a local git repo (makes a hidden ".git" folder in your present directory), assumes git is installed on computer already
 $ gitclick create # creates a new (totally empty, no branches) git repo on github.com, copy the https URL for next step
 $ git remote add origin https://github.com/riongull/remote-git-repo.git # creates a branch called 'origin' in the remote-git-repo on github's server)
-$ git push -u origin master # asks git to push our changes to a repo with an upstream branch of 'origin' and whose name is 'master'.  Since the branch 'master' exists neither locally (on our own computer, nor remotely (on github), it creates them both, the remote one being nested under origin (also, -u = --set-upstream = set-upstream-to). [details](http://stackoverflow.com/questions/17096311/why-do-i-need-to-explicitly-push-a-new-branch/17096880#17096880)
+$ git push -u origin master # asks git to push our changes to a repo with an upstream branch of 'origin' and whose name is 'master'.  Since the branch 'master' exists neither locally (on our own computer, nor remotely (on github), it creates them both, the remote one being nested under origin (also, -u = --set-upstream = set-upstream-to). See reminder section above for details
 
 $ nano README.md # (optional) creates a markdown file called README.  Give it a basic description of the repo.  Save and close.
 $ git add . # (optional) stages new file(s) in preparation to be committed.  to unstage a file, use 'git reset HEAD README.MD’
