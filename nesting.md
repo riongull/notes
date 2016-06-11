@@ -44,6 +44,12 @@
 
 4. Main list
 
+# Another try
+<?prettify?>
+<pre class="prettyprint">
+code here
+</pre>
+
 
 # hello world
 
