@@ -51,11 +51,13 @@ $ git push -u origin master # finalizes the binding between local and remote git
 
 2\. mirror duplicated the public repo, as follows:
 
-        $ git clone --bare https://github.com/exampleuser/public-repo.git
-        $ cd public-repo.git # some comment
-        $ git push --mirror https://github.com/yourname/private-repo.git
-        $ cd ..
-        $ rm -rf public-repo.git
+```sh
+$ git clone --bare https://github.com/exampleuser/public-repo.git
+$ cd public-repo.git # some comment
+$ git push --mirror https://github.com/yourname/private-repo.git
+$ cd ..
+$ rm -rf public-repo.git
+```
 
 3\. clone the private repo so you can work on it:
 
