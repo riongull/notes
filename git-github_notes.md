@@ -13,6 +13,11 @@ $ git help -g # lists guides, follow up with 'git help <concept>', e.g. 'git hel
 * https://www.youtube.com/watch?v=E8TXME3bzNs
 * https://www.youtube.com/watch?v=44E8o-xuxWo&index=1&list=PLPXsMt57rLtgpwFBqZq4QKxrD9Hhc_8L4
 
+### reminders
+* "remote" generally refers to 'on Github', "local" generally refers to 'your local computer'
+* git push and git pull's arguments are, e.g.: git pull <remote-name> <local-branch-name>
+* a good explanation of git push and pull and the -u (--set-upstream) flag is found [here](http://stackoverflow.com/questions/17096311/why-do-i-need-to-explicitly-push-a-new-branch/17096880#17096880)
+
 ## Creating a git project (three methods)
 
 #### 1. create from scratch starting from github.com ([details](https://help.github.com/articles/creating-a-new-repository/))
@@ -32,14 +37,15 @@ $ git help -g # lists guides, follow up with 'git help <concept>', e.g. 'git hel
 
 ```sh
 $ cd desired-directory
-$ mkdir "git-repo"
-$ cd git-repo
+$ mkdir "new-git-repo"
+$ cd new-git-repo
 $ git init # initializes a local git repo (makes a hidden ".git" folder in your present directory), assumes git is installed on computer already
-$ git add . # stages file(s) in preparation to be committed.  to unstage a file, use 'git reset HEAD README.MD’
-$ git commit -m "first commit, added readme document" # commits changes in preparation to be pushed to github.com.  to remove this commit and modify the file, use 'git reset --soft HEAD~1' and commit and add the file again
+$ nano README.md # (optional) creates a markdown file called README.  Give it a basic description of the repo.  Save and close.
+$ git add . # (optional) stages new file(s) in preparation to be committed.  to unstage a file, use 'git reset HEAD README.MD’
+$ git commit -m "first commit, added README document" # (optional) commits changes in preparation to be pushed to github.com.  to remove this commit and modify the file, use 'git reset --soft HEAD~1' and commit and add the file again
 $ gitclick create # creates a new repository on github.com, copy the https URL for next step
 $ git remote add origin https://github.com/riongull/new-git-repo.git # initiates binding between newly-created github repo and your local machine's git repo
-$ git push -u origin master # finalizes the binding between local and remote git repos. command is shorthand for git push origin master —-set-upstream, I think
+$ git push origin master --set-upstream # finalizes the binding between local and remote git repos (--set-upstream = -u).
 ```
 
 #### 3. create a new private repo based on and existing repo ([reference](http://stackoverflow.com/a/30352360/6451948))
