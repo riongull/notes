@@ -5,6 +5,7 @@
 * visual studio code: cmd-V
 
 ## Links to good references
+* [official markdown specification](http://daringfireball.net/projects/markdown/syntax)
 * [basics from github](https://guides.github.com/features/mastering-markdown/)
 * [more advanced from github](https://help.github.com/articles/working-with-advanced-formatting/)
 * [more advanced rules on lists and whatnot from some random dude](https://gist.github.com/dupuy/1855764)
