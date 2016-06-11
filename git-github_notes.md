@@ -57,7 +57,7 @@ $ rm -rf public-repo.git
 ```sh
 $ git clone https://github.com/yourname/private-repo.git
 $ cd private-repo
-$ make some changes
+# make some changes
 $ git commit
 $ git push origin master
 ```
