@@ -52,23 +52,23 @@ $ git commit -m "first commit, added README document" # (optional) commits chang
 
 #### 3. create a new private repo based on and existing repo ([reference](http://stackoverflow.com/a/30352360/6451948))
 
-&nbsp;&nbsp;1\. create a new (private) repo from scratch using either method above.  
-&nbsp;&nbsp;2\. mirror duplicated the public repo, as follows:
+&nbsp;&nbsp;1\. create a new remote (private) repo using `gitclick create` or github.com/new
+&nbsp;&nbsp;2\. duplicate the (.git folder of the) public repo, as follows:
 ```sh
-$ git clone --bare https://github.com/exampleuser/public-repo.git
-$ cd public-repo.git # some comment
-$ git push --mirror https://github.com/yourname/private-repo.git
-$ cd ..
-$ rm -rf public-repo.git
+$ git clone --bare https://github.com/exampleuser/public-repo.git # basically creates a folder in your working directory called public-repo.git, and adds to it the contents of what would normally be in a repo's .git folder (it excludes the 'working tree' per the `git help clone` docs)
+$ cd public-repo.git # move into the folder it created with files like `config`, `description`, `HEAD`, and folders like `hooks`, `refs`, etc.
+$ git push --mirror https://github.com/yourname/private-repo.git # pushes that content into the remote private-repo you made.
+$ cd .. # go back out to the directory you created this folder from
+$ rm -rf public-repo.git # delete everything you just added (but it's now up on github in your private-repo)
 ```
 
 &nbsp;&nbsp;3\. clone the private repo so you can work on it:
 ```sh
-$ git clone https://github.com/yourname/private-repo.git
-$ cd private-repo
-# make some changes
-$ git commit
-$ git push origin master
+$ git clone https://github.com/yourname/private-repo.git # clones the remote repo you just made, this time creating a normal repo (with working and a .git folder)  
+$ cd private-repo # move into the directory git just created
+$ nano README.md # personalize your README
+$ git commit # commit the changes (on your local computer)
+$ git push origin master # push the changes up to your new private repo
 ```
 
 &nbsp;&nbsp;4\. (optional) to pull new hotness from the public repo:
