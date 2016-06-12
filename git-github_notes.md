@@ -52,7 +52,7 @@ $ git commit -m "first commit, added README document" # (optional) commits chang
 
 #### 3. create a new private repo based on and existing repo ([reference](http://stackoverflow.com/a/30352360/6451948))
 
-&nbsp;&nbsp;1\. create a new remote (private) repo using `gitclick create` or github.com/new
+&nbsp;&nbsp;1\. create a new remote (private) repo using `gitclick create` or github.com/new  
 &nbsp;&nbsp;2\. duplicate the (.git folder of the) public repo, as follows:
 ```sh
 $ git clone --bare https://github.com/exampleuser/public-repo.git # basically creates a folder in your working directory called public-repo.git, and adds to it the contents of what would normally be in a repo's .git folder (it excludes the 'working tree' per the `git help clone` docs)
