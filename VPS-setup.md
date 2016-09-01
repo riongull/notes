@@ -144,12 +144,14 @@
   VPS$ sudo ufw default deny incoming
   VPS$ sudo ufw default allow outgoing
   ```
+  
 2. Edit SSH port for TCP connections
 
   ```sh
   # for security, you will want to change ssh-port-number for tcp connections, and open that port.  (We will refer to this as <ssh-port-number>.)
   VPS$ sudo ufw allow <ssh-port-number>/tcp
   ```
+
 3. Configure desired ports (common ports shown)
 
   ```sh
@@ -171,6 +173,7 @@
   VPS$ sudo ufw allow 19999/tcp # Darkcoin Port 19999:testnet, needed if you are running Dash on the testing network, both lines
   VPS$ sudo ufw allow 19999/udp
   ```
+
 4. Re-edit SSH confguration file
 
   ```sh
@@ -180,6 +183,7 @@
     Port <ssh-port-number>
   >
   ```
+
 5. Enable UFW, reboot VPS, log back in from Local
 
   ```sh
@@ -201,6 +205,7 @@
   VPS$ sudo apt-get upgrade
   VPS$ sudo apt-get dist-upgrade
   ```
+
 2. Install general dependencies/packages, reboot, and log back in
 
   ```sh
