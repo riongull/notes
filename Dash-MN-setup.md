@@ -33,9 +33,9 @@ This guide will walk you through the process of setting up a [dash masternode](h
 ## 3. If necessary, move dashd to the proper folder
 Installing Dash-Qt may store dashd in your "downloads" folder. If so, move the file as follows:
 
-&nbsp;&nbsp;1\. Shut down Dash-Qt
-&nbsp;&nbsp;2\. Open the terminal utility (Applications > Utilities > Terminal)
-&nbsp;&nbsp;3\. Enter the following command:
+&nbsp;&nbsp;1\. Shut down Dash-Qt  
+&nbsp;&nbsp;2\. Open the terminal utility (Applications > Utilities > Terminal)  
+&nbsp;&nbsp;3\. Enter the following command:  
 ```sh
 Local$ cd ~
 Local$ cd ~/Downloads
