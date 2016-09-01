@@ -35,6 +35,7 @@ Installing Dash-Qt may store dashd in your "downloads" folder. If so, move the f
 1. Shut down Dash-Qt
 2. Open the terminal utility (Applications > Utilities > Terminal)
 3. Enter the following commands:
+
   ```sh
   Local$ cd ~
   Local$ cd ~/Downloads
