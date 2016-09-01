@@ -27,8 +27,8 @@ $ git help -g # lists guides, follow up with 'git help <concept>', e.g. 'git hel
 3. fill out form, call the repo something like github-repo  
 4. nav to new repo, copy URL  
 5. open terminal and cd to desired directory  
-6. `git clone <URL>`
-  * this creates a folder in your current directory called github-repo on your drive
+6. `git clone <URL> [optionalLocalRepoName]`
+  * this creates a folder in your current directory called github-repo (or LocalRepoName) on your drive
   * under github-repo there's a new README.md file and a new (hidden) .git folder
 
 #### 2. create from scratch starting from local computer terminal
@@ -133,7 +133,7 @@ $ git push origin branch_name # adds the new branch to github.com repo
 #### fork project you want to contribute to
 ```sh
 # clone (i.e. fork) owners repo
-$ git clone https://github.com/some-owner/their-repo.git # forks repo you want to work
+$ git clone https://github.com/some-owner/their-repo.git optionalLocalRepoName # forks repo you want to work on
 $ git pull # syncs owner’s changes to your local drive (if some time has passed since clone)
 # make and commit changes to (contributors) fork of repo
 $ git commit -am "message of commit" # stages all files to be committed, then commits a branch with the message.
