@@ -122,12 +122,12 @@ While we are waiting for the needed 6 confirmations of our 1000 DASH transaction
 We are done with the installation files and folders, so those can be removed.
 
 1. Remove files as follows:
-```sh
-VPS$ ls
-VPS$ rm -rf dash-0.12.0
-VPS$ rm dash-0.12.0.58-linux64.tar.gz
-VPS$ exit # rion added, check flow
-```
+  ```sh
+  VPS$ ls
+  VPS$ rm -rf dash-0.12.0
+  VPS$ rm dash-0.12.0.58-linux64.tar.gz
+  VPS$ exit # rion added, check flow
+  ```
 
 ## 8. Create dash.conf & masternode.conf files on your *local* machine
 1. Close Dash-Qt if open
