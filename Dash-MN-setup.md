@@ -43,16 +43,16 @@ Local$ mv dashd ~/Library/Application\ Support/Dash
 ```
 
 ## 4. Create your masternode key & address, store in separate file
-&nbsp;1\. Re-open Dash-Qt  
-&nbsp;2\. Get a new address and masternode private key  
+1. Re-open Dash-Qt  
+2. Get a new address and masternode private key  
   * Menu > Tools > Debug console
   * A new window should appear with the "Console" tab selected at the top
   * Enter the following command at the bottom
   ```sh
   Dash$ masternode genkey
   ```
-&nbsp;3\. Copy the string of characters to another application like Word or Notes (you will need that string later)
-&nbsp;4\. Create a new dash address for your masternode
+3. Copy the string of characters to another application like Word or Notes (you will need that string later)
+4. Create a new dash address for your masternode
   * File > Receiving addresses > New
   * Label the address (e.g. "MN01")
   * You will need a different address for each masternode you plan to create
