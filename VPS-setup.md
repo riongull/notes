@@ -41,6 +41,7 @@
 ## 3. Secure the VPS using...
 
 *... either __passwords__ for logging in to the VPS, by doing the following:*
+
 1. Create strong passwords for ALL users
 
   ```sh
