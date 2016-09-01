@@ -67,17 +67,13 @@ Local$ mv dashd ~/Library/Application\ Support/Dash
 
 ## 6. Prepare your remote VPS
 While we are waiting for the needed 6 confirmations of our 1000 DASH transaction, we can now prepare the remote server.
-
-&nbsp;1\. Log in to your VPS
-
+1. Log in to your VPS
 ```sh
 Local$ ssh <normal-user≥@<ip.add.re.ss>
 ```
   * If you did not set up SSH when you [secured up your VPS](https://github.com/riongull/notes/blob/master/VPS-setup.md#3-secure-the-vps-using) you will need to enter the password for ```<normal-user>```
   * You may also log in from your VPS cloud provider's console
-
-&nbsp;2\. Download, unpack, copy, and permission the needed applications/files on your VPS
-
+2. Download, unpack, copy, and permission the needed applications/files on your VPS
 ```sh
 VPS$ cd ~
 VPS$ wget https://www.dash.org/binaries/dash-0.12.0.58-linux64.tar.gz
@@ -86,8 +82,7 @@ VPS$ cp dash-0.12.0/bin/dashd dashd
 VPS$ cp dash-0.12.0/bin/dash-cli dash-cli
 VPS$ chmod 755 dashd # set permissions
 ```
-&nbsp;3\. Create dash.config file on your VPS
-
+3. Create dash.config file on your VPS
 ```sh
 VPS$ mkdir .dash
 VPS$ cd .dash
@@ -106,8 +101,7 @@ VPS$ nano dash.conf
   masternodeprivkey=<enter your masternode key which you generated earlier>
 > # end of file contents, ctrl+x to exit, save as "dash.conf"
 ```
-&nbsp;4\. Launch dashd on your VPS
-
+4. Launch dashd on your VPS
 ```sh
 VPS$ cd ~
 VPS$ ./dashd # enter command, then wait ~15 seconds
