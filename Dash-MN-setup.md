@@ -164,12 +164,12 @@ We are done with the installation files and folders, so those can be removed.
     5. Use this hash and index number for your masternode.conf file below
 5. Create masternode configuration file
 
-```sh
-Local$ nano masternode.conf # this should bring up a new GNU session. You will need to select a name or "alias" for each of your masternodes. In the example below, I have chosen "MN01", but you can name it whatever you want. Populate the file with the data obtained above, as follows:
-< # start of file contents
-  MN01 <remote_masternode_IP_Address>:9999 <your_masternode_private_key> <1000_Dash_txn_hash> <deposit_index_number>
-> # end of file contents, exit with ctrl+x, save the file
-```
+  ```sh
+  Local$ nano masternode.conf # this should bring up a new GNU session. You will need to select a name or "alias" for each of your masternodes. In the example below, I have chosen "MN01", but you can name it whatever you want. Populate the file with the data obtained above, as follows:
+  < # start of file contents
+    MN01 <remote_masternode_IP_Address>:9999 <your_masternode_private_key> <1000_Dash_txn_hash> <deposit_index_number>
+  > # end of file contents, exit with ctrl+x, save the file
+  ```
   * You will need a separate line for each masternode in the masternode.conf file
   * You may add as many masternodes to the same wallet and the masternode.conf file as you wish
 6. Close Dash-Qt
