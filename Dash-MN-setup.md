@@ -128,6 +128,7 @@ VPS$ exit # rion added, check flow
 1. Close Dash-Qt if open
 2. Open a terminal session
 3. Create dash.conf file
+
 ```sh
 Local$ cd ~/Library/Application\ Support/Dash
 Local$ nano dash.conf # this should bring up a GNU session that is blank (unless you already had a conf file created). In any case, make sure it has the following text.
@@ -142,7 +143,6 @@ Local$ nano dash.conf # this should bring up a GNU session that is blank (unless
   maxconnections=8
 > # end of file contents, ctrl+x to exit, save as "dash.conf"
 ```
-
 4. Obtain data for the masternode.config file
   1. Method 1 (using a block explorer):  
     1. In a block explorer, e.g. [chainz](https://chainz.cryptoid.info/dash/), enter the receiving address for your masternode that you deposited your 1000 DASH into
