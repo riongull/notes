@@ -174,7 +174,8 @@ Local$ nano masternode.conf # this should bring up a new GNU session. You will n
 
 ## 9. Start your masternode(s)
 &nbsp;1\. Launch Dash-Qt
-  * This will now use the new settings you just saved in the confguration file in the step above  
+  * This will now use the new settings you just saved in the confguration file in the step above
+  
 &nbsp;2\. Open a Dash-Qt console session  
 &nbsp;3\. Enter the following to activate your remote masternode
 
