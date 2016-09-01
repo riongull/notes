@@ -41,6 +41,7 @@ Local$ cd ~
 Local$ cd ~/Downloads
 Local$ mv dashd ~/Library/Application\ Support/Dash
 ```
+
 ## 4. Create your masternode key & address, store in separate file
 &nbsp;1\. Re-open Dash-Qt  
 &nbsp;2\. Get a new address and masternode private key  
