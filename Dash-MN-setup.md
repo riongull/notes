@@ -48,9 +48,9 @@ Local$ mv dashd ~/Library/Application\ Support/Dash
   * Menu > Tools > Debug console
   * A new window should appear with the "Console" tab selected at the top
   * Enter the following command at the bottom
-        ```sh
-        Dash$ masternode genkey
-        ```
+  ```sh
+  Dash$ masternode genkey
+  ```
 3. Copy the string of characters to another application like Word or Notes (you will need that string later)
 4. Create a new dash address for your masternode
   * File > Receiving addresses > New
