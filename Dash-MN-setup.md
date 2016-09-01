@@ -24,8 +24,8 @@ This guide will walk you through the process of setting up a [dash masternode](h
 5. Open the Applications folder and press control while clicking Dash-Qt
 6. From the menu shown, click open, (confirm by clicking open again if needed)
 7. Install the app into the default directory
-6. Allow it to load and wait for the application to fully sync (progress is shown at bottom) 
-7. Encrypt your wallet and back it up (before depositing any dash)
+8. Allow it to load and wait for the application to fully sync (progress is shown at bottom)
+9. Encrypt your wallet and back it up (before depositing any dash)
 
 ## 2. Create and secure a Linux VPS
 1. Create a Ubuntu 64-bit Linux virtual private server (VPS)

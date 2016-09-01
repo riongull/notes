@@ -42,25 +42,26 @@
 
 *... either __passwords__ for logging in to the VPS, by doing the following:*
 1. Create strong passwords for ALL users
-```sh
-# 1.1 give normal-user a secure password
-VPS$ su <normal-user>
-VPS$ passwd
-<newPassword>
-<newPassword>
-VPS$ exit
-# 1.2 give super-user a secure password
-VPS$ su <super-user>
-VPS$ passwd
-<newPassword>
-<newPassword>
-VPS$ exit
-# 1.3 give root a secure password
-VPS$ passwd
-<newPassword>
-<newPassword>
-VPS$ exit
-```
+
+  ```sh
+  # 1.1 give normal-user a secure password
+  VPS$ su <normal-user>
+  VPS$ passwd
+  <newPassword>
+  <newPassword>
+  VPS$ exit
+  # 1.2 give super-user a secure password
+  VPS$ su <super-user>
+  VPS$ passwd
+  <newPassword>
+  <newPassword>
+  VPS$ exit
+  # 1.3 give root a secure password
+  VPS$ passwd
+  <newPassword>
+  <newPassword>
+  VPS$ exit
+  ```
 
 *...or __SSH__ for logging in to the VPS, by doing the following:*
 
