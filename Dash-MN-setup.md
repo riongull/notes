@@ -1,7 +1,7 @@
 # Setting Up a Dash Masternode
 
 #### About this guide
-This guide will walk you through the process of setting up a [dash masternode](http://dashmasternode.org/) using your own virtual private server (VPS).  It is adapted from the following guides:
+This guide will walk you through the process of setting up a [dash masternode](http://dashmasternode.org/) using a __Mac OS X__ local machine and your own remote __Linux__ virtual private server (VPS).  It is adapted from the following guides:
 * https://www.dash.org/forum/threads/masternode-setup-guide-using-os-x-local-linux-remote.1776/
 * https://www.dash.org/forum/threads/taos-masternode-setup-guide-for-dummies-updated.2680/
 
@@ -67,6 +67,7 @@ Dash$ masternode genkey
 
 ## 6. Prepare your remote VPS
 While we are waiting for the needed 6 confirmations of our 1000 DASH transaction, we can now prepare the remote server.
+
 1. Log in to your VPS
 ```sh
 Local$ ssh <normal-user≥@<ip.add.re.ss>
