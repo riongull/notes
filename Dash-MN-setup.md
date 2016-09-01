@@ -86,24 +86,25 @@ While we are waiting for the needed 6 confirmations of our 1000 DASH transaction
   VPS$ chmod 755 dashd # set permissions
   ```
 3. Create dash.config file on your VPS
-```sh
-VPS$ mkdir .dash
-VPS$ cd .dash
-VPS$ nano dash.conf
-# once open, insert the following text
-< # start of file contents
-  rpcuser=<enter any user name>
-  rpcpassword=<enter any long password>
-  rpcallowip=127.0.0.1
-  listen=1
-  server=1
-  daemon=1
-  logtimestamps=1
-  maxconnections=256
-  masternode=1
-  masternodeprivkey=<enter your masternode key which you generated earlier>
-> # end of file contents, ctrl+x to exit, save as "dash.conf"
-```
+
+  ```sh
+  VPS$ mkdir .dash
+  VPS$ cd .dash
+  VPS$ nano dash.conf
+  # once open, insert the following text
+  < # start of file contents
+    rpcuser=<enter any user name>
+    rpcpassword=<enter any long password>
+    rpcallowip=127.0.0.1
+    listen=1
+    server=1
+    daemon=1
+    logtimestamps=1
+    maxconnections=256
+    masternode=1
+    masternodeprivkey=<enter your masternode key which you generated earlier>
+  > # end of file contents, ctrl+x to exit, save as "dash.conf"
+  ```
 4. Launch dashd on your VPS
 ```sh
 VPS$ cd ~
