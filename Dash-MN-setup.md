@@ -173,14 +173,16 @@ Local$ nano masternode.conf # this should bring up a new GNU session. You will n
 &nbsp;6\. Close Dash-Qt
 
 ## 9. Start your masternode(s)
-&nbsp;1\. Launch Dash-Qt  
-  * This will now use the new settings you just saved in the confguration file in the step above
+&nbsp;1\. Launch Dash-Qt
+  * This will now use the new settings you just saved in the confguration file in the step above  
 &nbsp;2\. Open a Dash-Qt console session  
-&nbsp;3\. Enter the following to activate your remote masternode  
+&nbsp;3\. Enter the following to activate your remote masternode
+
 ```sh
 Dash$ walletpassphrase <enter passphrase> 60
 Dash$ masternode start-alias <alias of the masternode you are starting>
 ```
+
   * You should get a message saying "started masternode successfully"
 &nbsp;4\. Check your work by going back to your remote server and enter the following
 ```sh
