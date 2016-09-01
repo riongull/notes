@@ -76,6 +76,7 @@ While we are waiting for the needed 6 confirmations of our 1000 DASH transaction
   * If you did not set up SSH when you [secured up your VPS](https://github.com/riongull/notes/blob/master/VPS-setup.md#3-secure-the-vps-using) you will need to enter the password for ```<normal-user>```
   * You may also log in from your VPS cloud provider's console
 2. Download, unpack, copy, and permission the needed applications/files on your VPS
+
   ```sh
   VPS$ cd ~
   VPS$ wget https://www.dash.org/binaries/dash-0.12.0.58-linux64.tar.gz
