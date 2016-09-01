@@ -33,25 +33,25 @@ This guide will walk you through the process of setting up a [dash masternode](h
 ## 3. If necessary, move dashd to the proper folder
 Installing Dash-Qt may store dashd in your "downloads" folder. If so, move the file as follows:
 
-&nbsp;&nbsp;1\. Shut down Dash-Qt  
-&nbsp;&nbsp;2\. Open the terminal utility (Applications > Utilities > Terminal)  
-&nbsp;&nbsp;3\. Enter the following commands:  
+&nbsp;1\. Shut down Dash-Qt  
+&nbsp;2\. Open the terminal utility (Applications > Utilities > Terminal)  
+&nbsp;3\. Enter the following commands:  
 ```sh
 Local$ cd ~
 Local$ cd ~/Downloads
 Local$ mv dashd ~/Library/Application\ Support/Dash
 ```    
 ## 4. Create your masternode key & address, store in separate file
-&nbsp;&nbsp;1\. Re-open Dash-Qt  
-&nbsp;&nbsp;2\. Get a new address and masternode private key  
+&nbsp;1\. Re-open Dash-Qt  
+&nbsp;2\. Get a new address and masternode private key  
   * Menu > Tools > Debug console
   * A new window should appear with the "Console" tab selected at the top
   * Enter the following command at the bottom
   ```sh
   Dash$ masternode genkey
   ```
-&nbsp;&nbsp;3\. Copy the string of characters to another application like Word or Notes (you will need that string later)
-&nbsp;&nbsp;4\. Create a new dash address for your masternode
+&nbsp;3\. Copy the string of characters to another application like Word or Notes (you will need that string later)
+&nbsp;4\. Create a new dash address for your masternode
   * File > Receiving addresses > New
   * Label the address (e.g. "MN01")
   * You will need a different address for each masternode you plan to create
@@ -67,7 +67,7 @@ Local$ mv dashd ~/Library/Application\ Support/Dash
 ## 6. Prepare your remote VPS
 While we are waiting for the needed 6 confirmations of our 1000 DASH transaction, we can now prepare the remote server.
 
-&nbsp;&nbsp;1\. Log in to your VPS
+&nbsp;1\. Log in to your VPS
 
 ```sh
 Local$ ssh <normal-user≥@<ip.add.re.ss>
@@ -75,7 +75,7 @@ Local$ ssh <normal-user≥@<ip.add.re.ss>
   * If you did not set up SSH when you [secured up your VPS](https://github.com/riongull/notes/blob/master/VPS-setup.md#3-secure-the-vps-using) you will need to enter the password for ```<normal-user>```
   * You may also log in from your VPS cloud provider's console
 
-&nbsp;&nbsp;2\. Download, unpack, copy, and permission the needed applications/files on your VPS
+&nbsp;2\. Download, unpack, copy, and permission the needed applications/files on your VPS
 
 ```sh
 VPS$ cd ~
@@ -85,7 +85,7 @@ VPS$ cp dash-0.12.0/bin/dashd dashd
 VPS$ cp dash-0.12.0/bin/dash-cli dash-cli
 VPS$ chmod 755 dashd # set permissions
 ```
-&nbsp;&nbsp;3\. Create dash.config file on your VPS
+&nbsp;3\. Create dash.config file on your VPS
 
 ```sh
 VPS$ mkdir .dash
@@ -105,7 +105,7 @@ VPS$ nano dash.conf
   masternodeprivkey=<enter your masternode key which you generated earlier>
 > # end of file contents, ctrl+x to exit, save as "dash.conf"
 ```
-&nbsp;&nbsp;4\. Launch dashd on your VPS
+&nbsp;4\. Launch dashd on your VPS
 
 ```sh
 VPS$ cd ~
@@ -148,7 +148,7 @@ Local$ nano dash.conf # this should bring up a GNU session that is blank (unless
 > # end of file contents, ctrl+x to exit, save as "dash.conf"
 ```
 
-&nbsp;&nbsp;4\. Obtain data for the masternode.config file
+&nbsp;4\. Obtain data for the masternode.config file
   1. Method 1 (using a block explorer):  
     1. In a block explorer, e.g. [chainz](https://chainz.cryptoid.info/dash/), enter the receiving address for your masternode that you deposited your 1000 DASH into
     2. Find the transaction ID and index of your 1000 DASH deposit
@@ -160,7 +160,7 @@ Local$ nano dash.conf # this should bring up a GNU session that is blank (unless
     3. Copy the "Transaction ID" without the "-" and three numbers on the far right, and paste that into a block explorer.
     4. Find the address with the 1000 DASH deposit and an index number
     5. Use this hash and index number for your masternode.conf file below
-&nbsp;&nbsp;5\. Create masternode configuration file
+&nbsp;5\. Create masternode configuration file
 
 ```sh
 Local$ nano masternode.conf # this should bring up a new GNU session. You will need to select a name or "alias" for each of your masternodes. In the example below, I have chosen "MN01", but you can name it whatever you want. Populate the file with the data obtained above, as follows:
@@ -170,19 +170,19 @@ Local$ nano masternode.conf # this should bring up a new GNU session. You will n
 ```
   * You will need a separate line for each masternode in the masternode.conf file
   * You may add as many masternodes to the same wallet and the masternode.conf file as you wish
-&nbsp;&nbsp;6\. Close Dash-Qt
+&nbsp;6\. Close Dash-Qt
 
 ## 9. Start your masternode(s)
-&nbsp;&nbsp;1\. Launch Dash-Qt  
+&nbsp;1\. Launch Dash-Qt  
   * This will now use the new settings you just saved in the confguration file in the step above
-&nbsp;&nbsp;2\. Open a Dash-Qt console session  
-&nbsp;&nbsp;3\. Enter the following to activate your remote masternode  
+&nbsp;2\. Open a Dash-Qt console session  
+&nbsp;3\. Enter the following to activate your remote masternode  
 ```sh
 Dash$ walletpassphrase <enter passphrase> 60
 Dash$ masternode start-alias <alias of the masternode you are starting>
 ```
   * You should get a message saying "started masternode successfully"
-&nbsp;&nbsp;4\. Check your work by going back to your remote server and enter the following
+&nbsp;4\. Check your work by going back to your remote server and enter the following
 ```sh
 Local$ ssh <normal-user≥@<ip.add.re.ss>  
 VPS$ ./dash-cli masternode list full | grep <your MN IP address>
