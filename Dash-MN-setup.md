@@ -19,10 +19,13 @@ This guide will walk you through the process of setting up a [dash masternode](h
 ## 1. Download & install Dash-Qt & prepare your wallet
 1. From a browser on your Mac, go to https://www.dash.org/downloads
 2. Find and click the Dash Core, Mac OS X dmg download link
-3. Double click the downloaded dmg file to install it locally
-4. Drag the contents to your application folder
-5. Open Dash-Qt and allow it to fully sync
-6. Encrypt your wallet and back it up (before depositing any dash)
+3. Click the downloaded dmg file to open up its contents
+4. Drag the Dash-Qt.app file into the Applications folder
+5. Open the Applications folder and press control while clicking Dash-Qt
+6. From the menu shown, click open, (confirm by clicking open again if needed)
+7. Install the app into the default directory
+6. Allow it to load and wait for the application to fully sync (progress is shown at bottom) 
+7. Encrypt your wallet and back it up (before depositing any dash)
 
 ## 2. Create and secure a Linux VPS
 1. Create a Ubuntu 64-bit Linux virtual private server (VPS)
