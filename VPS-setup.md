@@ -1,9 +1,21 @@
 # Setting Up a Secure Virtual Private Server (VPS)
 
-## Instructions adapted from the following tutorials:
+#### About this guide
+This guide will walk you through the process of setting up a __Linux__-based virtual private server (VPS).  It assumes you are using a __Mac OS X__ local machine.  It is adapted from the following guides:
 * http://planetcrypton.com/hardened-server
 * https://www.youtube.com/watch?v=DbPDraCYju8
 * https://gist.github.com/learncodeacademy/5850f394342a5bfdbfa4
+
+#### Using this guide
+* Command promt legend
+  * this guide uses the command prompts below to indicate which machine you are running commands on:
+  * ```Local$ sample command ``` - run on your __local Mac OS X__ terminal
+  * ```VPS$ sample command``` - run on your __remote virtual private server's__ terminal
+  * ```Dash$ sample command``` - run on your __local Dash-Qt's__ console
+* Command line syntax
+  * the text before the ```$``` will look different on your machines
+  * simply type what's *after* the ```$``` (and hit enter/return) to execute a given command
+  * for a ```$ command -with <text_in_brackets>``` replace ```<text_in_brackets>``` with *your* data (omitting ```<``` and ```>```)
 
 ## 1. Create a Linux virtual private server (VPS)
 
@@ -144,7 +156,7 @@
   VPS$ sudo ufw default deny incoming
   VPS$ sudo ufw default allow outgoing
   ```
-  
+
 2. Edit SSH port for TCP connections
 
   ```sh
