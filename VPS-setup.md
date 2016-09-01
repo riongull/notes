@@ -67,67 +67,72 @@
 *...or __SSH__ for logging in to the VPS, by doing the following:*
 
 1. Create SSH folder if needed
-```sh
-Local$ cd ~
-Local$ ls
-# if there's a folder named .ssh, then skip the next step, otherwise:
-Local$ mkdir ~/.ssh
-```
+
+  ```sh
+  Local$ cd ~
+  Local$ ls
+  # if there's a folder named .ssh, then skip the next step, otherwise:
+  Local$ mkdir ~/.ssh
+  ```
 2. Create SSH keys
-```sh
-Local$ touch /home/<your-local-user-name>/.ssh/<dash-server-key>
-Local$ ssh-keygen -t rsa
-</home/<your-local-user-name>/.ssh/dash-server-key> # replace default path with one we just created
-<really-long-and-hard-to-guess-passphrase>
- # set public key permissions
-Local$ chmod 644 /home/<your-LOCAL-user-name>/.ssh/<darkcoin-server-key>.pub
-Local$ chmod 600 /home/<your-LOCAL-user-name>/.ssh/<darkcoin-server-key>
-```
+
+  ```sh
+  Local$ touch /home/<your-local-user-name>/.ssh/<dash-server-key>
+  Local$ ssh-keygen -t rsa
+  </home/<your-local-user-name>/.ssh/dash-server-key> # replace default path with one we just created
+  <really-long-and-hard-to-guess-passphrase>
+   # set public key permissions
+  Local$ chmod 644 /home/<your-LOCAL-user-name>/.ssh/<darkcoin-server-key>.pub
+  Local$ chmod 600 /home/<your-LOCAL-user-name>/.ssh/<darkcoin-server-key>
+  ```
 3. Create/Edit ~/.ssh/config file to handle multiple keys
-```sh
-Local$ touch ~/.ssh/config
-Local$ chmod 644 ~/.ssh/config
-Local$ nano ~/.ssh/config
-< # Start of contents of new config file
-  Host <ip.add.re.ss>
-  Hostname <ip.add.re.ss>
-  PreferredAuthentications publickey
-  IdentityFile ~/.ssh/<dash-server-key>
-> # End of contents of new config file, save and close
-```
+
+  ```sh
+  Local$ touch ~/.ssh/config
+  Local$ chmod 644 ~/.ssh/config
+  Local$ nano ~/.ssh/config
+  < # Start of contents of new config file
+    Host <ip.add.re.ss>
+    Hostname <ip.add.re.ss>
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/<dash-server-key>
+  > # End of contents of new config file, save and close
+  ```
 4. Copy/paste the public key from *local* to *remote* and set permissions
-```sh
-Local$ cd ~/.ssh
-Local$ cat dash-server-key.pub | pbcopy # was id_rsa.pub
-Local$ ssh root@<ip.add.re.ss> #log into VPS
-<password>
-# You're now in your VPS...
-VPS$ mkdir /home/<normal-user>/.ssh/
-VPS$ touch /home/<normal-user>/.ssh/authorized_keys
-VPS$ nano /home/<normal-user>/.ssh/authorized_keys
-[ctrl+x] # press ctrl+x to paste in the key you copied from local
-# Set the permissions.
-VPS$ chown -R <login-user>:<login-user> /home/<login-user>/.ssh
-VPS$ chmod 700 /home/<login-user>/.ssh
-VPS$ chmod 600 /home/<login-user>/.ssh/authorized_keys
-VPS$ exit
-```
+
+  ```sh
+  Local$ cd ~/.ssh
+  Local$ cat dash-server-key.pub | pbcopy # was id_rsa.pub
+  Local$ ssh root@<ip.add.re.ss> #log into VPS
+  <password>
+  # You're now in your VPS...
+  VPS$ mkdir /home/<normal-user>/.ssh/
+  VPS$ touch /home/<normal-user>/.ssh/authorized_keys
+  VPS$ nano /home/<normal-user>/.ssh/authorized_keys
+  [ctrl+x] # press ctrl+x to paste in the key you copied from local
+  # Set the permissions.
+  VPS$ chown -R <login-user>:<login-user> /home/<login-user>/.ssh
+  VPS$ chmod 700 /home/<login-user>/.ssh
+  VPS$ chmod 600 /home/<login-user>/.ssh/authorized_keys
+  VPS$ exit
+  ```
 5. Configure SSH on *remote* server
-```sh
-VPS$ sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config_original # copy config file just in case we screw things up while editing it, just in case.
-VPS$ sudo nano /etc/ssh/sshd_config # open the ssh configuration file. The things  we need to check, set, or add within the sshd_config file are below:
-< #start
-  Protocol 2
-  PermitRootLogin no
-  PasswordAuthentication no
-  UseDNS no
-  AllowUsers <login-user>
-> # end
-VPS$ service ssh restart # restart ssh.  Note that this is a very “strict” configuration.  You will now ONLY be allowed to log-in to your REMOTE server from your current LOCAL machine.  To be able to log-in from a different LOCAL machine you would need to copy the private ssh key from your LOCAL machine onto the other LOCAL machine.  (You might want to keep the private key on an encrypted usb flash drive for such purposes.)  If that other LOCAL machine were not also owned by you, then you would want to delete the private key from it after you were done using it.  If you were willing to compromise just a bit on security you could leave PasswordAuthentication set to yes; it would be better if you could avoid doing this, however, in the event someone guessed or otherwise found out login-user's password.  You should now try to log-out as root and then ssh log-in as <login-user>:
-VPS$ exit
-Local$ ssh <login-user>@<ip.add.re.ss>
-<password> # if you can successfully log-in at this point, then you can continue on to the “Configuring Ports” section below.  If you cannot log-in, then you can try to go back and fix any problems by logging-in through a web-based console provided by your cloud-server's host.  If you just can't get it working no matter what, you may have to start again, rebuilding the server from scratch.
-```
+
+  ```sh
+  VPS$ sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config_original # copy config file just in case we screw things up while editing it, just in case.
+  VPS$ sudo nano /etc/ssh/sshd_config # open the ssh configuration file. The things  we need to check, set, or add within the sshd_config file are below:
+  < #start
+    Protocol 2
+    PermitRootLogin no
+    PasswordAuthentication no
+    UseDNS no
+    AllowUsers <login-user>
+  > # end
+  VPS$ service ssh restart # restart ssh.  Note that this is a very “strict” configuration.  You will now ONLY be allowed to log-in to your REMOTE server from your current LOCAL machine.  To be able to log-in from a different LOCAL machine you would need to copy the private ssh key from your LOCAL machine onto the other LOCAL machine.  (You might want to keep the private key on an encrypted usb flash drive for such purposes.)  If that other LOCAL machine were not also owned by you, then you would want to delete the private key from it after you were done using it.  If you were willing to compromise just a bit on security you could leave PasswordAuthentication set to yes; it would be better if you could avoid doing this, however, in the event someone guessed or otherwise found out login-user's password.  You should now try to log-out as root and then ssh log-in as <login-user>:
+  VPS$ exit
+  Local$ ssh <login-user>@<ip.add.re.ss>
+  <password> # if you can successfully log-in at this point, then you can continue on to the “Configuring Ports” section below.  If you cannot log-in, then you can try to go back and fix any problems by logging-in through a web-based console provided by your cloud-server's host.  If you just can't get it working no matter what, you may have to start again, rebuilding the server from scratch.
+  ```
 
 ## 4. Configure VPS ports
 
