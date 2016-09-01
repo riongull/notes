@@ -19,7 +19,7 @@ This guide will walk you through the process of setting up a __Linux__-based vir
 
 ## 1. Create a Linux virtual private server (VPS)
 
-1. Create a [Vultr account](https://vultr.com)
+1. Create a [Vultr account](http://www.vultr.com/?ref=6971315-3B)
 2. After signing in to Vultr, deploy a new instance
   * Location: somewhere near you
   * Server Type: 64 bit OS > Ubuntu > 14.04 x64
