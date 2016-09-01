@@ -28,7 +28,7 @@ This guide will walk you through the process of setting up a [dash masternode](h
 1. Create a Ubuntu 64-bit Linux virtual private server (VPS)
   * You may use any service for this, e.g. AWS, Digital Ocean, Vultr, etc
   * You should have secured the necessary ports, created tough logins, etc
-  * See [this link](https://mygithub.com) for a step-by-step tutorial using [Vultr](http://www.vultr.com/?ref=6971315-3B)
+  * See [this link](https://github.com/riongull/notes/blob/master/VPS-setup.md) for a step-by-step tutorial using [Vultr](http://www.vultr.com/?ref=6971315-3B)
 
 ## 3. If necessary, move dashd to the proper folder
 Installing Dash-Qt may store dashd in your "downloads" folder. If so, move the file as follows:
@@ -66,11 +66,11 @@ Dash$ masternode genkey
 
 ## 6. Prepare your remote VPS
 While we are waiting for the needed 6 confirmations of our 1000 DASH transaction, we can now prepare the remote server.
-1. Log into your VPS (that you created in Step 2 above)
-  * Depending on how you set up your VPS, log in using either your [password](githublink), or your [password-less SSH](githublink)
+1. Log in to your VPS
 ```sh
 Local$ ssh <normal-user≥@<ip.add.re.ss>
 ```
+  * If you did not set up SSH when you [secured up your VPS](https://github.com/riongull/notes/blob/master/VPS-setup.md#3-secure-the-vps-using) you will need to enter the password for \<normal-user>
   * You may also log in from your VPS cloud provider's console
 2. Download, unpack, copy, and permission the needed applications/files on your VPS
 ```sh
