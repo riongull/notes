@@ -67,6 +67,7 @@ Dash$ masternode genkey
 
 ## 6. Prepare your remote VPS
 While we are waiting for the needed 6 confirmations of our 1000 DASH transaction, we can now prepare the remote server.
+
 1. Log in to your VPS
 ```sh
 Local$ ssh <normal-user≥@<ip.add.re.ss>
