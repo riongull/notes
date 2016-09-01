@@ -115,7 +115,7 @@ VPS$ ./dash-cli getinfo
   * You don't need to wait for the blocks to completely sync; we may move on to the next step
 
 ## 7. Remove unnecessary files & folders from your VPS
-We are done with the installation files and folders, so those can be removed. 
+We are done with the installation files and folders, so those can be removed.  
 1. Remove files as follows:
 ```sh
 VPS$ ls
