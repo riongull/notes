@@ -130,8 +130,8 @@ VPS$ exit # rion added, check flow
 
 ## 8. Create dash.conf & masternode.conf files on your *local* machine
 &nbsp;&nbsp;1\. Close Dash-Qt if open
-&nbsp;&nbsp;2\. Open a terminal session
-&nbsp;&nbsp;3\. Create dash.conf file 
+&nbsp;&nbsp;2\. Open a terminal session 
+&nbsp;&nbsp;3\. Create dash.conf file
 
 ```sh
 Local$ cd ~/Library/Application\ Support/Dash
