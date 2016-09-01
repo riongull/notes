@@ -122,6 +122,7 @@ While we are waiting for the needed 6 confirmations of our 1000 DASH transaction
 We are done with the installation files and folders, so those can be removed.
 
 1. Remove files as follows:
+
   ```sh
   VPS$ ls
   VPS$ rm -rf dash-0.12.0
