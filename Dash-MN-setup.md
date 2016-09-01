@@ -18,7 +18,7 @@ This guide will walk you through the process of setting up a [dash masternode](h
 
 ## 1. Download & install Dash-Qt & prepare your wallet
 1. From a browser on your Mac, go to https://www.dash.org/downloads
-2. Find the latest Mac OS X Dash-Qt wallet and click the download link
+2. Find and click the Dash Core, Mac OS X dmg download link
 3. Double click the downloaded dmg file to install it locally
 4. Drag the contents to your application folder
 5. Open Dash-Qt and allow it to fully sync

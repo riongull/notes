@@ -18,22 +18,22 @@
 ## 2. Set up the VPS with new users
 
 1. Log into the *remote* (newly created) VPS from your *local* computer's terminal
-```sh
-Local$ ssh root@<ip.add.re.ss>
-<defaultPassword>
-```
+  ```sh
+  Local$ ssh root@<ip.add.re.ss>
+  <defaultPassword>
+  ```
 2. Change the 'root' user's password
-```sh
-VPS$ passwd root
-<newPassword>
-<newPassword>
-```
+  ```sh
+  VPS$ passwd root
+  <newPassword>
+  <newPassword>
+  ```
 3. Create a couple new users
-```sh
-VPS$ adduser <super-user>
-VPS$ sudo usermod -a -G sudo <super-user>
-VPS$ adduser <normal-user>
-```
+  ```sh
+  VPS$ adduser <super-user>
+  VPS$ sudo usermod -a -G sudo <super-user>
+  VPS$ adduser <normal-user>
+  ```
 
 ## 3. Secure the VPS using...
 
