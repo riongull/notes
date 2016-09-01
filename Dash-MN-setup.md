@@ -106,11 +106,12 @@ While we are waiting for the needed 6 confirmations of our 1000 DASH transaction
   > # end of file contents, ctrl+x to exit, save as "dash.conf"
   ```
 4. Launch dashd on your VPS
-```sh
-VPS$ cd ~
-VPS$ ./dashd # enter command, then wait ~15 seconds
-VPS$ ./dash-cli getinfo
-```
+
+  ```sh
+  VPS$ cd ~
+  VPS$ ./dashd # enter command, then wait ~15 seconds
+  VPS$ ./dash-cli getinfo
+  ```
   * If you run the "getinfo" command several times you should see that the number of blocks is increasing
   * The number of blocks must eventually catch up to the current blockchain before your masternode is active
   * You can check if the number of blocks is up to the current height by comparing to the current number of blocks reported on one of the many Dash blockchain explorers (several are listed on the dash.org website)
