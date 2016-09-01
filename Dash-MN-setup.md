@@ -74,7 +74,7 @@ Local$ ssh <normal-user≥@<ip.add.re.ss>
 ```
   * If you did not set up SSH when you [secured up your VPS](https://github.com/riongull/notes/blob/master/VPS-setup.md#3-secure-the-vps-using) you will need to enter the password for ```<normal-user>```
   * You may also log in from your VPS cloud provider's console
-  
+
 &nbsp;&nbsp;2\. Download, unpack, copy, and permission the needed applications/files on your VPS
 
 ```sh
@@ -131,7 +131,7 @@ VPS$ exit # rion added, check flow
 ## 8. Create dash.conf & masternode.conf files on your *local* machine
 &nbsp;&nbsp;1\. Close Dash-Qt if open
 &nbsp;&nbsp;2\. Open a terminal session
-&nbsp;&nbsp;3\. Create dash.conf file
+&nbsp;&nbsp;3\. Create dash.conf file 
 
 ```sh
 Local$ cd ~/Library/Application\ Support/Dash
