@@ -135,22 +135,22 @@ We are done with the installation files and folders, so those can be removed.
 2. Open a terminal session
 3. Create dash.conf file
 
-```sh
-Local$ cd ~/Library/Application\ Support/Dash
-Local$ nano dash.conf # this should bring up a GNU session that is blank (unless you already had a conf file created). In any case, make sure it has the following text.
-< # start of file contents
-  rpcuser=<enter a username of your choosing>
-  rpcpassword=<enter a really long string of random characters>
-  rpcallowip=127.0.0.1
-  listen=0
-  server=1
-  daemon=1
-  logtimestamps=1
-  maxconnections=8
-> # end of file contents, ctrl+x to exit, save as "dash.conf"
-```
+  ```sh
+  Local$ cd ~/Library/Application\ Support/Dash
+  Local$ nano dash.conf # this should bring up a GNU session that is blank (unless you already had a conf file created). In any case, make sure it has the following text.
+  < # start of file contents
+    rpcuser=<enter a username of your choosing>
+    rpcpassword=<enter a really long string of random characters>
+    rpcallowip=127.0.0.1
+    listen=0
+    server=1
+    daemon=1
+    logtimestamps=1
+    maxconnections=8
+  > # end of file contents, ctrl+x to exit, save as "dash.conf"
+  ```
 
-&nbsp;4\. Obtain data for the masternode.config file
+4. Obtain data for the masternode.config file
   1. Method 1 (using a block explorer):  
     1. In a block explorer, e.g. [chainz](https://chainz.cryptoid.info/dash/), enter the receiving address for your masternode that you deposited your 1000 DASH into
     2. Find the transaction ID and index of your 1000 DASH deposit
@@ -162,7 +162,7 @@ Local$ nano dash.conf # this should bring up a GNU session that is blank (unless
     3. Copy the "Transaction ID" without the "-" and three numbers on the far right, and paste that into a block explorer.
     4. Find the address with the 1000 DASH deposit and an index number
     5. Use this hash and index number for your masternode.conf file below
-&nbsp;5\. Create masternode configuration file
+5. Create masternode configuration file
 
 ```sh
 Local$ nano masternode.conf # this should bring up a new GNU session. You will need to select a name or "alias" for each of your masternodes. In the example below, I have chosen "MN01", but you can name it whatever you want. Populate the file with the data obtained above, as follows:
@@ -172,7 +172,7 @@ Local$ nano masternode.conf # this should bring up a new GNU session. You will n
 ```
   * You will need a separate line for each masternode in the masternode.conf file
   * You may add as many masternodes to the same wallet and the masternode.conf file as you wish
-&nbsp;6\. Close Dash-Qt
+6. Close Dash-Qt
 
 ## 9. Start your masternode(s)
 1. Launch Dash-Qt
