@@ -42,7 +42,6 @@ Installing Dash-Qt may store dashd in your "downloads" folder. If so, move the f
   Local$ cd ~/Downloads
   Local$ mv dashd ~/Library/Application\ Support/Dash
   ```
-4. Something
 
 ## 4. Create your masternode key & address, store in separate file
 1. Re-open Dash-Qt  
