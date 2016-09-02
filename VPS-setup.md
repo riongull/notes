@@ -106,7 +106,7 @@ This guide will walk you through the process of setting up a __Linux__-based vir
   Local$ chmod 644 <fullPathOfPWD>/<dash-server-key>.pub
   Local$ chmod 600 <fullPathOfPWD>/<dash-server-key>
   ```
-3. Create/Edit ~/.ssh/config file to handle multiple keys
+3. Create & edit ~/.ssh/config file to handle multiple keys
 
   ```sh
   Local$ touch ~/.ssh/config
@@ -114,19 +114,19 @@ This guide will walk you through the process of setting up a __Linux__-based vir
   Local$ nano ~/.ssh/config
   # Hostname below can be either your ip address or your-example-domain.com  
   < # Start of contents of new config file
-    Host <ip.add.re.ss>
-    Hostname <ip.add.re.ss>
-    PreferredAuthentications publickey
-    IdentityFile ~/.ssh/<dash-server-key>
+    Host <ip.add.re.ss> # any alias is okay, e.g. 'my-server' instead of 'ip.add.re.ss', you then log in with: 'ssh root@my-server'
+      Hostname <ip.add.re.ss>
+      PreferredAuthentications password # we will change 'password' to 'publickey' later
+      IdentityFile ~/.ssh/<dash-server-key> # this will be needed when we use 'publickey' authentication
   > # End of contents of new config file, save and close
-  # You may add other entries to the file, including those previously set up to connect via shh
   ```
-4. Copy/paste the public key from *local* to *remote* and set permissions
+  * You may [add other entries to the file](https://www.digitalocean.com/community/tutorials/how-to-configure-custom-connection-options-for-your-ssh-client), including those previously set up to connect via shh
+4. Copy & paste the public key from *local* to *remote* and set permissions
 
   ```sh
   Local$ cd ~/.ssh
-  Local$ cat dash-server-key.pub | pbcopy # was id_rsa.pub
-  Local$ ssh root@<ip.add.re.ss> #log into VPS
+  Local$ cat <dash-server-key>.pub | pbcopy
+  Local$ ssh root@<ip.add.re.ss> # log into VPS
   <password>
   # You're now in your VPS...
   VPS$ mkdir /home/<normal-user>/.ssh/
