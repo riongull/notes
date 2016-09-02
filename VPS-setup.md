@@ -95,13 +95,16 @@ This guide will walk you through the process of setting up a __Linux__-based vir
 2. Create SSH keys
 
   ```sh
-  Local$ touch ~/.ssh/<dash-server-key> # <dash-server-key> is a descriptive name of your choice
+  Local$ pwd # make note of the full path to your present working directory, <fullPathOfPWD> for next step
+  Local$ touch <fullPathOfPWD>/<dash-server-key> # <dash-server-key> is a descriptive name of your choice
   Local$ ssh-keygen -t rsa
-  </home/<your-local-user-name>/.ssh/dash-server-key> # replace default path with one we just created
+  <fullPathOfPWD>/<dash-server-key> # enter the same file (with full path) that you entered above
+  y # answer yes to overwrite file
   <really-long-and-hard-to-guess-passphrase>
-   # set key permissions
-  Local$ chmod 644 /home/<your-LOCAL-user-name>/.ssh/<darkcoin-server-key>.pub
-  Local$ chmod 600 /home/<your-LOCAL-user-name>/.ssh/<darkcoin-server-key>
+  <really-long-and-hard-to-guess-passphrase>
+  # set key permissions
+  Local$ chmod 644 <fullPathOfPWD>/<dash-server-key>.pub
+  Local$ chmod 600 <fullPathOfPWD>/<dash-server-key>
   ```
 3. Create/Edit ~/.ssh/config file to handle multiple keys
 
