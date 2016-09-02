@@ -42,11 +42,11 @@ This guide will walk you through the process of setting up a __Linux__-based vir
   <newPassword>
   <newPassword>
   ```
-3. Create a couple new users
+3. Create a couple new users, give one sudo privileges  
 
   ```sh
   VPS$ adduser <super-user>
-  VPS$ sudo usermod -a -G sudo <super-user> # adds super-user to 'sudo' group (gives it sudo capabilities)
+  VPS$ sudo usermod -a -G sudo <super-user> # adds super-user to 'sudo' group
   VPS$ adduser <normal-user>
   ```
 
@@ -89,11 +89,11 @@ This guide will walk you through the process of setting up a __Linux__-based vir
 2. Create SSH keys
 
   ```sh
-  Local$ touch /home/<your-local-user-name>/.ssh/<dash-server-key>
+  Local$ touch /home/<your-local-user-name>/.ssh/<dash-server-key> # <dash-server-key> is a descriptive name you are coming up with now, <your-local-user-name> already exists on your computer
   Local$ ssh-keygen -t rsa
   </home/<your-local-user-name>/.ssh/dash-server-key> # replace default path with one we just created
   <really-long-and-hard-to-guess-passphrase>
-   # set public key permissions
+   # set key permissions
   Local$ chmod 644 /home/<your-LOCAL-user-name>/.ssh/<darkcoin-server-key>.pub
   Local$ chmod 600 /home/<your-LOCAL-user-name>/.ssh/<darkcoin-server-key>
   ```
