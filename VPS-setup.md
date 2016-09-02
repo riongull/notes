@@ -112,12 +112,14 @@ This guide will walk you through the process of setting up a __Linux__-based vir
   Local$ touch ~/.ssh/config
   Local$ chmod 644 ~/.ssh/config
   Local$ nano ~/.ssh/config
+  # Hostname below can be either your ip address or your-example-domain.com  
   < # Start of contents of new config file
     Host <ip.add.re.ss>
     Hostname <ip.add.re.ss>
     PreferredAuthentications publickey
     IdentityFile ~/.ssh/<dash-server-key>
   > # End of contents of new config file, save and close
+  # You may add other entries to the file, including those previously set up to connect via shh
   ```
 4. Copy/paste the public key from *local* to *remote* and set permissions
 
