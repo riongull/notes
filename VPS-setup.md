@@ -46,7 +46,7 @@ This guide will walk you through the process of setting up a __Linux__-based vir
 
   ```sh
   VPS$ adduser <super-user>
-  VPS$ sudo usermod -a -G sudo <super-user> # Adds super-user to 'sudo' user group (gives it sudo capabilities)
+  VPS$ sudo usermod -a -G sudo <super-user> # adds super-user to 'sudo' user group (gives it sudo capabilities)
   VPS$ adduser <normal-user>
   ```
 
