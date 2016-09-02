@@ -112,10 +112,9 @@ This guide will walk you through the process of setting up a __Linux__-based vir
   Local$ touch ~/.ssh/config
   Local$ chmod 644 ~/.ssh/config
   Local$ nano ~/.ssh/config
-  # Hostname below can be either your ip address or your-example-domain.com  
   < # Start of contents of new config file
     Host <ip.add.re.ss> # any alias is okay, e.g. 'my-server' instead of 'ip.add.re.ss', you then log in with: 'ssh root@my-server'
-      Hostname <ip.add.re.ss>
+      Hostname <ip.add.re.ss> # can be either your ip address or your-example-domain.com  
       PreferredAuthentications password # we will change 'password' to 'publickey' later
       IdentityFile ~/.ssh/<dash-server-key> # this will be needed when we use 'publickey' authentication
   > # End of contents of new config file, save and close
