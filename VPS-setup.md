@@ -95,7 +95,7 @@ This guide will walk you through the process of setting up a __Linux__-based vir
 2. Create SSH keys
 
   ```sh
-  Local$ touch ~/.ssh/<dash-server-key> # <dash-server-key> is a descriptive name you are coming up with now
+  Local$ touch ~/.ssh/<dash-server-key> # <dash-server-key> is a descriptive name of your choice
   Local$ ssh-keygen -t rsa
   </home/<your-local-user-name>/.ssh/dash-server-key> # replace default path with one we just created
   <really-long-and-hard-to-guess-passphrase>
