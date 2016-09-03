@@ -139,18 +139,20 @@ This guide will walk you through the process of setting up a __Linux__-based vir
   ```
 5. Configure SSH on *remote* server
 
-  * Note that this step changes your server to a very “strict” configuration.  After this change you will ONLY be allowed to log-in to your REMOTE server from your current LOCAL machine.  To be able to log-in from a different LOCAL machine you would need to copy the private ssh key from your LOCAL machine onto the other LOCAL machine.  (You might want to keep the private key on an encrypted USB flash drive for such purposes.)  If that other LOCAL machine were not also owned by you, then you would want to delete the private key from it after you were done using it.  If you were willing to compromise just a bit on security you could leave PasswordAuthentication set to yes; it would be better if you could avoid doing this, however, in the event someone guessed or otherwise found out <login-user>'s password.
-
   ```sh
   VPS$ sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config_original # copy config file just in case we screw things up while editing it, just in case.
-  VPS$ sudo nano /etc/ssh/sshd_config # open the ssh configuration file. The things  we need to check, set, or add within the sshd_config file are below:
-  < #start
+  VPS$ sudo nano /etc/ssh/sshd_config # open the ssh configuration file.
+  # Note that this step changes your server to a very “strict” configuration.  
+  # After this change you will ONLY be allowed to log-in to your REMOTE server from your current LOCAL machine.  
+  # To be able to log-in from a different LOCAL machine you would need to copy the private ssh key from your LOCAL machine onto the other LOCAL machine.  (You might want to keep the private key on an encrypted USB flash drive for such purposes.)  If that other LOCAL machine were not also owned by you, then you would want to delete the private key from it after you were done using it.  If you were willing to compromise just a bit on security you could leave PasswordAuthentication set to yes; it would be better if you could avoid doing this, however, in the event someone guessed or otherwise found out <login-user>'s password.
+  # Check, set, or add the following lines in the sshd_config file:
+  < #start of desired file settings
     Protocol 2
     PermitRootLogin no
     PasswordAuthentication no
     UseDNS no
     AllowUsers <login-user>
-  > # end
+  > # end of desired file settings
   VPS$ service ssh restart # restart ssh.  
   VPS$ exit # log-out as root and then ssh log-in as <login-user>:
   Local$ ssh <login-user>@<ip.add.re.ss>
