@@ -34,13 +34,15 @@ This guide will walk you through the process of setting up a [dash masternode](h
   * See [this link](https://github.com/riongull/notes/blob/master/VPS-setup.md) for a step-by-step tutorial using [Vultr](http://www.vultr.com/?ref=6971315-3B)
 
 ## 3. If necessary, move dashd to the proper folder
-Installing Dash-Qt may store dashd in your "downloads" folder. If so, move the file as follows:
+Installing Dash-Qt may have put dashd in your "downloads" folder. If so, move the file as follows:
 
 1. Shut down Dash-Qt
 2. Open the terminal utility (Applications > Utilities > Terminal)
 3. Enter the following commands:
 
   ```sh
+  Local$ cd ~/Library/Application\ Support/Dash
+  # if you don't see a file called dashd, run the following commands
   Local$ cd ~
   Local$ cd ~/Downloads
   Local$ mv dashd ~/Library/Application\ Support/Dash
