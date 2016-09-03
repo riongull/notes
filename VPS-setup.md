@@ -50,7 +50,7 @@ This guide will walk you through the process of setting up a __Linux__-based vir
   <newPassword>
   <otherFieldsAsDesired>
   VPS$ sudo usermod -a -G sudo <super-user> # adds super-user to 'sudo' group
-  VPS$ adduser <normal-user>
+  VPS$ adduser <login-user>
   <newPassword>
   <newPassword>
   <otherFieldsAsDesired>
@@ -63,8 +63,8 @@ This guide will walk you through the process of setting up a __Linux__-based vir
 1. Create strong passwords for ALL users
 
   ```sh
-  # 1.1 give normal-user a secure password
-  VPS$ su <normal-user>
+  # 1.1 give login-user a secure password
+  VPS$ su <login-user>
   VPS$ passwd
   <newPassword>
   <newPassword>
@@ -128,9 +128,9 @@ This guide will walk you through the process of setting up a __Linux__-based vir
   Local$ ssh root@<ip.add.re.ss> # log into VPS
   <password>
   # You're now in your VPS...
-  VPS$ mkdir /home/<normal-user>/.ssh/
-  VPS$ touch /home/<normal-user>/.ssh/authorized_keys
-  VPS$ nano /home/<normal-user>/.ssh/authorized_keys
+  VPS$ mkdir /home/<login-user>/.ssh/
+  VPS$ touch /home/<login-user>/.ssh/authorized_keys
+  VPS$ nano /home/<login-user>/.ssh/authorized_keys
   [ctrl+x] # press ctrl+x to paste in the key you copied from local
   # Set the permissions.
   VPS$ chown -R <login-user>:<login-user> /home/<login-user>/.ssh
