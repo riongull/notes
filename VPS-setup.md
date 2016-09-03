@@ -158,7 +158,16 @@ This guide will walk you through the process of setting up a __Linux__-based vir
   > # end of desired file settings
 
   VPS$ service ssh restart # restart ssh.  
-  VPS$ exit # log-out as root and then ssh log-in as <login-user>:
+  VPS$ exit # log out so we can test our logging-in with our new configuration
+
+  # before logging back into our server we must edit the ~/.ssh/config file to allow publickey log-ins
+  Local$ nano ~/.ssh/config
+  < # Start of contents of config file
+    Host <ip.add.re.ss>
+      Hostname <ip.add.re.ss>  
+      PreferredAuthentications publickey # change 'password' to 'publickey'
+      IdentityFile ~/.ssh/<dash-server-key>
+  > # end of contents of config file
   Local$ ssh <login-user>@<ip.add.re.ss>
   <password>
   # if you can successfully log-in at this point, then you can continue on to the “Configuring Ports” section below.  If you cannot log-in, then you can try to go back and fix any problems by logging-in through a web-based console provided by your cloud-server's host.  If you just can't get it working no matter what, you may have to start again, rebuilding the server from scratch.
@@ -178,7 +187,7 @@ This guide will walk you through the process of setting up a __Linux__-based vir
 2. Edit SSH port for TCP connections
 
   ```sh
-  # for security, you will want to change ssh-port-number for tcp connections, and open that port.  (We will refer to this as <ssh-port-number>.)
+  # [for security](https://major.io/2013/05/14/changing-your-ssh-servers-port-from-the-default-is-it-worth-it/), you may want to change ssh-port-number for tcp connections, and open that port.  (We will refer to this as <ssh-port-number>.)
   VPS$ sudo ufw allow <ssh-port-number>/tcp
   ```
 
