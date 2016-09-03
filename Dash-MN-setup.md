@@ -34,7 +34,7 @@ This guide will walk you through the process of setting up a [dash masternode](h
   * See [this link](https://github.com/riongull/notes/blob/master/VPS-setup.md) for a step-by-step tutorial using [Vultr](http://www.vultr.com/?ref=6971315-3B)
 
 ## 3. If necessary, move dashd to the proper folder
-Installing Dash-Qt may have put dashd in your "downloads" folder. If so, move the file as follows:
+Installing Dash-Qt may have put dashd in your "downloads" folder. If so, we'll need to move the file:
 
 1. Shut down Dash-Qt
 2. Open the terminal utility (Applications > Utilities > Terminal)
@@ -42,6 +42,7 @@ Installing Dash-Qt may have put dashd in your "downloads" folder. If so, move th
 
   ```sh
   Local$ cd ~/Library/Application\ Support/Dash
+  Local$ ls -la
   # if you don't see a file called dashd, run the following commands
   Local$ cd ~
   Local$ cd ~/Downloads
@@ -75,11 +76,15 @@ Installing Dash-Qt may have put dashd in your "downloads" folder. If so, move th
 While we are waiting for the needed 6 confirmations of our 1000 DASH transaction, we can now prepare the remote server.
 
 1. Log in to your VPS
-
+  * If logging in with a password or password-less SSH on port 22 (the default):
   ```sh
-  Local$ ssh <normal-user≥@<ip.add.re.ss>
+  Local$ ssh <login-user≥@<ip.add.re.ss>
+  <password> # if needed
   ```
-  * If you did not set up SSH when you [secured up your VPS](https://github.com/riongull/notes/blob/master/VPS-setup.md#3-secure-the-vps-using) you will need to enter the password for ```<normal-user>```
+  * If you changed your SSH port in step 3.5 of [securing your VPS](https://github.com/riongull/notes/blob/master/VPS-setup.md#3-secure-the-vps-using):
+  ```sh
+  Local$ ssh -p <ssh-port-number> <login-user≥@<ip.add.re.ss>
+  ```
   * You may also log in from your VPS cloud provider's console
 2. Download, unpack, copy, and permission the needed applications/files on your VPS
 
@@ -193,7 +198,7 @@ We are done with the installation files and folders, so those can be removed.
 4. Check your work by going back to your remote server and enter the following
 
     ```sh
-    Local$ ssh <normal-user≥@<ip.add.re.ss>  
+    Local$ ssh <login-user≥@<ip.add.re.ss>  
     VPS$ ./dash-cli masternode list full | grep <your MN IP address>
     ```
   * If it doesn't show enabled, don't panic; the blockchain must fully download on the remote server before it becomes active
