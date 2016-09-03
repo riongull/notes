@@ -227,7 +227,7 @@ This guide will walk you through the process of setting up a __Linux__-based vir
 5. Enable UFW, reboot VPS, log back in from Local
 
   ```sh
-  VPS$ sudo ufw enable # enable UFW.
+  VPS$ sudo ufw enable # you've made changes, now enable the firewall (the UFW)
   VPS$ sudo ufw status numbered # check its status (you can omit the word “numbered,” but it provides more information)
   VPS$ sudo reboot # reboot the server,
   # you should now be able to log back in using our ssh private key and ssh passphrase, now also including the new <ssh-port-number> in the login. You may have to wait about a minute or so for it to boot up before you can login
