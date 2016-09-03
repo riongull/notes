@@ -17,6 +17,7 @@ This guide will walk you through the process of setting up a [dash masternode](h
   * for a ```$ command -with <text_in_brackets>``` replace ```<text_in_brackets>``` with *your* data (omitting ```<``` and ```>```)
 
 ## 1. Download & install Dash-Qt & prepare your wallet
+The following steps will help you install a dash wallet on your Mac OS X.  [This video](https://www.youtube.com/watch?v=hCGZPN0Sb84&index=3&list=PLiFMZOlhgsYLWcmb-MT6x7cIxb01OoJTB) may help as well, although it is a bit dated.
 1. From a browser on your Mac, go to https://www.dash.org/downloads
 2. Find and click the Dash Core, Mac OS X dmg download link
 3. Click the downloaded dmg file to open up its contents
@@ -25,7 +26,7 @@ This guide will walk you through the process of setting up a [dash masternode](h
 6. From the menu shown, click open, (confirm by clicking open again if needed)
 7. Install the app into the default directory
 8. Allow it to load and wait for the application to fully sync (progress is shown at bottom)
-9. Encrypt your wallet and back it up (before depositing any dash)
+9. [Encrypt your wallet](https://www.youtube.com/watch?v=PcnAvExGLJs&index=8&list=PLiFMZOlhgsYLWcmb-MT6x7cIxb01OoJTB) and [back it up](https://node40.com/2016/03/30/how-to-backing-up-your-dash-public-key-by-dumping-the-corresponding-private-key.html) (before depositing any dash)
 
 ## 2. Create and secure a Linux VPS
 1. Create a Ubuntu 64-bit Linux virtual private server (VPS)
