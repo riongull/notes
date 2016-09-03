@@ -76,12 +76,11 @@ Installing Dash-Qt may have put dashd in your "downloads" folder. If so, we'll n
 While we are waiting for the needed 6 confirmations of our 1000 DASH transaction, we can now prepare the remote server.
 
 1. Log in to your VPS
-  * If logging in with a password or password-less SSH on port 22 (the default):
   ```sh
   Local$ ssh <login-user≥@<ip.add.re.ss>
   <password> # if needed
   ```
-  * If you changed your SSH port in step 3.5 of [securing your VPS](https://github.com/riongull/notes/blob/master/VPS-setup.md#3-secure-the-vps-using):
+  * If you changed your SSH port in step 3.5 of [securing your VPS](https://github.com/riongull/notes/blob/master/VPS-setup.md#3-secure-the-vps-using) you may need to:
   ```sh
   Local$ ssh -p <ssh-port-number> <login-user≥@<ip.add.re.ss>
   ```
