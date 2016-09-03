@@ -189,6 +189,7 @@ This guide will walk you through the process of setting up a __Linux__-based vir
 
   ```sh
   # [for security](https://major.io/2013/05/14/changing-your-ssh-servers-port-from-the-default-is-it-worth-it/), you may want to change ssh-port-number for tcp connections, and open that port.  (We will refer to this as <ssh-port-number>.)
+  # your chosen <ssh-port-number> should be something non-standard, and not used by [other services](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers)  
   VPS$ sudo ufw allow <ssh-port-number>/tcp
   ```
 
