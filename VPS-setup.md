@@ -136,7 +136,6 @@ This guide will walk you through the process of setting up a __Linux__-based vir
   VPS$ chown -R <login-user>:<login-user> /home/<login-user>/.ssh
   VPS$ chmod 700 /home/<login-user>/.ssh
   VPS$ chmod 600 /home/<login-user>/.ssh/authorized_keys
-  VPS$ exit
   ```
 5. Configure SSH on *remote* server
 
