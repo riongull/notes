@@ -169,7 +169,7 @@ This guide will walk you through the process of setting up a __Linux__-based vir
 1. Configure default access
 
   ```sh
-  VPS$ su <general-user>
+  VPS$ su <super-user>
   # deny all incoming and allow all outgoing connections by default:
   VPS$ sudo ufw default deny incoming
   VPS$ sudo ufw default allow outgoing
@@ -242,7 +242,7 @@ This guide will walk you through the process of setting up a __Linux__-based vir
   VPS$ sudo aptitude install git build-essential screen curl mailutils
   VPS$ sudo reboot # as before, you may have to wait a very short time for it to boot up before you can login.)
   VPS$ ssh -p <ssh-port-number> <login-user>@<ip.add.re.ss>
-  VPS$ su <general-user>
+  VPS$ su <super-user>
   VPS$ cd ~
   ```
 
