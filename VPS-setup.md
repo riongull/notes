@@ -140,12 +140,14 @@ This guide will walk you through the process of setting up a __Linux__-based vir
 5. Configure SSH on *remote* server
 
   ```sh
-  # copy config file just in case we screw things up while editing it, just in case.
+  # copy the config file just in case we screw things up while editing it, just in case.
   VPS$ sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config_original
-  VPS$ sudo nano /etc/ssh/sshd_config # open the ssh configuration file.
+
   # NOTE: this step changes your server to a very “strict” configuration.  
   # After this change you will ONLY be allowed to log-in to your REMOTE server from your current LOCAL machine.  
   # To be able to log-in from a different LOCAL machine you would need to copy the private ssh key from your LOCAL machine onto the other LOCAL machine.  (You might want to keep the private key on an encrypted USB flash drive for such purposes.)  If that other LOCAL machine were not also owned by you, then you would want to delete the private key from it after you were done using it.  If you were willing to compromise just a bit on security you could leave PasswordAuthentication set to yes; it would be better if you could avoid doing this, however, in the event someone guessed or otherwise found out <login-user>'s password.
+  VPS$ sudo nano /etc/ssh/sshd_config
+
   # Check, set, or add the following lines in the sshd_config file:
   < #start of desired file settings
     Protocol 2
@@ -154,10 +156,12 @@ This guide will walk you through the process of setting up a __Linux__-based vir
     UseDNS no
     AllowUsers <login-user>
   > # end of desired file settings
+
   VPS$ service ssh restart # restart ssh.  
   VPS$ exit # log-out as root and then ssh log-in as <login-user>:
   Local$ ssh <login-user>@<ip.add.re.ss>
-  <password> # if you can successfully log-in at this point, then you can continue on to the “Configuring Ports” section below.  If you cannot log-in, then you can try to go back and fix any problems by logging-in through a web-based console provided by your cloud-server's host.  If you just can't get it working no matter what, you may have to start again, rebuilding the server from scratch.
+  <password>
+  # if you can successfully log-in at this point, then you can continue on to the “Configuring Ports” section below.  If you cannot log-in, then you can try to go back and fix any problems by logging-in through a web-based console provided by your cloud-server's host.  If you just can't get it working no matter what, you may have to start again, rebuilding the server from scratch.
   ```
 
 ## 4. Configure VPS ports
