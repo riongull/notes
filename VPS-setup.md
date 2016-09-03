@@ -131,7 +131,7 @@ This guide will walk you through the process of setting up a __Linux__-based vir
   VPS$ mkdir /home/<login-user>/.ssh/
   VPS$ touch /home/<login-user>/.ssh/authorized_keys
   VPS$ nano /home/<login-user>/.ssh/authorized_keys
-  [ctrl+x] # press ctrl+x to paste in the key you copied from local
+  [command+v] # press command+v to paste in the key you copied from local
   # Set the permissions.
   VPS$ chown -R <login-user>:<login-user> /home/<login-user>/.ssh
   VPS$ chmod 700 /home/<login-user>/.ssh
