@@ -140,6 +140,7 @@ This guide will walk you through the process of setting up a __Linux__-based vir
 5. Configure SSH on *remote* server
 
   * Note that this step changes your server to a very “strict” configuration.  After this change you will ONLY be allowed to log-in to your REMOTE server from your current LOCAL machine.  To be able to log-in from a different LOCAL machine you would need to copy the private ssh key from your LOCAL machine onto the other LOCAL machine.  (You might want to keep the private key on an encrypted USB flash drive for such purposes.)  If that other LOCAL machine were not also owned by you, then you would want to delete the private key from it after you were done using it.  If you were willing to compromise just a bit on security you could leave PasswordAuthentication set to yes; it would be better if you could avoid doing this, however, in the event someone guessed or otherwise found out <login-user>'s password.
+
   
   ```sh
   VPS$ sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config_original # copy config file just in case we screw things up while editing it, just in case.
