@@ -60,8 +60,8 @@ Installing Dash-Qt may have put dashd in your "downloads" folder. If so, we'll n
   Dash$ masternode genkey
   ```
 3. Copy the string of characters to another application like Word or Notes
-  * This will be referred to as \<yourmasternodeprivkey> in step 3 below
-  
+  * This will be referred to as \<yourmasternodeprivkey> in step 6.3 below
+
 4. Create a new dash address for your masternode
   * File > Receiving addresses > New
   * Label the address (e.g. "MN01"), click "OK", and
@@ -124,7 +124,7 @@ While we are waiting for the needed 6 confirmations of our 1000 DASH transaction
     logtimestamps=1
     maxconnections=256
     masternode=1
-    masternodeprivkey=<enter your masternode key which you generated earlier>
+    masternodeprivkey=<yourmasternodeprivkey>
   > # end of file contents, ctrl+x to exit, save as "dash.conf"
   ```
 4. Launch dashd on your VPS
