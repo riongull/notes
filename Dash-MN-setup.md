@@ -17,7 +17,7 @@ This guide will walk you through the process of setting up a [dash masternode](h
   * for a ```$ command -with <text_in_brackets>``` replace ```<text_in_brackets>``` with *your* data (omitting ```<``` and ```>```)
 
 ## 1. Download & install Dash-Qt & prepare your wallet
-The following steps will help you install a dash wallet on your Mac OS X.  [This video](https://www.youtube.com/watch?v=hCGZPN0Sb84&index=3&list=PLiFMZOlhgsYLWcmb-MT6x7cIxb01OoJTB) may help as well, although it is a bit dated.
+The following steps will help you [install a dash wallet on your Mac OS X](https://node40.com/2016/02/26/how-to-install-and-secure-the-dash-qt-(core)-wallet.html).  [This video](https://www.youtube.com/watch?v=hCGZPN0Sb84&index=3&list=PLiFMZOlhgsYLWcmb-MT6x7cIxb01OoJTB) may help as well, although it is a bit dated.
 
 1. From a browser on your Mac, go to https://www.dash.org/downloads
 2. Find and click the Dash Core, Mac OS X dmg download link
@@ -46,7 +46,6 @@ Installing Dash-Qt may have put dashd in your "downloads" folder. If so, we'll n
   Local$ cd ~/Library/Application\ Support/Dash
   Local$ ls -la
   # if you don't see a file called dashd, run the following commands
-  Local$ cd ~
   Local$ cd ~/Downloads
   Local$ mv dashd ~/Library/Application\ Support/Dash
   ```
@@ -60,15 +59,24 @@ Installing Dash-Qt may have put dashd in your "downloads" folder. If so, we'll n
   ```sh
   Dash$ masternode genkey
   ```
-3. Copy the string of characters to another application like Word or Notes (you will need that string later)
+3. Copy the string of characters to another application like Word or Notes
+  * This will be referred to as \<yourmasternodeprivkey> in step 3 below
+  
 4. Create a new dash address for your masternode
   * File > Receiving addresses > New
-  * Label the address (e.g. "MN01")
-  * You will need a different address for each masternode you plan to create
+  * Label the address (e.g. "MN01"), click "OK", and
+  * Leave the 'Receiving addresses' dialog box for the next step
+  * Note: you will need a different address for each masternode you plan to create
 
 ## 5. Fund your newly created address with 1000 DASH
-1. Fund your the address just created with 1000 DASH
-  * It must be one transaction of exactly 1000 DASH
+1. These steps assume you already have >1000 DASH (1000 + miner fee) in your Dash-Qt wallet
+2. Open the 'Receiving addresses' dialog box if necessary (file > Receiving addresses)
+2. Click the Receiving address you made in step 4 (e.g. "MN01") and click the 'copy' button
+3. Click the Send tab on the main Dash-Qt window
+4. Paste the address you copied on the 'Pay To' field, it should populate your label
+5. Fund your masternode (e.g. MN01) address with *exactly* 1000 DASH
+  * You need a small amount extra in the wallet you are sending from in order to cover the miner fee
+  * The amount you actually send must be one transaction of exactly 1000 DASH
   * No, you may not send more than 1000 DASH
   * No, you may not send 999.99 DASH
   * No, you may not put in 1 DASH first and then 999 DASH. It must be all at once. You may test the address first, but you will still need to send 1000 DASH later, all in one transaction
@@ -104,10 +112,11 @@ While we are waiting for the needed 6 confirmations of our 1000 DASH transaction
   VPS$ mkdir .dash
   VPS$ cd .dash
   VPS$ nano dash.conf
-  # once open, insert the following text
+  # once open, insert the following text.  Note: rpcuser and rpcpassword can be anything, you will not have to remember them later, feel free to go nuts on your keyboard
+
   < # start of file contents
-    rpcuser=<enter any user name>
-    rpcpassword=<enter any long password>
+    rpcuser=<anything-like-random-numbers-and-letters>
+    rpcpassword=<anything-like-random-numbers-and-letters>
     rpcallowip=127.0.0.1
     listen=1
     server=1
