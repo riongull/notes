@@ -104,7 +104,8 @@ While we are waiting for the needed 6 confirmations of our 1000 DASH transaction
 
   ```sh
   VPS$ su <super-user>
-  VPS$ adduser <dash-user> # this will be the assumed target for '~' from now on (cd ~ == cd /home/<dash-user>)
+  <password>
+  VPS$ sudo adduser <dash-user> # this will be the assumed target for '~' from now on (cd ~ == cd /home/<dash-user>)
   <super-users-password>
   <newPassword>
   <newPassword>
@@ -114,7 +115,8 @@ While we are waiting for the needed 6 confirmations of our 1000 DASH transaction
 3. Download, unpack, copy, and permission the needed applications/files on your VPS
 
   ```sh
-  VPS$ cd ~ # whatever user you want; /home/<dash-user> if you created <dash-user> above
+  VPS$ su <dash-user> # whatever user you want; <dash-user> if you created it above
+  VPS$ cd ~
   VPS$ wget https://www.dash.org/binaries/dash-0.12.0.58-linux64.tar.gz
   VPS$ tar xfvz dash-0.12.0.58-linux64.tar.gz # unpack files
   VPS$ cp dash-0.12.0/bin/dashd dashd
