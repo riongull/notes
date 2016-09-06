@@ -52,17 +52,20 @@ Installing Dash-Qt may have put dashd in your "downloads" folder. If so, we'll n
 
 ## 4. Create your masternode key & address, store in separate file
 1. Re-open Dash-Qt  
-2. Get a new address and masternode private key  
+2. Get a new masternode private key and address
   * Menu > Tools > Debug console
   * A new window should appear with the "Console" tab selected at the top
   * Enter the following command at the bottom
   ```sh
   Dash$ masternode genkey
+  # Dash will output the result
+  Dash$ getaccountaddress 0
+  # Dash will output the result
   ```
-3. Copy the string of characters to another application like Word or Notes
-  * This will be referred to as \<yourmasternodeprivkey> in step 6.3 below
+3. Copy and label the two outputted strings of characters to another application like Word or Notes
+  * These will be referred to as \<yourmasternodeprivkey> and \<yourzeroaddress> in step 6.3 below
 
-4. Create a new dash address for your masternode
+4. Create a new dash 'zero' address for your masternode
   * File > Receiving addresses > New
   * Label the address (e.g. "MN01"), click "OK", and
   * Leave the 'Receiving addresses' dialog box for the next step
@@ -96,10 +99,20 @@ While we are waiting for the needed 6 confirmations of our 1000 DASH transaction
   Local$ ssh -p <ssh-port-number> <login-user≥@<ip.add.re.ss>
   ```
   * You may also log in from your VPS cloud provider's console
-2. Download, unpack, copy, and permission the needed applications/files on your VPS
+
+2. Optionally, create a new user on your VPS for all dash-related files and functions
 
   ```sh
-  VPS$ cd ~
+  VPS$ adduser <dash-user> # this will be the assumed target for '~' from now on (cd ~ == cd /home/<dash-user>)
+  <newPassword>
+  <newPassword>
+  <otherFieldsAsDesired>
+  ```
+
+3. Download, unpack, copy, and permission the needed applications/files on your VPS
+
+  ```sh
+  VPS$ cd ~ # cd /home/<dash-user>
   VPS$ wget https://www.dash.org/binaries/dash-0.12.0.58-linux64.tar.gz
   VPS$ tar xfvz dash-0.12.0.58-linux64.tar.gz # unpack files
   VPS$ cp dash-0.12.0/bin/dashd dashd
@@ -145,6 +158,7 @@ We are done with the installation files and folders, so those can be removed.
 1. Remove files as follows:
 
   ```sh
+  VPS$ cd ~
   VPS$ ls
   VPS$ rm -rf dash-0.12.0
   VPS$ rm dash-0.12.0.58-linux64.tar.gz

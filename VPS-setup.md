@@ -178,7 +178,7 @@ This guide will walk you through the process of setting up a __Linux__-based vir
 1. Configure default access
 
   ```sh
-  # as designed, we can only log in to our server using <login-user>, but to make changes we must now sign in with <super-user> (because only it has sudo permissions)
+  # as designed, we can only log in to our server using <login-user>, but to make administrative changes we must now sign in with <super-user> (because only it has sudo permissions)
   VPS$ su <super-user>
   # deny all incoming and allow all outgoing connections by default:
   VPS$ sudo ufw default deny incoming
