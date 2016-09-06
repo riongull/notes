@@ -50,7 +50,7 @@ Installing Dash-Qt may have put dashd in your "downloads" folder. If so, we'll n
   Local$ mv dashd ~/Library/Application\ Support/Dash
   ```
 
-## 4. Create your masternode key & address, store in separate file
+## 4. FIX THIS SECTION WHEN I KNOW IT'S WORKING Create your masternode key & address, store in separate file
 1. Re-open Dash-Qt  
 2. Get a new masternode private key and address
   * Menu > Tools > Debug console
@@ -63,7 +63,7 @@ Installing Dash-Qt may have put dashd in your "downloads" folder. If so, we'll n
   # Dash will output the result
   ```
 3. Copy and label the two outputted strings of characters to another application like Word or Notes
-  * These will be referred to as \<yourmasternodeprivkey> and \<yourzeroaddress> in step 6.3 below
+  * These will be referred to as \<yourmasternodeprivkey> and \<yourzeroaddress> in step 6.4 below
 
 4. Create a new dash 'zero' address for your masternode
   * File > Receiving addresses > New
@@ -91,19 +91,21 @@ While we are waiting for the needed 6 confirmations of our 1000 DASH transaction
 1. Log in to your VPS
 
   ```sh
-  Local$ ssh <login-user≥@<ip.add.re.ss>
+  Local$ ssh <login-user>@<ip.add.re.ss>
   <password> # if needed
   ```
   * If you changed your SSH port in step 3.5 of [securing your VPS](https://github.com/riongull/notes/blob/master/VPS-setup.md#3-secure-the-vps-using) you may need to:
   ```sh
-  Local$ ssh -p <ssh-port-number> <login-user≥@<ip.add.re.ss>
+  Local$ ssh -p <ssh-port-number> <login-user>@<ip.add.re.ss>
   ```
   * You may also log in from your VPS cloud provider's console
 
 2. Optionally, create a new user on your VPS for all dash-related files and functions
 
   ```sh
+  VPS$ su <super-user>
   VPS$ adduser <dash-user> # this will be the assumed target for '~' from now on (cd ~ == cd /home/<dash-user>)
+  <super-users-password>
   <newPassword>
   <newPassword>
   <otherFieldsAsDesired>
@@ -112,14 +114,14 @@ While we are waiting for the needed 6 confirmations of our 1000 DASH transaction
 3. Download, unpack, copy, and permission the needed applications/files on your VPS
 
   ```sh
-  VPS$ cd ~ # cd /home/<dash-user>
+  VPS$ cd ~ # whatever user you want; /home/<dash-user> if you created <dash-user> above
   VPS$ wget https://www.dash.org/binaries/dash-0.12.0.58-linux64.tar.gz
   VPS$ tar xfvz dash-0.12.0.58-linux64.tar.gz # unpack files
   VPS$ cp dash-0.12.0/bin/dashd dashd
   VPS$ cp dash-0.12.0/bin/dash-cli dash-cli
   VPS$ chmod 755 dashd # set permissions
   ```
-3. Create dash.config file on your VPS
+4. Create dash.config file on your VPS
 
   ```sh
   VPS$ mkdir .dash
@@ -140,7 +142,7 @@ While we are waiting for the needed 6 confirmations of our 1000 DASH transaction
     masternodeprivkey=<yourmasternodeprivkey>
   > # end of file contents, ctrl+x to exit, save as "dash.conf"
   ```
-4. Launch dashd on your VPS
+5. Launch dashd on your VPS
 
   ```sh
   VPS$ cd ~
@@ -223,7 +225,7 @@ We are done with the installation files and folders, so those can be removed.
 4. Check your work by going back to your remote server and enter the following
 
     ```sh
-    Local$ ssh <login-user≥@<ip.add.re.ss>  
+    Local$ ssh <login-user>@<ip.add.re.ss>  
     VPS$ ./dash-cli masternode list full | grep <your MN IP address>
     ```
   * If it doesn't show enabled, don't panic; the blockchain must fully download on the remote server before it becomes active
