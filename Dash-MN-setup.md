@@ -212,7 +212,8 @@ We are done with the installation files and folders, so those can be removed.
 5. Create masternode configuration file
 
   ```sh
-  Local$ nano masternode.conf # this should bring up a new GNU session. You will need to select a name or "alias" for each of your masternodes. In the example below, I have chosen "MN01", but you can name it whatever you want. Populate the file with the data obtained above, as follows:
+  Local$ cd ~/Library/Application\ Support/Dash
+  Local$ nano masternode.conf # this file may already exist. If it does not nano will create it.  Either way you will need to select a name or "alias" for each of your masternodes. In the example below, I have chosen "MN01", but you can name it whatever you want. Populate the file with the data obtained above in the following (or using the template's) format:
   < # start of file contents
     MN01 <remote_masternode_IP_Address>:9999 <your_masternode_private_key> <1000_Dash_txn_hash> <deposit_index_number>
   > # end of file contents, exit with ctrl+x, save the file
