@@ -239,6 +239,7 @@ We are done with the installation files and folders, so those can be removed.
     Dash$ masternode start-alias <alias-of-masternode-you-want-to-start>
     ```
   * You should get a response similar to:
+  
     ```sh
     Dash$
     {
@@ -246,7 +247,7 @@ We are done with the installation files and folders, so those can be removed.
     "result" : "successful"
     }
     ```
-    
+
 4. Check your work by going back to your remote server and enter the following
 
     ```sh
