@@ -209,10 +209,6 @@ We are done with the installation files and folders, so those can be removed.
     8. Find the transaction listed under "outputs"
     9. Locate the index number of your unspent 1000 DASH (0 or 1), copy it into your notes
 
-
-    3. Copy the "Transaction ID" (the part to the left of the "-") and paste it into your notes.
-    4. Find the address with the 1000 DASH deposit and an index number
-    5. Use this hash and index number for your masternode.conf file below
 5. Create masternode configuration file
 
   ```sh
