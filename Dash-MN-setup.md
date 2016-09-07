@@ -190,17 +190,28 @@ We are done with the installation files and folders, so those can be removed.
   ```
 
 4. Obtain data for the masternode.config file
-  1. Method 1 (using a block explorer):  
-    1. Go to a dash block explorer, e.g. [chainz](https://chainz.cryptoid.info/dash/),
-    2. Enter the masternode receiving address (into which you deposited your 1000 DASH) in the search bar
-    3. Click on the "hash" of the 1000 DASH transaction
-    4. Copy the value for that hash and paste it into the document where you have your masternode privkey and address
-    5. Find the transaction listed under "outputs"
-    6. Locate the index number of your unspent 1000 DASH (will be either 0 or 1)
-    7. Use this hash and index number for your masternode.conf file below
-  2. Method 2 (using Dash-Qt):
-    1. Click on the transactions tab and double click on the 1000 DASH transaction (it should be the most recent transaction and listed as "Payment to yourself")
-    3. Copy the "Transaction ID" without the "-" and three numbers on the far right, and paste that into a block explorer.
+  1. Easy Method:
+    1. Open Dash-Qt
+    2. From the menu: Tools > Debug Console, then type the command:
+    
+    ```sh
+    Dash$ masternode outputs
+    ```
+    4. The values are listed in the format "hash":"index", copy them into your notes
+
+  2. Alternate Method:
+    1. Open Dash-Qt
+    2. From the menu: File > Receiving addresses
+    3. Clck on your masternode addresses and click copy
+    4. Go to a dash block explorer, e.g. [chainz](https://chainz.cryptoid.info/dash/),
+    5. Paste the masternode receiving address (into which you deposited your 1000 DASH) in the search bar
+    6. Click on the "hash" of the 1000 DASH transaction
+    7. Copy the value for that hash and paste it into your notes document
+    8. Find the transaction listed under "outputs"
+    9. Locate the index number of your unspent 1000 DASH (0 or 1), copy it into your notes
+
+
+    3. Copy the "Transaction ID" (the part to the left of the "-") and paste it into your notes.
     4. Find the address with the 1000 DASH deposit and an index number
     5. Use this hash and index number for your masternode.conf file below
 5. Create masternode configuration file
