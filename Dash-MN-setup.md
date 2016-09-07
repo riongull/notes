@@ -133,16 +133,16 @@ While we are waiting for the needed 6 confirmations of our 1000 DASH transaction
   # once open, insert the following text.  Note: rpcuser and rpcpassword can be anything, you will not have to remember them later, feel free to go nuts on your keyboard
 
   < # start of file contents
-    rpcuser=<anything-like-random-numbers-and-letters>
-    rpcpassword=<anything-like-random-numbers-and-letters>
-    rpcallowip=127.0.0.1
-    listen=1
-    server=1
-    daemon=1
-    logtimestamps=1
-    maxconnections=256
-    masternode=1
-    masternodeprivkey=<masternode-privkey>
+  rpcuser=<anything-like-random-numbers-and-letters>
+  rpcpassword=<anything-like-random-numbers-and-letters>
+  rpcallowip=127.0.0.1
+  listen=1
+  server=1
+  daemon=1
+  logtimestamps=1
+  maxconnections=256
+  masternode=1
+  masternodeprivkey=<masternode-privkey>
   > # end of file contents, ctrl+x to exit, save as "dash.conf"
   ```
 5. Launch dashd on your VPS
