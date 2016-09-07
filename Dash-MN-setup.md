@@ -210,7 +210,7 @@ We are done with the installation files and folders, so those can be removed.
     8. Find the transaction listed under "outputs"
     9. Locate the index number of your unspent 1000 DASH (0 or 1), copy it into your notes
 
-5. Create masternode configuration file
+5. Create masternode.conf file
 
   ```sh
   Local$ cd ~/Library/Application\ Support/Dash
