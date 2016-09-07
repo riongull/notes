@@ -179,14 +179,14 @@ We are done with the installation files and folders, so those can be removed.
   Local$ cd ~/Library/Application\ Support/Dash
   Local$ nano dash.conf # this should bring up a GNU session that is blank (unless you already had a conf file created). In any case, make sure it has the following text.
   < # start of file contents
-rpcuser=<anything-like-random-numbers-and-letters-probably-safer-to-use-something-different-than-the-last-one>
-rpcpassword=<anything-like-random-numbers-and-letters-probably-safer-to-use-something-different-than-the-last-one>
-rpcallowip=127.0.0.1
-listen=0
-server=1
-daemon=1
-logtimestamps=1
-maxconnections=8
+  rpcuser=<anything-like-random-numbers-and-letters-probably-safer-to-use-something-different-than-the-last-one>
+  rpcpassword=<anything-like-random-numbers-and-letters-probably-safer-to-use-something-different-than-the-last-one>
+  rpcallowip=127.0.0.1
+  listen=0
+  server=1
+  daemon=1
+  logtimestamps=1
+  maxconnections=8
   > # end of file contents, ctrl+x to exit, save as "dash.conf"
   ```
 
