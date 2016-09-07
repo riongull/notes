@@ -123,7 +123,7 @@ While we are waiting for the needed 6 confirmations of our 1000 DASH transaction
   VPS$ cp dash-0.12.0/bin/dash-cli dash-cli
   VPS$ chmod 755 dashd # set permissions
   ```
-4. Create dash.config file on your VPS
+4. Create ```dash.conf``` file on your VPS
 
   ```sh
   VPS$ cd ~
@@ -170,10 +170,10 @@ We are done with the installation files and folders, so those can be removed.
   VPS$ exit # repeat to exit all the way out of VPS (into your local machine)
   ```
 
-## 8. Create dash.conf & masternode.conf files on your *local* machine
+## 8. Create ```dash.conf``` & ```masternode.conf``` files on your *local* machine
 1. Close Dash-Qt if open (command+Q to quit the program, not just close the windows)
 2. Open (or switch back to) terminal
-3. Create dash.conf file
+3. Create ```dash.conf``` file
 
   ```sh
   Local$ cd ~/Library/Application\ Support/Dash
@@ -190,7 +190,7 @@ We are done with the installation files and folders, so those can be removed.
   > # end of file contents, ctrl+x to exit, save as "dash.conf"
   ```
 
-4. Obtain data for the masternode.config file
+4. Obtain data for ```masternode.conf```
   1. Easy Method:
     1. Open Dash-Qt
     2. From the menu: Tools > Debug Console, then type the command:
@@ -210,7 +210,7 @@ We are done with the installation files and folders, so those can be removed.
     8. Find the transaction listed under "outputs"
     9. Locate the index number of your unspent 1000 DASH (0 or 1), copy it into your notes
 
-5. Create masternode.conf file
+5. Create ```masternode.conf``` file
 
   ```sh
   Local$ cd ~/Library/Application\ Support/Dash
@@ -224,8 +224,8 @@ We are done with the installation files and folders, so those can be removed.
     MN01 <masternode-ip-address>:9999 <masternode-privkey> <txn-hash> <txn-output-index>
   > # end of file contents, exit with ctrl+x, save the file
   ```
-  * You will need a separate line for each masternode in the masternode.conf file
-  * You may add as many masternodes to the same wallet and the masternode.conf file as you wish
+  * You will need a separate line for each masternode in ```masternode.conf```
+  * You may add as many masternodes to the same wallet and ```masternode.conf``` as you wish
 6. Close Dash-Qt
 
 ## 9. Start your masternode(s)
