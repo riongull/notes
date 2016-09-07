@@ -63,7 +63,7 @@ Installing Dash-Qt may have put dashd in your "downloads" folder. If so, we'll n
   # Dash will output the result
   ```
 3. Copy and label the two outputted strings of characters to another application like Word or Notes
-  * These will be referred to as \<yourmasternodeprivkey> and \<yourzeroaddress> in step 6.4 below
+  * These will be referred to as \<masternode-privkey> and \<zero-address> in step 6.4 below
 
 4. Create a new dash 'zero' address for your masternode
   * File > Receiving addresses > New
@@ -141,7 +141,7 @@ While we are waiting for the needed 6 confirmations of our 1000 DASH transaction
     logtimestamps=1
     maxconnections=256
     masternode=1
-    masternodeprivkey=<yourmasternodeprivkey>
+    masternodeprivkey=<masternode-privkey>
   > # end of file contents, ctrl+x to exit, save as "dash.conf"
   ```
 5. Launch dashd on your VPS
@@ -220,7 +220,7 @@ We are done with the installation files and folders, so those can be removed.
   # reminder: your VPS ip address can be found using 'nano ~/.ssh/config'
   # populate the file with the data obtained above in the following format:
   < # start of file contents
-    MN01 <remote-masternode-ip-address>:9999 <masternode-private-key> <txn-hash> <txn-output-index>
+    MN01 <masternode-ip-address>:9999 <masternode-privkey> <txn-hash> <txn-output-index>
   > # end of file contents, exit with ctrl+x, save the file
   ```
   * You will need a separate line for each masternode in the masternode.conf file
