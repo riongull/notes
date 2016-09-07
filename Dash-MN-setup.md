@@ -126,6 +126,7 @@ While we are waiting for the needed 6 confirmations of our 1000 DASH transaction
 4. Create dash.config file on your VPS
 
   ```sh
+  VPS$ mkdir cd ~
   VPS$ mkdir .dash
   VPS$ cd .dash
   VPS$ nano dash.conf
