@@ -14,7 +14,7 @@ This guide will walk you through the process of setting up a [dash masternode](h
 * Command line syntax
   * the text before the ```$``` will look different on your machines
   * simply type what's *after* the ```$``` (and hit enter/return) to execute a given command
-  * for a ```$ command -with <text_in_brackets>``` replace ```<text_in_brackets>``` with *your* data (omitting ```<``` and ```>```)
+  * for a ```$ command -with <text-in-brackets>``` replace ```<text-in-brackets>``` with *your* data (omitting ```<``` and ```>```)
 
 ## 1. Download & install Dash-Qt & prepare your wallet
 The following steps will help you [install a dash wallet on your Mac OS X](https://node40.com/2016/02/26/how-to-install-and-secure-the-dash-qt-(core)-wallet.html).  [This video](https://www.youtube.com/watch?v=hCGZPN0Sb84&index=3&list=PLiFMZOlhgsYLWcmb-MT6x7cIxb01OoJTB) may help as well, although it is a bit dated.
@@ -220,7 +220,7 @@ We are done with the installation files and folders, so those can be removed.
   # reminder: your VPS ip address can be found using 'nano ~/.ssh/config'
   # populate the file with the data obtained above in the following format:
   < # start of file contents
-    MN01 <remote_masternode_IP_Address>:9999 <your_masternode_private_key> <txn_hash> <txn_output_index>
+    MN01 <remote-masternode-ip-address>:9999 <masternode-private-key> <txn-hash> <txn-output-index>
   > # end of file contents, exit with ctrl+x, save the file
   ```
   * You will need a separate line for each masternode in the masternode.conf file
@@ -234,8 +234,8 @@ We are done with the installation files and folders, so those can be removed.
 3. Enter the following to activate your remote masternode
 
     ```sh
-    Dash$ walletpassphrase <enter passphrase> 60
-    Dash$ masternode start-alias <alias of the masternode you are starting>
+    Dash$ walletpassphrase <your-wallet-passphrase> 60
+    Dash$ masternode start-alias <alias-of-masternode-you-want-to-start>
     ```
   * You should get a message saying "started masternode successfully"
 4. Check your work by going back to your remote server and enter the following
