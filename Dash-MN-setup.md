@@ -193,11 +193,10 @@ We are done with the installation files and folders, so those can be removed.
   1. Easy Method:
     1. Open Dash-Qt
     2. From the menu: Tools > Debug Console, then type the command:
-    
+
     ```sh
-    Dash$ masternode outputs
+    Dash$ masternode outputs # values are listed as "hash":"index", copy them into your notes
     ```
-    4. The values are listed in the format "hash":"index", copy them into your notes
 
   2. Alternate Method:
     1. Open Dash-Qt
