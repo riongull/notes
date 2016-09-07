@@ -239,7 +239,7 @@ We are done with the installation files and folders, so those can be removed.
     Dash$ masternode start-alias <alias-of-masternode-you-want-to-start>
     ```
   * You should get a response similar to:
-  
+
     ```sh
     Dash$
     {
@@ -257,4 +257,4 @@ We are done with the installation files and folders, so those can be removed.
   * If it doesn't show enabled, don't panic; the blockchain must fully download on the remote server before it becomes active
   * You can check the status of the blockchain download by running the "getinfo" command repeatedly until it is fully caught up to the current number of blocks
   * Once it is caught up, give it a minute and try again to see if it shows as "ENABLED"
-  * If your address comes up with "ENABLED" in the string, you've done everything correct Congratulations, your masternode is set up correctly, you are done!
+  * If your address comes up with "ENABLED" in the string, you've done everything correct. Congratulations, your masternode is set up correctly, you are done!
