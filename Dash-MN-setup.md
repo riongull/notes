@@ -217,8 +217,8 @@ We are done with the installation files and folders, so those can be removed.
   # this file may already exist
   # if it does not nano will create it
   # either way you will need to select a name/alias (e.g. "MNO1"
-  # populate the file with the data obtained above in the following (or using the template's) format:
   # reminder: your VPS ip address can be found using 'nano ~/.ssh/config'
+  # populate the file with the data obtained above in the following format:
   < # start of file contents
     MN01 <remote_masternode_IP_Address>:9999 <your_masternode_private_key> <txn_hash> <txn_output_index>
   > # end of file contents, exit with ctrl+x, save the file
