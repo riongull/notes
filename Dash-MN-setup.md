@@ -210,7 +210,7 @@ We are done with the installation files and folders, so those can be removed.
     8. Find the transaction listed under "outputs"
     9. Locate the index number of your unspent 1000 DASH (0 or 1), copy it into your notes
 
-5. Create ```masternode.conf``` file
+5. Create ```masternode.conf```
 
   ```sh
   Local$ cd ~/Library/Application\ Support/Dash
@@ -230,15 +230,23 @@ We are done with the installation files and folders, so those can be removed.
 
 ## 9. Start your masternode(s)
 1. Launch Dash-Qt
-  * This will now use the new settings you just saved in the confguration file in the step above
-2. Open a Dash-Qt console session  
+  * This will now use the new settings from ```dash.conf``` and ```masternode.conf```
+2. Open a Dash-Qt console session (Tools > Debug console)
 3. Enter the following to activate your remote masternode
 
     ```sh
     Dash$ walletpassphrase <your-wallet-passphrase> 60
     Dash$ masternode start-alias <alias-of-masternode-you-want-to-start>
     ```
-  * You should get a message saying "started masternode successfully"
+  * You should get a response similar to:
+    ```sh
+    Dash$
+    {
+    "alias" : "MN01",
+    "result" : "successful"
+    }
+    ```
+    
 4. Check your work by going back to your remote server and enter the following
 
     ```sh
