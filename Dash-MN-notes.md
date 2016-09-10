@@ -113,13 +113,27 @@ list-conf    # Print masternode.conf in JSON format
 winners      # Print list of masternode winners
 ```
 
-```
-masternode
+##### mnbudget "command" options
+* found by typing `VPS$ ./dash-cli help mnbudget`
+```sh
+mnbudget "command"... ( "passphrase" )
 ```
 
-##### mnbudget "command" options
+Vote or show current budgets
+
+Available commands:
 ```
-mnbudget
+prepare            # Prepare proposal for network by signing and creating tx
+submit             # Submit proposal for network
+vote-many          # Vote on a Dash initiative
+vote-alias         # Vote on a Dash initiative
+vote               # Vote on a Dash initiative/budget
+getvotes           # Show current masternode budgets
+getinfo            # Show current masternode budgets
+show               # Show all budgets
+projection         # Show the projection of which proposals will be paid the next cycle
+check              # Scan proposals and remove invalid
+nextblock          # Get next superblock for budget system
 ```
 
 #### Generating
