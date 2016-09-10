@@ -14,7 +14,7 @@ This document provides general guidance and a list of popular links related to o
   * simply type what's *after* the ```$``` (and hit enter/return) to execute a given command
   * for a ```$ command -with <text-in-brackets>``` replace ```<text-in-brackets>``` with *your* data (omitting ```<``` and ```>```)
 
-## Starting and stopping your masternode(s)
+## Starting your masternode(s)
 1. Launch Dash-Qt
 2. Open a Dash-Qt console session (Tools > Debug console)
 3. Enter the following to activate your remote masternode
@@ -32,6 +32,9 @@ This document provides general guidance and a list of popular links related to o
     "result" : "successful"
     }
     ```
+## Stopping your masternode(s)
+1.
+
 
 ## Checking the status of your masternode & install Dash-Qt & prepare your wallet
 The following steps will help you [install a dash wallet on your Mac OS X](https://node40.com/2016/02/26/how-to-install-and-secure-the-dash-qt-(core)-wallet.html).  [This video](https://www.youtube.com/watch?v=hCGZPN0Sb84&index=3&list=PLiFMZOlhgsYLWcmb-MT6x7cIxb01OoJTB) may help as well, although it is a bit dated.
@@ -97,24 +100,25 @@ masternode "command"... ( "passphrase" )
 Set of commands to execute masternode related actions
 
 Arguments:
-1. "command"        (string or set of strings, required) The command to execute
-2. "passphrase"     (string, optional) The wallet passphrase
+* "command"        (string or set of strings, required) The command to execute
+* "passphrase"     (string, optional) The wallet passphrase
 
 Available commands:
-  count        - Print number of all known masternodes (optional: 'ds', 'enabled', 'all', 'qualify')
-  current      - Print info on current masternode winner
-  debug        - Print masternode status
-  genkey       - Generate new masternodeprivkey
-  enforce      - Enforce masternode payments
-  outputs      - Print masternode compatible outputs
-  start        - Start masternode configured in dash.conf
-  start-alias  - Start single masternode by assigned alias configured in masternode.conf
-  start-<mode> - Start masternodes configured in masternode.conf (<mode>: 'all', 'missing', 'disabled')
-  status       - Print masternode status information
-  list         - Print list of all known masternodes (see masternodelist for more info)
-  list-conf    - Print masternode.conf in JSON format
-  winners      - Print list of masternode winners
-
+```sh
+count        # Print number of all known masternodes (optional: 'ds', 'enabled', 'all', 'qualify')
+current      # Print info on current masternode winner
+debug        # Print masternode status
+genkey       # Generate new masternodeprivkey
+enforce      # Enforce masternode payments
+outputs      # Print masternode compatible outputs
+start        # Start masternode configured in dash.conf
+start#alias  # Start single masternode by assigned alias configured in masternode.conf
+start#<mode> # Start masternodes configured in masternode.conf (<mode>: 'all', 'missing', 'disabled')
+status       # Print masternode status information
+list         # Print list of all known masternodes (see masternodelist for more info)
+list-conf    # Print masternode.conf in JSON format
+winners      # Print list of masternode winners
+```
 
 ```
 masternode
