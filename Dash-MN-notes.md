@@ -48,7 +48,7 @@ Running `VPS:~$ ./dash-cli help` from the directory containing `dash-cli` while 
 
 Commands in the following subsections should be issued with the following format:
 ```sh
-VPS$ ./dash-cli <command-listed> <plus> ( other-fields ) "as-shown"
+VPS$ ./dash-cli "command-listed" <plus-other-fields> ( as-shown )
 ```
 
 #### Blockchain
