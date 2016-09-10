@@ -39,17 +39,17 @@ This document provides general guidance and a list of popular links related to o
 
 
 ## Dash-cli commands
-Running `VPS:~$ ./dash-cli help` from the directory containing `dash-cli` while `dashd` produces the following help file commands:
-
-* Itmes in `( parenthases )` are optional
-* Items in `"quotes"` are values you provide
-* Items in `<angle brackets>` are arguments/values you provide
-* Items `<separated|by|pipes>` are mutually exclustive options (choose one)
-
 Commands in the following subsections should be issued with the following format:
 ```sh
 VPS$ ./dash-cli "command-listed" <plus-other-fields> ( as-shown )
 ```
+where:
+* items in `"quotes"` are commands or values you provide,
+* items in `<angle brackets>` are arguments/values you provide,
+* items `<separated|by|pipes>` are mutually exclustive options, and
+* Itmes in `( parenthases )` are optional
+
+* *Note: These are found by running `VPS:$ ./dash-cli help` from the directory containing `dash-cli` while `dashd`*
 
 #### Blockchain
 ```sh
