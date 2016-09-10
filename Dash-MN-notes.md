@@ -6,13 +6,13 @@ This document provides general guidance and a list of popular links related to o
 #### Using this guide
 * Command promt legend
   * this guide uses the command prompts below to indicate which machine you are running commands on:
-  * ```Local$ sample command ``` - run on your __local Mac OS X__ terminal
-  * ```VPS$ sample command``` - run on your __remote virtual private server's__ terminal
-  * ```Dash$ sample command``` - run on your __local Dash-Qt's__ console
+  * `Local$ sample command` - run on your __local Mac OS X__ terminal
+  * `VPS$ sample command` - run on your __remote virtual private server's__ terminal
+  * `Dash$ sample command` - run on your __local Dash-Qt's__ console
 * Command line syntax
-  * the text before the ```$``` will look different on your machines
-  * simply type what's *after* the ```$``` (and hit enter/return) to execute a given command
-  * for a ```$ command -with <text-in-brackets>``` replace ```<text-in-brackets>``` with *your* data (omitting ```<``` and ```>```)
+  * the text before the `$` will look different on your machines
+  * simply type what's *after* the `$` (and hit enter/return) to execute a given command
+  * for a `$ command -with <text-in-brackets>` replace `<text-in-brackets>` with *your* data (omitting `<` and `>`)
 
 ## Starting your masternode(s)
 1. Launch Dash-Qt
@@ -34,17 +34,17 @@ This document provides general guidance and a list of popular links related to o
 
 ## Stopping your masternode(s)
 1. Log into your VPS
-2. ```VPS$ cd ~``` (or whatever directory holds dash-cli and dashd)
-3. ```VPS$ ./dash-cli stop```
+2. `VPS$ cd ~` (or whatever directory holds dash-cli and dashd)
+3. `VPS$ ./dash-cli stop`
 
 
 ## Dash-cli commands
-Running ```VPS:~$ ./dash-cli help``` from the directory containing ```dash-cli``` while ```dashd``` produces the following help file commands:
+Running `VPS:~$ ./dash-cli help` from the directory containing `dash-cli` while `dashd` produces the following help file commands:
 
 * Itmes in `( parenthases )` are optional
 * Items in `"quotes"` are values you provide
-* Items in ```<angle brackets>``` are arguments/values you provide
-* Items ```<separated|by|pipes>``` are mutually exclustive options (choose one)
+* Items in `<angle brackets>` are arguments/values you provide
+* Items `<separated|by|pipes>` are mutually exclustive options (choose one)
 
 #### Blockchain
 ```sh
@@ -83,7 +83,7 @@ spork <name> [<value>]
 ```
 
 ##### masternode "command" options
-* found by typing `VPS$ ./dash-cli help masternode` ...
+* found by typing `VPS$ ./dash-cli help masternode`
 
 ```sh
 masternode "command"... ( "passphrase" )
@@ -96,7 +96,8 @@ Arguments:
 * "passphrase"     (string, optional) The wallet passphrase
 
 Available commands:
-```sh
+```
+sh
 count        # Print number of all known masternodes (optional: 'ds', 'enabled', 'all', 'qualify')
 current      # Print info on current masternode winner
 debug        # Print masternode status
@@ -116,7 +117,7 @@ winners      # Print list of masternode winners
 masternode
 ```
 
-##### ```mnbudget``` "command" options
+##### mnbudget "command" options
 ```
 mnbudget
 ```

@@ -9,12 +9,12 @@ This guide will walk you through the process of setting up a __Linux__-based vir
 #### Using this guide
 * Command promt legend
   * this guide uses the command prompts below to indicate which machine you are running commands on:
-  * ```Local$ sample command ``` - run on your __local Mac OS X__ terminal
-  * ```VPS$ sample command``` - run on your __remote virtual private server's__ terminal
+  * `Local$ sample command` - run on your __local Mac OS X__ terminal
+  * `VPS$ sample command` - run on your __remote virtual private server's__ terminal
 * Command line syntax
-  * the text before the ```$``` will look different on your machines
-  * simply type what's *after* the ```$``` (and hit enter/return) to execute a given command
-  * for a ```$ command -with <text-in-brackets>``` replace ```<text-in-brackets>``` with *your* data (omitting ```<``` and ```>```)
+  * the text before the `$` will look different on your machines
+  * simply type what's *after* the `$` (and hit enter/return) to execute a given command
+  * for a `$ command -with <text-in-brackets>` replace `<text-in-brackets>` with *your* data (omitting `<` and `>`)
 
 ## 1. Create a Linux virtual private server (VPS)
 
@@ -105,7 +105,7 @@ This guide will walk you through the process of setting up a __Linux__-based vir
   Local$ chmod 644 <fullPathOfPWD>/<dash-server-key>.pub
   Local$ chmod 600 <fullPathOfPWD>/<dash-server-key>
   ```
-3. Create & edit ```~/.ssh/config``` to handle multiple keys
+3. Create & edit `~/.ssh/config` to handle multiple keys
 
   ```sh
   Local$ touch ~/.ssh/config
@@ -213,7 +213,7 @@ This guide will walk you through the process of setting up a __Linux__-based vir
   VPS$ sudo ufw allow 19999/udp
   ```
 
-4. Re-edit ```/etc/ssh/sshd_config```
+4. Re-edit `/etc/ssh/sshd_config`
 
   ```sh
   # edit the ssh configuration file again, just to change the Port to the <ssh-port-number> you chose above:
