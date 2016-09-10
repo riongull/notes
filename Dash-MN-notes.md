@@ -35,12 +35,7 @@ This document provides general guidance and a list of popular links related to o
 ## Stopping your masternode(s)
 1. Log into your VPS
 2. ```cd ~``` (or whatever directory holds dash-cli and dashd)
-3. Enter the following:
-
-    ```sh
-    Dash$ walletpassphrase <your-wallet-passphrase> 60 # this is the same password you created to encrypt your wallet
-    Dash$ masternode start-alias <alias-of-masternode-you-want-to-start>
-    ```
+3. ```./dash-cli stop```
 
 ## Checking the status of your masternode & install Dash-Qt & prepare your wallet
 The following steps will help you [install a dash wallet on your Mac OS X](https://node40.com/2016/02/26/how-to-install-and-secure-the-dash-qt-(core)-wallet.html).  [This video](https://www.youtube.com/watch?v=hCGZPN0Sb84&index=3&list=PLiFMZOlhgsYLWcmb-MT6x7cIxb01OoJTB) may help as well, although it is a bit dated.
