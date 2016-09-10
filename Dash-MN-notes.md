@@ -46,7 +46,10 @@ Running `VPS:~$ ./dash-cli help` from the directory containing `dash-cli` while 
 * Items in `<angle brackets>` are arguments/values you provide
 * Items `<separated|by|pipes>` are mutually exclustive options (choose one)
 
-Commands in the following subsections should be issued with the format `./dash-cli <command-listed> <plus> ( other-fields-as-shown)`
+Commands in the following subsections should be issued with the following format:
+```sh
+VPS$ ./dash-cli <command-listed> <plus> ( other-fields ) "as-shown"
+```
 
 #### Blockchain
 ```sh
