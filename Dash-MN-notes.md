@@ -31,10 +31,10 @@ This document provides general guidance and a list of popular links related to o
     "result" : "successful"
     }
     ```
-    
+
 ## Stopping your masternode(s)
-1. Log into your VPS and
-2. ```cd ~ # or whatever directory holds dash-cli and dashd```
+1. Log into your VPS
+2. ```cd ~``` (or whatever directory holds dash-cli and dashd)
 3. Enter the following:
 
     ```sh
