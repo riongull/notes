@@ -64,14 +64,14 @@ verifychain ( checklevel numblocks )
 ```
 
 #### Control
-```
+```sh
 getinfo
 help ( "command" )
 stop
 ```
 
 #### Dash
-```
+```sh
 darksend <dashaddress> <amount>
 masternode "command"... ( "passphrase" )
 masternodelist ( "mode" "filter" )
@@ -96,21 +96,20 @@ Arguments:
 * "passphrase"     (string, optional) The wallet passphrase
 
 Available commands:
-```
-sh
-count        # Print number of all known masternodes (optional: 'ds', 'enabled', 'all', 'qualify')
-current      # Print info on current masternode winner
-debug        # Print masternode status
-genkey       # Generate new masternodeprivkey
-enforce      # Enforce masternode payments
-outputs      # Print masternode compatible outputs
-start        # Start masternode configured in dash.conf
-start#alias  # Start single masternode by assigned alias configured in masternode.conf
-start#<mode> # Start masternodes configured in masternode.conf (<mode>: 'all', 'missing', 'disabled')
-status       # Print masternode status information
-list         # Print list of all known masternodes (see masternodelist for more info)
-list-conf    # Print masternode.conf in JSON format
-winners      # Print list of masternode winners
+```sh
+count             # Print number of all known masternodes (optional: 'ds', 'enabled', 'all', 'qualify')
+current           # Print info on current masternode winner
+debug             # Print masternode status
+genkey            # Generate new masternodeprivkey
+enforce           # Enforce masternode payments
+outputs           # Print masternode compatible outputs
+start             # Start masternode configured in dash.conf
+start#alias       # Start single masternode by assigned alias configured in masternode.conf
+start#<mode>      # Start masternodes configured in masternode.conf (<mode>: 'all', 'missing', 'disabled')
+status            # Print masternode status information
+list              # Print list of all known masternodes (see masternodelist for more info)
+list-conf         # Print masternode.conf in JSON format
+winners           # Print list of masternode winners
 ```
 
 ##### mnbudget "command" options
@@ -122,7 +121,7 @@ mnbudget "command"... ( "passphrase" )
 Vote or show current budgets
 
 Available commands:
-```
+```sh
 prepare            # Prepare proposal for network by signing and creating tx
 submit             # Submit proposal for network
 vote-many          # Vote on a Dash initiative
@@ -137,14 +136,14 @@ nextblock          # Get next superblock for budget system
 ```
 
 #### Generating
-```
+```sh
 getgenerate
 gethashespersec
 setgenerate generate ( genproclimit )
 ```
 
 #### Mining
-```
+```sh
 getblocktemplate ( "jsonrequestobject" )
 getmininginfo
 getnetworkhashps ( blocks height )
@@ -153,7 +152,7 @@ submitblock "hexdata" ( "jsonparametersobject" )
 ```
 
 #### Network
-```
+```sh
 addnode "node" "add|remove|onetry"
 getaddednodeinfo dns ( "node" )
 getconnectioncount
@@ -164,7 +163,7 @@ ping
 ```
 
 #### Rawtransactions
-```
+```sh
 createrawtransaction [{"txid":"id","vout":n},...] {"address":amount,...}
 decoderawtransaction "hexstring"
 decodescript "hex"
@@ -174,7 +173,7 @@ signrawtransaction "hexstring" ( [{"txid":"id","vout":n,"scriptPubKey":"hex","re
 ```
 
 #### Util
-```
+```sh
 createmultisig nrequired ["key",...]
 estimatefee nblocks
 estimatepriority nblocks
@@ -183,7 +182,7 @@ verifymessage "dashaddress" "signature" "message"
 ```
 
 #### Wallet
-```
+```sh
 addmultisigaddress nrequired ["key",...] ( "account" )
 backupwallet "destination"
 dumpprivkey "dashaddress"
