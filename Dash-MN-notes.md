@@ -108,8 +108,8 @@ genkey            # Generate new masternodeprivkey
 enforce           # Enforce masternode payments
 outputs           # Print masternode compatible outputs
 start             # Start masternode configured in dash.conf
-start#alias       # Start single masternode by assigned alias configured in masternode.conf
-start#<mode>      # Start masternodes configured in masternode.conf (<mode>: 'all', 'missing', 'disabled')
+start-alias       # Start single masternode by assigned alias configured in masternode.conf
+start-<mode>      # Start masternodes configured in masternode.conf (<mode>: 'all', 'missing', 'disabled')
 status            # Print masternode status information
 list              # Print list of all known masternodes (see masternodelist for more info)
 list-conf         # Print masternode.conf in JSON format
@@ -131,7 +131,7 @@ submit             # Submit proposal for network
 vote-many          # Vote on a Dash initiative
 vote-alias         # Vote on a Dash initiative
 vote               # Vote on a Dash initiative/budget
-getvotes           # Show current masternode budgets
+getvotes           # Show current masternode budgets  (DEPRECATED?)
 getinfo            # Show current masternode budgets
 show               # Show all budgets
 projection         # Show the projection of which proposals will be paid the next cycle
