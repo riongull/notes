@@ -41,10 +41,10 @@ This document provides general guidance and a list of popular links related to o
 ## Dash-cli commands
 Running ```VPS:~$ ./dash-cli help``` from the directory containing ```dash-cli``` while ```dashd``` produces the following help file commands:
 
-* itmes in `( parenthases )` are optional
-* items in `"quotes"` are values you provide
-* items in ```<angle brackets>``` are arguments/values you provide
-* items ```<separated|by|pipes>``` are mutually exclustive options (choose one)
+* Itmes in `( parenthases )` are optional
+* Items in `"quotes"` are values you provide
+* Items in ```<angle brackets>``` are arguments/values you provide
+* Items ```<separated|by|pipes>``` are mutually exclustive options (choose one)
 
 #### Blockchain
 ```sh
@@ -82,8 +82,8 @@ mnsync [status|reset]
 spork <name> [<value>]
 ```
 
-###### `masternode` "command" options
-* found by typing `./dash-cli help masternode` ...
+##### masternode "command" options
+* found by typing `VPS$ ./dash-cli help masternode` ...
 
 ```sh
 masternode "command"... ( "passphrase" )
@@ -116,7 +116,7 @@ winners      # Print list of masternode winners
 masternode
 ```
 
-###### ```mnbudget``` "command" options
+##### ```mnbudget``` "command" options
 ```
 mnbudget
 ```
