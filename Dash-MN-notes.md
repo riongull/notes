@@ -48,7 +48,6 @@ where:
 * items in `<angle brackets>` are arguments/values you provide,
 * items `<separated|by|pipes>` are mutually exclustive options, and
 * Itmes in `( parenthases )` are optional
-
 * *Note: These are found by running `VPS:$ ./dash-cli help` from the directory containing `dash-cli` while `dashd`*
 
 #### Blockchain
