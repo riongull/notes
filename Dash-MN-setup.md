@@ -218,7 +218,7 @@ We are done with the installation files and folders, so those can be removed.
   # this file may already exist
   # if it does not nano will create it
   # either way you will need to select a name/alias (e.g. "MNO1"
-  # reminder: your VPS ip address can be found using 'nano ~/.ssh/config'
+  # reminder: your masternode/VPS ip address can be found using 'nano ~/.ssh/config'
   # populate the file with the data obtained above in the following format:
   < # start of file contents
     MN01 <masternode-ip-address>:9999 <masternode-privkey> <txn-hash> <txn-output-index>
@@ -235,7 +235,7 @@ We are done with the installation files and folders, so those can be removed.
 3. Enter the following to activate your remote masternode
 
     ```sh
-    Dash$ walletpassphrase <your-wallet-passphrase> 60
+    Dash$ walletpassphrase <your-wallet-passphrase> 60 # this is the same password you created to encrypt your wallet
     Dash$ masternode start-alias <alias-of-masternode-you-want-to-start>
     ```
   * You should get a response similar to:
