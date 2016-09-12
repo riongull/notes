@@ -96,10 +96,10 @@ masternode "command"... ( "passphrase" )
 Set of commands to execute masternode related actions
 
 Arguments:
-* "command"        (string or set of strings, required) The command to execute
-* "passphrase"     (string, optional) The wallet passphrase
+* "`command`"        (string or set of strings, required) The command to execute
+* "`passphrase`"     (string, optional) The wallet passphrase
 
-Available commands:
+Available `command`s:
 ```sh
 count             # Print number of all known masternodes (optional: 'ds', 'enabled', 'all', 'qualify')
 current           # Print info on current masternode winner
@@ -123,10 +123,10 @@ masternodelist ( "mode" "filter" )
 ```
 
 Arguments:
-* "mode"      (string, optional/required to use filter, defaults = status) The mode to run list in
-* "filter"    (string, optional) Filter results. Partial match by IP by default in all modes, additional matches in some modes are also available
+* "`mode`"      (string, optional/required to use filter, defaults = status) The mode to run list in
+* "`filter`"    (string, optional) Filter results. Partial match by IP by default in all modes, additional matches in some modes are also available
 
-Available commands:
+Available `command`s:
 ```sh
 activeseconds     # Print number of seconds masternode recognized by the network as enabled (since latest issued `masternode start/start-many/start-alias`)
 addr              # Print ip address associated with a masternode (can be additionally filtered, partial match)
@@ -147,7 +147,7 @@ mnbudget "command"... ( "passphrase" )
 
 Vote or show current budgets
 
-Available commands:
+Available `command`s:
 ```sh
 prepare            # Prepare proposal for network by signing and creating tx
 submit             # Submit proposal for network
