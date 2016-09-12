@@ -24,10 +24,11 @@ The following steps will help you [install a dash wallet on your Mac OS X](https
 3. Click the downloaded dmg file to open up its contents
 4. Drag the Dash-Qt.app file into the Applications folder
 5. Open the Applications folder and press control while clicking Dash-Qt
+  * control-clicking the application allows you to open unsigned applications
 6. From the menu shown, click open, (confirm by clicking open again if needed)
 7. Install the app into the default directory
-8. Allow it to load and wait for the application to fully sync (progress is shown at bottom)
-9. [Encrypt your wallet](https://www.youtube.com/watch?v=PcnAvExGLJs&index=8&list=PLiFMZOlhgsYLWcmb-MT6x7cIxb01OoJTB) and [back it up](https://node40.com/2016/03/30/how-to-backing-up-your-dash-public-key-by-dumping-the-corresponding-private-key.html) (before depositing any dash)
+8. Allow it to load and start syncing the blockchain (progress shown at bottom)
+9. While syncing, and before depositing any dash, [encrypt your wallet](https://www.youtube.com/watch?v=PcnAvExGLJs&index=8&list=PLiFMZOlhgsYLWcmb-MT6x7cIxb01OoJTB) and [back it up](https://node40.com/2016/03/30/how-to-backing-up-your-dash-public-key-by-dumping-the-corresponding-private-key.html)
 
 ## 2. Create and secure a Linux VPS
 1. Create a Ubuntu 64-bit Linux virtual private server (VPS)
