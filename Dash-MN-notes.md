@@ -116,6 +116,29 @@ list-conf         # Print masternode.conf in JSON format
 winners           # Print list of masternode winners
 ```
 
+##### masternodelist "mode" options
+* found by typing `VPS$ ./dash-cli help masternodelist`
+```sh
+masternodelist ( "mode" "filter" )
+```
+
+Arguments:
+* "mode"      (string, optional/required to use filter, defaults = status) The mode to run list in
+* "filter"    (string, optional) Filter results. Partial match by IP by default in all modes, additional matches in some modes are also available
+
+Available commands:
+```sh
+activeseconds     # Print number of seconds masternode recognized by the network as enabled (since latest issued `masternode start/start-many/start-alias`)
+addr              # Print ip address associated with a masternode (can be additionally filtered, partial match)
+full              # Print info in format `status` `protocol` `pubkey` `IP` `lastseen` `activeseconds` `lastpaid` (can be additionally filtered, partial match)
+lastseen          # Print timestamp of when a masternode was last seen on the network
+lastpaid          # The last time a node was paid on the network
+protocol          # Print protocol of a masternode (can be additionally filtered, exact match))
+pubkey            # Print public key associated with a masternode (can be additionally filtered partial match)
+rank              # Print rank of a masternode based on current block
+status            # Print masternode status: ENABLED / EXPIRED / VIN_SPENT / REMOVE / POS_ERROR (can be additionally filtered, partial match)
+```
+
 ##### mnbudget "command" options
 * found by typing `VPS$ ./dash-cli help mnbudget`
 ```sh
