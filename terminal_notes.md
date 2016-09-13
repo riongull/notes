@@ -174,9 +174,7 @@ $ strings # displays the contents of a file in string format
 $ template # describe what it does
 ```
 
-
-
 ### online resources
-* more detailed list of commands found [here](https://github.com/0nn0/terminal-mac-cheatsheet/wiki/Terminal-Cheatsheet-for-Mac-(-basics-))
-* nice [video](https://www.youtube.com/watch?v=1PoQUmy4X2M&index=19&list=PLpKIAFYBxQOWzJjInMUaKtamCshDmLjej) series on linux commands
-* bash scripting [video series](https://www.youtube.com/watch?v=NWWvZa-qlRE&list=PLT98CRl2KxKHdOpQ-uI2QuNcQ0aEAe5bN&index=38)
+* [Detailed list of commands](https://github.com/0nn0/terminal-mac-cheatsheet)
+* [Linux video series](https://www.youtube.com/watch?v=NWWvZa-qlRE&list=PLT98CRl2KxKHdOpQ-uI2QuNcQ0aEAe5bN&index=38)
+* [Bash scripting video series](https://www.youtube.com/watch?v=1PoQUmy4X2M&index=19&list=PLpKIAFYBxQOWzJjInMUaKtamCshDmLjej)
