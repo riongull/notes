@@ -1,6 +1,6 @@
 # Terminal Usage and Common Commands
 
-###### About this guide
+#### About this guide
 This document lists and explains generally-used commands on the terminal program.  Commands work on both Mac and Linux systems, but windows commands are very similar.  
 
 ### Basics

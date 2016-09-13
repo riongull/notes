@@ -16,7 +16,7 @@ This document provides general guidance and a list of popular links related to o
   * `Dash$ sample command` - a command run on your __local Dash-Qt's__ console
 * Running from Dash-Qt vs VPS
   * Full commands are not shown in all sections; keep the follwoing in mind:
-    * When running commands your VPS, you must be in the proper directory and preface commands with `./dash-cli` 
+    * When running commands your VPS, you must be in the proper directory and preface commands with `./dash-cli`
     * When running from Dash-Qt there is no need to call `./dash-cli`
 
 ## Starting your masternode(s)
