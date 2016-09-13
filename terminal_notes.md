@@ -11,7 +11,7 @@ This document lists and explains generally-used commands on the terminal program
 ###### Command line syntax
 * Text in `this font` represents a code snippet, the name of a file, a command you execute, etc.
 * Syntax
-  * `YourComputers:YourPWD You$ command -with <text-in-brackets>`
+  * Example prompt & command: `YourComputers:YourPWD You$ command -with <text-in-brackets>`
     * `YourComputers:YourPWD You` shows information about your computer, user, and present working directory
     * `$` is the 'command prompt', it shows your that your terminal session is ready for your input
     * `command` is the name of the program you intend to run
