@@ -4,15 +4,20 @@
 This document provides general guidance and a list of popular links related to operating a dash masternode](http://dashmasternode.org/)
 
 #### Using this guide
-* Command promt legend
-  * this guide uses the command prompts below to indicate which machine you are running commands on:
-  * `Local$ sample command` - run on your __local Mac OS X__ terminal
-  * `VPS$ sample command` - run on your __remote virtual private server's__ terminal
-  * `Dash$ sample command` - run on your __local Dash-Qt's__ console
-* Command line syntax
-  * the text before the `$` will look different on your machines
-  * simply type what's *after* the `$` (and hit enter/return) to execute a given command
-  * for a `$ command -with <text-in-brackets>` replace `<text-in-brackets>` with *your* data (omitting `<` and `>`)
+* Basic terminal usage
+  * This [basic terminal reference page](https://github.com/riongull/notes/blob/master/terminal_notes.md) may help if you are new to using terminal/shell/bash
+* Setup assumptions/reference
+  * Many dash mastenode operators (MNOs) have set up a split wallet system
+  * When working with such a setup, you are generally issuing commands in any one of three locations, as shown in the legend below
+  * This [masternode setup guide](https://github.com/riongull/notes/blob/master/Dash-MN-setup.md) may help if you are looking to set up a masternode
+* Command prompt legend
+  * `Local$ sample command` - a command run on your __local Mac OS X__ terminal
+  * `VPS$ sample command` - a command run on your __remote virtual private server's__ terminal
+  * `Dash$ sample command` - a command run on your __local Dash-Qt's__ console
+* Running from Dash-Qt vs VPS
+  * Full commands are not shown in all sections; keep the follwoing in mind:
+    * When running commands your VPS, you must be in the proper directory and preface commands with `./dash-cli` 
+    * When running from Dash-Qt there is no need to call `./dash-cli`
 
 ## Starting your masternode(s)
 1. Launch Dash-Qt
@@ -20,7 +25,7 @@ This document provides general guidance and a list of popular links related to o
 3. Enter the following:
 
     ```sh
-    Dash$ walletpassphrase <your-wallet-passphrase> 60 # this is the same password you created to encrypt your wallet
+    Dash$ walletpassphrase <your-wallet-passphrase> 60 # this unlocks your wallet, the passphrase is the same one you created to encrypt your wallet
     Dash$ masternode start-alias <alias-of-masternode-you-want-to-start>
     ```
   * You should get a response similar to:
@@ -38,7 +43,9 @@ This document provides general guidance and a list of popular links related to o
 3. `VPS$ ./dash-cli stop`
 
 
-## Dash-cli commands
+## Checking your masternode's place in payment queue
+
+## All Dash-cli commands
 Commands in the following subsections should be issued with the following format:
 ```sh
 VPS$ ./dash-cli "command-listed" <plus-other-fields> ( as-shown )
@@ -126,7 +133,7 @@ Arguments:
 * "`mode`"      (string, optional/required to use filter, defaults = status) The mode to run list in
 * "`filter`"    (string, optional) Filter results. Partial match by IP by default in all modes, additional matches in some modes are also available
 
-Available `command`s:
+Available `mode`s:
 ```sh
 activeseconds     # Print number of seconds masternode recognized by the network as enabled (since latest issued `masternode start/start-many/start-alias`)
 addr              # Print ip address associated with a masternode (can be additionally filtered, partial match)

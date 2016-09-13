@@ -6,15 +6,14 @@ This guide will walk you through the process of setting up a [dash masternode](h
 * https://www.dash.org/forum/threads/taos-masternode-setup-guide-for-dummies-updated.2680/
 
 #### Using this guide
+* Basic terminal usage
+  * This [basic terminal reference page](https://github.com/riongull/notes/blob/master/terminal_notes.md) may help if you are new to using terminal/shell/bash
 * Command promt legend
-  * this guide uses the command prompts below to indicate which machine you are running commands on:
+  * This guide uses the command prompts below to indicate which machine you are running commands on:
   * `Local$ sample command ` - run on your __local Mac OS X__ terminal
   * `VPS$ sample command` - run on your __remote virtual private server's__ terminal
   * `Dash$ sample command` - run on your __local Dash-Qt's__ console
-* Command line syntax
-  * the text before the `$` will look different on your machines
-  * simply type what's *after* the `$` (and hit enter/return) to execute a given command
-  * for a `$ command -with <text-in-brackets>` replace `<text-in-brackets>` with *your* data (omitting `<` and `>`)
+
 
 ## 1. Download & install Dash-Qt & prepare your wallet
 The following steps will help you [install a dash wallet on your Mac OS X](https://node40.com/2016/02/26/how-to-install-and-secure-the-dash-qt-(core)-wallet.html).  [This video](https://www.youtube.com/watch?v=hCGZPN0Sb84&index=3&list=PLiFMZOlhgsYLWcmb-MT6x7cIxb01OoJTB) may help as well, although it is a bit dated.
