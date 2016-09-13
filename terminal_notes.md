@@ -176,5 +176,5 @@ $ template # describe what it does
 
 ### online resources
 * [Detailed list of commands](https://github.com/0nn0/terminal-mac-cheatsheet)
-* [Linux video series](https://www.youtube.com/watch?v=NWWvZa-qlRE&list=PLT98CRl2KxKHdOpQ-uI2QuNcQ0aEAe5bN&index=38)
-* [Bash scripting video series](https://www.youtube.com/watch?v=1PoQUmy4X2M&index=19&list=PLpKIAFYBxQOWzJjInMUaKtamCshDmLjej)
+* [Intro to bash scripting video series](https://www.youtube.com/watch?v=NWWvZa-qlRE&list=PLT98CRl2KxKHdOpQ-uI2QuNcQ0aEAe5bN&index=38)
+* [Intro to advanced bash usage](https://www.youtube.com/watch?v=uqHjc7hlqd0)

@@ -1,7 +1,7 @@
 # Dash Masternode Notes
 
 #### About this guide
-This document provides general guidance and a list of popular links related to operating a dash masternode](http://dashmasternode.org/)
+This document provides general guidance and a list of popular links related to operating a [dash masternode](http://dashmasternode.org/)
 
 #### Using this guide
 * Basic terminal usage
