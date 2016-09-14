@@ -1,31 +1,37 @@
 # Bash Scripting
 
-#### About this guide
-This document is a reference and guide for creating and running basic bash scripts   
+#### About this document
+This document is a reference and guide for creating and running basic bash scripts.  It assumes a knowlege of [basic terminal usage](https://github.com/riongull/notes/blob/master/terminal_notes.md).  
 
 ## Basic understanding
-* 
-
-## Create and print variables
-``` sh
-$ MYVARIABLE="Some string I want to be a variable for use in a terminal session" # ends when the terminal is closed
-$ echo $MYVARIABLE # display the variable
-```
+* scripts can run *from* any directory if...
+  * a) the script is located in a directory in your `PATH` variable, or
+  * b) you run the script with the *full* path to it's location
+* add scripts to `~/bin` so they are in your `PATH`
+* make scripts executable using `chmod +x <scriptname>`
+* debug scripts with `bash -x`
+* check which directories are in your `PATH`: `echo $PATH`
+* if executable shell programs have the same name but are in different directories the program in the first directory in your path is run
+* name your scripts with a .sh extension
 
 ## Create and execute a script
 ``` sh
-$ nano myscript
-# write file with the following text in nano
+$ cd ~/bin
+$ nano myscript.sh # opens nano to create a new file
 
-#!/bin/bash # (tells the shell that the command interpreter should be bash)
-ls
-MYVARIABLE="I executed my script"
-echo $MYVARIABLE # display the variable
-# save and exit out of nano
+< # start of file contents on next line
+#!/bin/bash # the 'hash-bang' tells the shell that the command interpreter should be 'bash' (execute using the program found at /bin/bash)
+MYGREETING="Hello"
+if [[ $USER = Rion ]]
+then echo $MYGREETING "Rion"
+else echo $MYGREETING "whoever you are"
+> # end of file contents, control+x to exit nano (y to save)
 
-$ chmod +x myscript # gives file executable permissions
-$ ls -l # check to see permissions (should be x's in each of user/group/everyone fields)
-$ ./myscript # executes script
+$ ls -l # by default the file is not exectuable
+$ chmod +x myscript # gives file global executable permissions
+$ ls -l # check to see permissions (should be x's in each of user/group/everyone fields now)
+$ cd ~ # go back home
+$ myscript # executes script, would need ./myscript if running from ~/bin
 ```
 
 ## Create custom commands (aliases)

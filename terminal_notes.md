@@ -64,6 +64,12 @@ $ cd path_where_program_lives
 $ program_name [program_command] # [] items are optional
 ```
 
+###### Use variables
+``` sh
+$ MYVARIABLE="Some string I want to be a variable for use in a terminal session" # ends when the terminal is closed
+$ echo $MYVARIABLE # display the variable
+```
+
 ### other useful commands
 ###### top
 ``` sh
