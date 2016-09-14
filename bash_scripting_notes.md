@@ -4,7 +4,7 @@
 This document is a reference and guide for creating and running basic bash scripts.  It assumes a knowlege of [basic terminal usage](https://github.com/riongull/notes/blob/master/terminal_notes.md).
 
 #### Useful links
-[Bash scripting video series](https://www.youtube.com/watch?v=Djgrtlv4cng)  
+* [Bash scripting video series](https://www.youtube.com/watch?v=Djgrtlv4cng)  
 
 
 ## Basic understanding
