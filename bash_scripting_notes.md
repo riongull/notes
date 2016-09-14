@@ -1,7 +1,11 @@
 # Bash Scripting
 
 #### About this document
-This document is a reference and guide for creating and running basic bash scripts.  It assumes a knowlege of [basic terminal usage](https://github.com/riongull/notes/blob/master/terminal_notes.md).  
+This document is a reference and guide for creating and running basic bash scripts.  It assumes a knowlege of [basic terminal usage](https://github.com/riongull/notes/blob/master/terminal_notes.md).
+
+#### Useful links
+[Bash scripting video series](https://www.youtube.com/watch?v=Djgrtlv4cng)  
+
 
 ## Basic understanding
 * scripts can run *from* any directory if...
@@ -25,10 +29,11 @@ MYGREETING="Hello, "
 if [[ $USER = Rion ]]
 then echo $MYGREETING "Rion"
 else echo $MYGREETING "whoever you are"
+fi
 > # end of file contents, control+x to exit nano (y to save)
 
 $ ls -l # by default the file is not exectuable
-$ chmod +x myscript # gives file global executable permissions
+$ chmod +x myscript.sh # gives file global executable permissions
 $ ls -l # check to see permissions (should be x's in each of user/group/everyone fields now)
 $ cd ~ # go back home
 $ myscript # executes script, would need ./myscript if running from ~/bin
