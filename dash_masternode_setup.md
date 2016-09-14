@@ -16,7 +16,7 @@ This guide will walk you through the process of setting up a [dash masternode](h
 
 
 ## 1. Download & install Dash-Qt & prepare your wallet
-The following steps will help you [install a dash wallet on your Mac OS X](https://node40.com/2016/02/26/how-to-install-and-secure-the-dash-qt-(core)-wallet.html).  Although it is a bit dated, [This video](https://www.youtube.com/watch?v=hCGZPN0Sb84&index=3&list=PLiFMZOlhgsYLWcmb-MT6x7cIxb01OoJTB) may help as well.
+The following steps will help you [install a dash wallet on your Mac OS X](https://node40.com/2016/02/26/how-to-install-and-secure-the-dash-qt-(core)-wallet.html).  Although it is a bit dated, [this video](https://www.youtube.com/watch?v=hCGZPN0Sb84&index=3&list=PLiFMZOlhgsYLWcmb-MT6x7cIxb01OoJTB) may help as well.
 
 1. From a browser on your Mac, go to https://www.dash.org/downloads
 2. Find and click the Dash Core, Mac OS X dmg download link
