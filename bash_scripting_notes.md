@@ -1,15 +1,18 @@
 # Bash Scripting
 
 #### About this guide
-This document
+This document is a reference and guide for creating and running basic bash scripts   
 
-## create and print variables
+## Basic understanding
+* 
+
+## Create and print variables
 ``` sh
 $ MYVARIABLE="Some string I want to be a variable for use in a terminal session" # ends when the terminal is closed
 $ echo $MYVARIABLE # display the variable
 ```
 
-## create and execute a script
+## Create and execute a script
 ``` sh
 $ nano myscript
 # write file with the following text in nano
@@ -25,14 +28,16 @@ $ ls -l # check to see permissions (should be x's in each of user/group/everyone
 $ ./myscript # executes script
 ```
 
-## create custom commands (aliases)
+## Create custom commands (aliases)
 ``` sh
 $ alias
 $ alias ls='ls --color -l'
 $ alias # lists curent aliases (both global and in current session)
 ```
 
-## edit .bash_profile (persisted bash configurations available every time you use Terminal)
+## Edit `.bash_profile`
+Your `.bash_profile` file controls how your bash terminal session looks and operates.  Changes made to this file will persist configuration changes to all subsequent terminal sessions.
+
 ``` sh
 $ cd ~/
 $ nano .bash_profile
