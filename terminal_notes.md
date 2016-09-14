@@ -22,7 +22,7 @@ This document lists and explains generally-used commands on the terminal program
     * some guides include `(text-in-parentheses)`, which can be replaced with `true` or `false` as an option  
 
 * Starting/Stoping
-    * To start a command, type what's *after* the `$` (`command -with <text-in-brackets>` in our example) and hit enter
+    * To start a command, type what's *after* the `$` (`command -with <text-in-brackets>` in our example) and hit `enter`
     * Some programs execute and finish almost immediately, others run until you stop them
     * To stop a program, press `command`+`c`
 * Help
