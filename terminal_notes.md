@@ -15,9 +15,12 @@ This document lists and explains generally-used commands on the terminal program
     * `YourComputers:YourPWD You` shows information about your computer, user, and present working directory
     * `$` is the 'command prompt', it shows your that your terminal session is ready for your input
     * `command` is the name of the program you intend to run
-    * `-with` represents options, letters or words which you include to modify the way `command` will be run
-    * `<text-in-brackets>` something *you replace* (omitting `"<text-in-brackets>"`) with your own data/text
-    * some other guides include `[stuff-in-brackets]`, which usually represents optional arguments or options
+    * `-with` represents options (letters or words) which you include to modify the way `command` will be run
+    * `<text-in-brackets>` is something *you replace* (omitting `"<text-in-brackets>"`) with your own data/text
+    * some guides include `"text-in-quotes"`, which typically has the same intention as `"<text-in-brackets>"`
+    * some guides include `[text-in-brackets]`, which usually represents optional arguments (nameed options)
+    * some guides include `(text-in-parentheses)`, which can be replaced with `true` or `false` as an option  
+
 * Starting/Stoping
     * To exectue a command, type what's *after* the `$` in our example and hit enter/return
     * Some programs execute and finish almost immediately, others run until you stop them
