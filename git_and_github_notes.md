@@ -32,7 +32,7 @@ $ git help -g # lists guides, follow up with 'git help <concept>', e.g. 'git hel
   * under github-repo there's a new README.md file and a new (hidden) .git folder
 
 #### 2. create from scratch starting from local computer terminal
-1. install gitclick [(see below)](https://github.com/riongull/notes/blob/master/git-github_notes.md#install-and-initialize-gitclick)
+1. install gitclick [(see below)](https://github.com/riongull/notes/blob/master/git_and_github_notes.md#install-and-initialize-gitclick)
 2. run following commands:
 
 ```sh

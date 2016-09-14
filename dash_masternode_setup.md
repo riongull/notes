@@ -33,7 +33,7 @@ The following steps will help you [install a dash wallet on your Mac OS X](https
 1. Create a Ubuntu 64-bit Linux virtual private server (VPS)
   * You may use any service for this, e.g. AWS, Digital Ocean, Vultr, etc
   * You should have secured the necessary ports, created tough logins, etc
-  * See [this link](https://github.com/riongull/notes/blob/master/VPS-setup.md) for a step-by-step tutorial using [Vultr](http://www.vultr.com/?ref=6971315-3B)
+  * See [this link](https://github.com/riongull/notes/blob/master/vitual_private_server_setup.md) for a step-by-step tutorial using [Vultr](http://www.vultr.com/?ref=6971315-3B)
 
 ## 3. If necessary, move dashd to the proper folder
 Installing Dash-Qt may have put dashd in your "downloads" folder. If so, we'll need to move the file:
@@ -94,7 +94,7 @@ While we are waiting for the needed 6 confirmations of our 1000 DASH transaction
   Local$ ssh <login-user>@<ip.add.re.ss>
   <password> # if needed
   ```
-  * If you changed your SSH port in step 3.5 of [securing your VPS](https://github.com/riongull/notes/blob/master/VPS-setup.md#3-secure-the-vps-using) you may need to:
+  * If you changed your SSH port in step 3.5 of [securing your VPS](https://github.com/riongull/notes/blob/master/vitual_private_server_setup.md#3-secure-the-vps-using) you may need to:
   ```sh
   Local$ ssh -p <ssh-port-number> <login-user>@<ip.add.re.ss>
   ```

@@ -9,7 +9,7 @@ This document provides general guidance and a list of popular links related to o
 * Setup assumptions/reference
   * Many dash mastenode operators (MNOs) have set up a split wallet system
   * When working with such a setup, you are generally issuing commands in any one of three locations, as shown in the legend below
-  * This [masternode setup guide](https://github.com/riongull/notes/blob/master/Dash-MN-setup.md) may help if you are looking to set up a masternode
+  * This [masternode setup guide](https://github.com/riongull/notes/blob/master/dashmasternode_setup.md) may help if you are looking to set up a masternode
 * Command prompt legend
   * `Local$ sample command` - a command run on your __local Mac OS X__ terminal
   * `VPS$ sample command` - a command run on your __remote virtual private server's__ terminal
