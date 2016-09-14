@@ -1,14 +1,15 @@
-### Scripting tools
+# Bash Scripting
 
-#### Bash scripting
+#### About this guide
+This document
 
-###### create and print variables
+## create and print variables
 ``` sh
 $ MYVARIABLE="Some string I want to be a variable for use in a terminal session" # ends when the terminal is closed
 $ echo $MYVARIABLE # display the variable
 ```
 
-###### create and execute a script
+## create and execute a script
 ``` sh
 $ nano myscript
 # write file with the following text in nano
@@ -24,14 +25,14 @@ $ ls -l # check to see permissions (should be x's in each of user/group/everyone
 $ ./myscript # executes script
 ```
 
-###### create custom commands (aliases)
+## create custom commands (aliases)
 ``` sh
 $ alias
 $ alias ls='ls --color -l'
 $ alias # lists curent aliases (both global and in current session)
 ```
 
-###### edit .bash_profile (persisted bash configurations available every time you use Terminal)
+## edit .bash_profile (persisted bash configurations available every time you use Terminal)
 ``` sh
 $ cd ~/
 $ nano .bash_profile
