@@ -5,7 +5,7 @@ This document is a reference and guide for creating and running basic bash scrip
 
 ## Basic understanding
 * scripts can run *from* any directory if...
-  * a) the script is located in a directory in your `PATH` variable, or
+  * a) the script is located in a directory in your `PATH` variable, __or__
   * b) you run the script with the *full* path to it's location
 * add scripts to `~/bin` so they are in your `PATH`
 * make scripts executable using `chmod +x <scriptname>`
@@ -21,7 +21,7 @@ $ nano myscript.sh # opens nano to create a new file
 
 < # start of file contents on next line
 #!/bin/bash # the 'hash-bang' tells the shell that the command interpreter should be 'bash' (execute using the program found at /bin/bash)
-MYGREETING="Hello"
+MYGREETING="Hello, "
 if [[ $USER = Rion ]]
 then echo $MYGREETING "Rion"
 else echo $MYGREETING "whoever you are"
