@@ -1,9 +1,13 @@
 # Terminal Usage and Common Commands
 
 #### About this guide
-This document lists and explains generally-used commands on the terminal program.  Commands work on both Mac and Linux systems, but windows commands are very similar.  
+This document lists and explains generally-used commands on Terminal and .  Commands work on both Mac and Linux systems, but windows commands are very similar.  
 
 ### Basics
+
+###### Key points
+* Terminal (aka shell) is a Unix-based program that operates on iOS and Linux operating systems
+*
 
 ###### Opening terminal
 * On a Mac, press `command`+`spacebar` to bring up Spotlight Search, then type `terminal` and hit enter.
@@ -45,7 +49,10 @@ $ man <command_you_want_to_know_about> # displays manual for a command (e.g. man
 $ touch "readme.md" # creates a new file (can use without quotes for files w/o spaces)
 $ nano "readme.md" # creates a new file and open editor to edit, "npm install nano" to get nano
 $ mkdir "New Folder" # creates a new folder
-$ cat readme.md # reads/displays file in terminal, name is from "concatenate and print", all files given as parameters are concatenated and sent to "standard output"
+$ cat readme.md # reads/displays file in terminal, name is from "concatenate", all files given as parameters are concatenated and sent to "standard output"
+$ less readme.md # better than cat for large files
+$ head readme.md #
+$ tail readme.md # reads and takes you to the bottom of the file. -f option will follow the file as it changes (good for reading log files in real time)
 $ cp
 $ mv "readme.md" "Read Me.md" # updates/renames file from x to y
 $ mv "New Folder" "newer-folder" # updates/renames folder from x to y
@@ -86,7 +93,8 @@ $ top # shows list of processes running with CPU & memory usage
 
 ###### less
 ```sh
-$ less # description
+# etymology: play on it's predecessor, more
+$ less # prints contents of a file such that you can scroll up and down
 ```
 
 ###### file
@@ -99,9 +107,16 @@ $ file # description
 $ strings # displays the contents of a file in string format
 ```
 
+###### [grep](https://www.youtube.com/watch?v=3w7xrQWRYrU)
+```sh
+# etymology: global regular expression print
+$ grep # finds regular expression values (or just normal text) within a file and prints results to your shell
+```
+
 ###### template
 ```sh
-$ template # describe what it does
+# etymology: where the name comes from (if not obvious)
+$ template -opt <arg> # describe what it does
 ```
 
 ### online resources
