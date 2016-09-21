@@ -33,7 +33,7 @@ The following steps will help you [install a dash wallet on your Mac OS X](https
 1. Create and secure a virtual private server (VPS) to host your masternode
   * You may use any service for this, e.g. AWS, Digital Ocean, Vultr, or your own hardware
   * This [comprehensive VPS setup guide](https://github.com/riongull/notes/blob/master/virtual_private_server_setup.md) walks you through this, using [Vultr](http://www.vultr.com/?ref=6971315-3B) as your VPS host
-  * Your machine should have sufficient storage, bandwidth, and memory, and be properly configured (ssh, ports, etc)
+  * Your machine should have sufficient storage, bandwidth, and RAM, and be properly configured (ssh, ports, etc)
 
 ## 3. If necessary, move dashd to the proper folder
 Installing Dash-Qt may have put dashd in your "downloads" folder. If so, we'll need to move the file:
