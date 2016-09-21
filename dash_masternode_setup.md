@@ -26,14 +26,14 @@ The following steps will help you [install a dash wallet on your Mac OS X](https
 6. From the menu shown, click 'Open', then confirm by clicking 'Open' again
 7. Press 'OK' to install the app into the default directory
 8. Select 'Deny' or 'Allow' depending on your preference
-8. Note the status of the network sync shown at the bottom; this will take hours to complete but you can move on
-9. While syncing, and before depositing any dash, [encrypt your wallet](https://www.youtube.com/watch?v=PcnAvExGLJs&index=8&list=PLiFMZOlhgsYLWcmb-MT6x7cIxb01OoJTB) and [back it up](https://node40.com/2016/03/30/how-to-backing-up-your-dash-public-key-by-dumping-the-corresponding-private-key.html)
+9. Note the status of the network sync shown at the bottom; this will take hours to complete but you can move on
+10. While syncing, and before depositing any dash, [encrypt your wallet](https://www.youtube.com/watch?v=PcnAvExGLJs&index=8&list=PLiFMZOlhgsYLWcmb-MT6x7cIxb01OoJTB) and [back it up](https://node40.com/2016/03/30/how-to-backing-up-your-dash-public-key-by-dumping-the-corresponding-private-key.html)
 
 ## 2. Create and secure a Linux VPS
-1. Create a Ubuntu 64-bit Linux virtual private server (VPS)
-  * You may use any service for this, e.g. AWS, Digital Ocean, Vultr, etc
-  * You should have secured the necessary ports, created tough logins, etc
-  * See [this link](https://github.com/riongull/notes/blob/master/virtual_private_server_setup.md) for a step-by-step tutorial using [Vultr](http://www.vultr.com/?ref=6971315-3B)
+1. Create and secure a virtual private server (VPS) to host your masternode
+  * You may use any service for this, e.g. AWS, Digital Ocean, Vultr, or your own hardware
+  * This [comprehensive setup guide](https://github.com/riongull/notes/blob/master/virtual_private_server_setup.md) walks you through this process, using [Vultr](http://www.vultr.com/?ref=6971315-3B) as your virtual private server host
+  * Your machine should provide sufficient storage, bandwidth, and memory, and be properly configured (ssh, ports, etc)
 
 ## 3. If necessary, move dashd to the proper folder
 Installing Dash-Qt may have put dashd in your "downloads" folder. If so, we'll need to move the file:
