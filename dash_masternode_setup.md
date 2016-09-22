@@ -28,18 +28,12 @@ The following steps will help you [install a dash wallet on your Mac OS X](https
 9. Note the status of the network sync shown at the bottom; this may take hours to complete but you can move on
 10. While syncing, and before depositing any dash, [encrypt your wallet](https://www.youtube.com/watch?v=PcnAvExGLJs&index=8&list=PLiFMZOlhgsYLWcmb-MT6x7cIxb01OoJTB) and [back it up](https://node40.com/2016/03/30/how-to-backing-up-your-dash-public-key-by-dumping-the-corresponding-private-key.html)
 
-## 2. Create and secure a Linux VPS
-1. Create and secure a virtual private server (VPS) to host your masternode
-  * You may use any service for this, e.g. AWS, Digital Ocean, Vultr, or your own hardware
-  * This [comprehensive VPS setup guide](https://github.com/riongull/notes/blob/master/virtual_private_server_setup.md) walks you through this process, using [Vultr](http://www.vultr.com/?ref=6971315-3B) as your VPS host
-  * Your machine should have sufficient storage, bandwidth, and RAM, and be properly configured (ssh, ports, etc)
+## 2. If necessary, move `dashd` to the proper folder
+Some older Dash-Qt installations saved `dashd` in the "downloads" folder. If you already had Dash-Qt installed, double check to make sure it is in the proper place, as follows:
 
-## 3. If necessary, move `dashd` to the proper folder
-Installing Dash-Qt may have put `dashd` in your "downloads" folder. If so, we'll need to move the file:
-
-1. Shut down Dash-Qt
-2. Open the terminal utility (Applications > Utilities > Terminal)
-3. Enter the following commands:
+1. Quit Dash-Qt (`command` + `q` when client is active window)
+2. Open the terminal utility (`command` + `spacebar`, then type 'terminal')
+3. Run the following commands:
 
   ```sh
   Local$ cd ~/Library/Application\ Support/Dash
@@ -49,26 +43,28 @@ Installing Dash-Qt may have put `dashd` in your "downloads" folder. If so, we'll
   Local$ mv dashd ~/Library/Application\ Support/Dash
   ```
 
-## 4. FIX THIS SECTION WHEN I KNOW IT'S WORKING Create your masternode key & address, store in separate file
-1. Re-open Dash-Qt  
+## 3. Create and secure a Linux VPS
+This step (done properly) requires a lot of steps, so there is a link below to a separate guide for this step.  Once complete, come back to this guide and continue on with step 4.  
+
+1. Create and secure a virtual private server (VPS) to host your masternode
+  * You may use your own hardware, or any 3rd party hosting service you like (e.g. AWS, Digital Ocean, Vultr, etc)
+  * This [comprehensive VPS setup guide](https://github.com/riongull/notes/blob/master/virtual_private_server_setup.md) walks you through this process, using [Vultr](http://www.vultr.com/?ref=6971315-3B) as your VPS host
+  * Your machine should have sufficient storage, bandwidth, and RAM, and be properly configured (ssh, ports, etc)
+
+## 4. Create your masternode key & address
+1. Open Dash-Qt
 2. Get a new masternode private key and address
-  * Menu > Tools > Debug console
+  * Menu: Tools > Debug console
   * A new window should appear with the "Console" tab selected at the top
-  * Enter the following command at the bottom
+  * Enter the following command in the input field at the bottom:
   ```sh
   Dash$ masternode genkey
   # Dash will output the result
-  Dash$ getaccountaddress 0
+  Dash$ getaccountaddress <masternodeLabel> # <masternodeLabel> is a name of your choice, e.g. "masternode1", "MN01", etc.
   # Dash will output the result
   ```
-3. Copy and label the two outputted strings of characters to another application like Word or Notes
-  * These will be referred to as \<masternode-privkey> and \<zero-address> in step 6.4 below
-
-4. Create a new dash 'zero' address for your masternode
-  * File > Receiving addresses > New
-  * Label the address (e.g. "MN01"), click "OK", and
-  * Leave the 'Receiving addresses' dialog box for the next step
-  * Note: you will need a different address for each masternode you plan to create
+3. Copy and label the two outputted strings of characters in the notes page you created for your IP address
+  * These will be referred to as \<masternode-privkey> and \<zero-address> in later steps
 
 ## 5. Fund your newly created address with 1000 DASH
 You may fund your masternode address by sending dash from any wallet (e.g. Jaxx, Electrum, Poloniex, etc).  These steps assume you are funding from Dash-Qt itself.  Either way, the wallet you are sourcing funds from must have 1000 DASH plus a little extra (~0.01 DASH) to cover the dash network fee.
@@ -77,13 +73,14 @@ You may fund your masternode address by sending dash from any wallet (e.g. Jaxx,
 2. Click the Receiving address you made in step 4 (e.g. "MN01") and click the 'copy' button
 3. Click the Send tab on the main Dash-Qt window (or your wallet of choice)
 4. Paste the address you copied on the 'Pay To' field, it should populate your label
-5. Fund your masternode (e.g. MN01) address with *exactly* 1000 DASH
-  * Don't include any miner fee in this amount; your wallet should automatically cover it
+5. Enter '1000' in the 'Amount' field
+  * Don't include any miner fee in this amount; the wallet will automatically cover it
   * The amount you actually send must be one transaction of exactly 1000 DASH
   * No, you may not send more than 1000 DASH
   * No, you may not send 999.99 DASH
   * No, you may not put in 1 DASH first and then 999 DASH. It must be all at once. You may test the address first, but you will still need to send 1000 DASH later, all in one transaction
-  * No, even if you have 1000 DASH in the wallet already, that doesn't count. You must send it to yourself by sending it to your new masternode address
+  * No, even if you have 1000 DASH in the wallet already, that doesn't count. You must send 1000 DASH to your `<masternodeLabel>` address
+5. Click 'Send' to fund your masternode (you may use/check InstantSend for this)
 
 ## 6. Prepare your remote VPS
 While we are waiting for the needed 6 confirmations of our 1000 DASH transaction, we can now prepare the remote server.

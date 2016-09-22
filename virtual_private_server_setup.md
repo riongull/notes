@@ -6,6 +6,10 @@ This guide will walk you through the process of setting up a __Linux__-based vir
 * https://www.youtube.com/watch?v=DbPDraCYju8
 * https://gist.github.com/learncodeacademy/5850f394342a5bfdbfa4
 
+The primary intended use case for this guide is for setting up a server to host a (single) [dash masternode](http://www.dashmasternode.com).  The steps can, however, be used more generally for various purposes, and need only slight modification if you wish to later set up multiple masternodes.
+
+For the dash masternode use case, the server you are about to set up *is* your masternode, *not* your local Dash-Qt wallet.  Your local Dash-Qt wallet (set of private and public key pairs) holds the masternode collateral payment, but all of the functions (and required uptime) related to running a masternode is being done on the remote server you are setting up.  Your dash funds are *not* stored on this server.
+
 #### Using this guide
 * Basic terminal usage
   * This [basic terminal reference page](https://github.com/riongull/notes/blob/master/terminal_notes.md) may help if you are new to using terminal/shell/bash
@@ -15,14 +19,20 @@ This guide will walk you through the process of setting up a __Linux__-based vir
   * `VPS$ sample command` - run on your __remote virtual private server's__ terminal
 
 ## 1. Create a Linux virtual private server (VPS)
+You may use your own hardware, or any 3rd party hosting service you like (e.g. AWS, Digital Ocean, Vultr, etc).  This guide uses Vultr, which is a provider widely recommended for hosting masternodes.
 
-1. Create a [Vultr account](http://www.vultr.com/?ref=6971315-3B)
-2. After signing in to Vultr, deploy a new instance
+*Note: The Vultr link below is an affiliate link.  Signing up through it is a good way to express appreciation for this guide.  The current promotion also gives you a $20 credit after your first $10 and 30 days of activity*
+
+1. [Create a Vultr account](http://www.vultr.com/?ref=6971315-3B)
+2. After signing in to Vultr, deploy a new 'Vultr Cloud Compute (VC2)' instance
   * Location: somewhere near you
   * Server Type: 64 bit OS > Ubuntu > 14.04 x64
-  * Server Size: Memory is the bottleneck for a Masternode; 1GB (1024MB) memory *(RAM)* is safe
-3. Click 'Deploy'
+  * Server Size: 20 GB SSD, 1024 MB memory, 2000 GB bandwidth
+  * No additional features are necessary
+3. Click 'Deploy Now'
 4. Wait for your new server to get to 'running' status
+5. Copy your server's IP address and default password to another application like Word or Notes
+  * These will be referred to as \<ip.add.re.ss> and \<defaultPassword> in later steps
 
 ## 2. Set up the VPS with new users
 
@@ -35,19 +45,19 @@ This guide will walk you through the process of setting up a __Linux__-based vir
 2. Change the 'root' user's password
 
   ```sh
-  VPS$ passwd root
-  <newPassword>
-  <newPassword>
+  VPS# passwd root
+  <newPassword> # this should be very secure
+  <newPassword> # confirm password
   ```
 3. Create a couple new users, give one sudo privileges  
 
   ```sh
-  VPS$ adduser <super-user>
+  VPS# adduser <super-user>
   <newPassword>
   <newPassword>
   <otherFieldsAsDesired>
-  VPS$ sudo usermod -a -G sudo <super-user> # adds super-user to 'sudo' group
-  VPS$ adduser <login-user>
+  VPS# sudo usermod -a -G sudo <super-user> # adds super-user to 'sudo' group
+  VPS# adduser <login-user>
   <newPassword>
   <newPassword>
   <otherFieldsAsDesired>
@@ -61,25 +71,25 @@ This guide will walk you through the process of setting up a __Linux__-based vir
 
   ```sh
   # 1.1 give login-user a secure password
-  VPS$ su <login-user>
+  VPS# su <login-user>
   VPS$ passwd
   <newPassword>
   <newPassword>
   VPS$ exit
   # 1.2 give super-user a secure password
-  VPS$ su <super-user>
+  VPS# su <super-user>
   VPS$ passwd
   <newPassword>
   <newPassword>
   VPS$ exit
-  # 1.3 give root a secure password
-  VPS$ passwd
+  # 1.3 give root a very secure password if you haven't already
+  VPS# passwd
   <newPassword>
   <newPassword>
-  VPS$ exit
+  VPS# exit
   ```
 
-*...or __SSH__ for logging in to the VPS, by doing the following:*
+*...or __SSH key__ for logging in to the VPS, by doing the following:*
 
 1. Create SSH folder if needed
 
