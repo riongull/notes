@@ -7,14 +7,12 @@ This guide will walk you through the process of setting up a __Linux__-based vir
 * https://gist.github.com/learncodeacademy/5850f394342a5bfdbfa4
 
 #### Using this guide
-* Command promt legend
+* Basic terminal usage
+  * This [basic terminal reference page](https://github.com/riongull/notes/blob/master/terminal_notes.md) may help if you are new to using terminal/shell/bash
+* Command prompt legend
   * this guide uses the command prompts below to indicate which machine you are running commands on:
   * `Local$ sample command` - run on your __local Mac OS X__ terminal
   * `VPS$ sample command` - run on your __remote virtual private server's__ terminal
-* Command line syntax
-  * the text before the `$` will look different on your machines
-  * simply type what's *after* the `$` (and hit enter/return) to execute a given command
-  * for a `$ command -with <text-in-brackets>` replace `<text-in-brackets>` with *your* data (omitting `<` and `>`)
 
 ## 1. Create a Linux virtual private server (VPS)
 
@@ -22,7 +20,7 @@ This guide will walk you through the process of setting up a __Linux__-based vir
 2. After signing in to Vultr, deploy a new instance
   * Location: somewhere near you
   * Server Type: 64 bit OS > Ubuntu > 14.04 x64
-  * Server Size: Memory is the bottleneck for a Masternode, choose 1GB RAM to be safe
+  * Server Size: Memory is the bottleneck for a Masternode; 1GB (1024MB) memory *(RAM)* is safe
 3. Click 'Deploy'
 4. Wait for your new server to get to 'running' status
 
@@ -186,7 +184,7 @@ This guide will walk you through the process of setting up a __Linux__-based vir
 
 2. Edit SSH port for TCP connections
   * [For security](https://major.io/2013/05/14/changing-your-ssh-servers-port-from-the-default-is-it-worth-it/), change your ssh-port-number for tcp connections, and open that port
-  * Your chosen <ssh-port-number> should be something non-standard, and ideally not used by [other services](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers)
+  * Your chosen \<ssh-port-number> should be something non-standard, and ideally not used by [other services](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers)
   ```sh
   VPS$ sudo ufw allow <ssh-port-number>/tcp
   ```
@@ -213,7 +211,7 @@ This guide will walk you through the process of setting up a __Linux__-based vir
   VPS$ sudo ufw allow 19999/udp
   ```
 
-4. Re-edit `/etc/ssh/sshd_config`
+4. Re-edit `/etc/ssh/sshd_config`  ### RDG Note: this step is not applicable ("re-edit") to users who didn't do ssh login
 
   ```sh
   # edit the ssh configuration file again, just to change the Port to the <ssh-port-number> you chose above:
@@ -227,6 +225,7 @@ This guide will walk you through the process of setting up a __Linux__-based vir
 
   ```sh
   VPS$ sudo ufw enable # you've made changes, now enable the firewall (the UFW)
+  y # confirm enable
   VPS$ sudo ufw status numbered # check its status (you can omit the word “numbered,” but it provides more information)
   VPS$ sudo reboot # reboot the server,
   # you should now be able to log back in using our ssh private key and ssh passphrase, now also including the new <ssh-port-number> in the login. You may have to wait about a minute or so for it to boot up before you can login

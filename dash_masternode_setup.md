@@ -8,12 +8,11 @@ This guide will walk you through the process of setting up a [dash masternode](h
 #### Using this guide
 * Basic terminal usage
   * This [basic terminal reference page](https://github.com/riongull/notes/blob/master/terminal_notes.md) may help if you are new to using terminal/shell/bash
-* Command promt legend
+* Command prompt legend
   * This guide uses the command prompts below to indicate which machine you are running commands on:
   * `Local$ sample command ` - run on your __local Mac OS X__ terminal
   * `VPS$ sample command` - run on your __remote virtual private server's__ terminal
   * `Dash$ sample command` - run on your __local Dash-Qt's__ console
-
 
 ## 1. Download & install Dash-Qt & prepare your wallet
 The following steps will help you [install a dash wallet on your Mac OS X](https://node40.com/2016/02/26/how-to-install-and-secure-the-dash-qt-(core)-wallet.html).  Although it is a bit dated, [this video](https://www.youtube.com/watch?v=hCGZPN0Sb84&index=3&list=PLiFMZOlhgsYLWcmb-MT6x7cIxb01OoJTB) may help as well.
@@ -72,18 +71,19 @@ Installing Dash-Qt may have put `dashd` in your "downloads" folder. If so, we'll
   * Note: you will need a different address for each masternode you plan to create
 
 ## 5. Fund your newly created address with 1000 DASH
-1. These steps assume you already have >1000 DASH (1000 + miner fee) in your Dash-Qt wallet
-2. Open the 'Receiving addresses' dialog box if necessary (file > Receiving addresses)
+You may fund your masternode address by sending dash from any wallet (e.g. Jaxx, Electrum, Poloniex, etc).  These steps assume you are funding from Dash-Qt itself.  Either way, the wallet you are sourcing funds from must have 1000 DASH plus a little extra (~0.01 DASH) to cover the dash network fee.
+
+1. Open the 'Receiving addresses' dialog box if necessary (file > Receiving addresses)
 2. Click the Receiving address you made in step 4 (e.g. "MN01") and click the 'copy' button
-3. Click the Send tab on the main Dash-Qt window
+3. Click the Send tab on the main Dash-Qt window (or your wallet of choice)
 4. Paste the address you copied on the 'Pay To' field, it should populate your label
 5. Fund your masternode (e.g. MN01) address with *exactly* 1000 DASH
-  * You need a small amount extra in the wallet you are sending from in order to cover the miner fee
+  * Don't include any miner fee in this amount; your wallet should automatically cover it
   * The amount you actually send must be one transaction of exactly 1000 DASH
   * No, you may not send more than 1000 DASH
   * No, you may not send 999.99 DASH
   * No, you may not put in 1 DASH first and then 999 DASH. It must be all at once. You may test the address first, but you will still need to send 1000 DASH later, all in one transaction
-  * No, if you have 1000 DASH in the wallet already, that doesn't count. You must send it to yourself by sending it to your new address
+  * No, even if you have 1000 DASH in the wallet already, that doesn't count. You must send it to yourself by sending it to your new masternode address
 
 ## 6. Prepare your remote VPS
 While we are waiting for the needed 6 confirmations of our 1000 DASH transaction, we can now prepare the remote server.

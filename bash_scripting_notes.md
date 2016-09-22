@@ -8,6 +8,7 @@ This document is a reference and guide for creating and running basic bash scrip
 
 
 ## Basic understanding
+* `<command> [-opt1[ -opt2]] [<arg1>[, <arg2>]]` (one single command, many possible options, many possible arguments)
 * scripts can run *from* any directory if...
   * a) the script is located in a directory in your `PATH` variable, __or__
   * b) you run the script with the *full* path to it's location
