@@ -1,14 +1,10 @@
 # Dash Unit Denomination - Problems & Solution
 
-##### About this document
+### Overview
 This document presents the problems with Dash's unit denomination convention.  It also presents potential solutions to these problems, along with the foreseeable challenges the community faces in fixing the system.
 
-### Overview
-
-
-
 ### Background
-We've had these discussions before in bitcoin, a good solution never really emerged (it was too late)
+We've had these discussions before in bitcoin, a good solution never really emerged (it was too late).  Expound on this...
 
 ##### past discussions
 
@@ -27,16 +23,17 @@ We've had these discussions before in bitcoin, a good solution never really emer
 ### Problems
 
 ##### psychological
-* people think dash is (will be) "expensive"
-* people think they own little after they've paid much
+* People (will) think dash is *"expensive"*
+* People feel they *own relatively little dash* after they've paid relatively much in their currency (e.g. dollars)
 
 ##### technical
-* existing software is tailored to 100 subunits per unit
+* Existing software is tailored to 100 subunits per unit
 
 ##### practical
-* visually, it's difficult to keep track of where the decimal is
+* It's difficult to grasp conceptually how much you are paying when you see a dash price  
+* It's difficult to see where the decimal is, and it's inconsistent from person to person
   * some people write `.0123`, some people write `0.1234`
-* verbally, it's harder to say "123 thousandths of a dash" than "123 thousand dash"
+* It's harder to say "123 thousandths of a dash" than "123 thousand dash"
 
 ### Solution
 The solutinon is to re-denominate the units.  This is merely a shift in nomenclature (naming convention).  
@@ -44,19 +41,23 @@ The solutinon is to re-denominate the units.  This is merely a shift in nomencla
 * We are *not* doing this to pump the price
 
 ##### re-denomination
-`1 dash` --> `1,000,000 dash`
-* what we now call `1 dash` (equal to `100,000,000 duffs`), will henceforth be identified as `1,000,000 dash` (but still equal to `100,000,000 duffs`)
+* What we now call `1 dash` (equal to `100,000,000 duffs`), will henceforth be identified as `1,000,000 dash` (but still equal to `100,000,000 duffs`)
+  * in short, `1 dash` --> `1,000,000 dash`
 
 ##### key benefits
-* works with existing software
+* Working with whole numbers is better than decimal units
+* We don't need to come up with new complex naming conventions as price increases
+* It will be more compatible with existing financial software
+* People will be more cognizant of purchasing power increases over time
+  * Last month this coffee cost me 2,000 DASH, now that same coffee costs only 1,300 DASH
 
 ##### key costs
 A lot of software will need to be updated.  It's better now than later.  Some upgrades may need to be funded by the treasury, particularly major 3rd party integrations such as ATMs and exchanges (Poloniex, etc).  Foreseeable software updates include:  
-* core software updates
-* peripheral software updates
-* exchange software updates (may need to fund)
-* documentation updates
-* wallet and software
+* Core software updates
+* Peripheral software updates
+* Exchange software updates (may need to fund)
+* Documentation updates
+* Wallet and software
 
 ### Before and After
 
@@ -73,7 +74,5 @@ A lot of software will need to be updated.  It's better now than later.  Some up
 
 
 ### Freeform Remarks
-*
-
-
-### Summary
+* We're going to have to tackle this proplem sooner or later
+* All of the solutions bitcoin came up with were sub-optimal, and there still isn't consensus
