@@ -1,10 +1,10 @@
-# Dash Unit Denomination - Problems & Solution
+# Dash Unit Denomination - the Problem & the Solution
 
 ### Overview
-This document presents the problems with Dash's unit denomination convention.  It also presents potential solutions to these problems, along with the foreseeable challenges the community faces in fixing the system.
+Dash prices are problematic.  If they aren't fixed now, the problem will get worse, and it will soon be practcally impossible to fix.  The problem is Dash's unit denomination convention.  This document explains the problem and presents the solution.  The solution will be costly, but it will provide many benefits.
 
 ### Background
-We've had these discussions before in bitcoin, a good solution never really emerged (it was too late).  Expound on this...
+The problems Dash faces are not new in cryptocurrency, The bitcoin community has had these discussions before.  It has been, and continues to be, a lengthy debate, and to this point no good solution has emerged.  This is because bitcoin didn't see these problems ahead of time.  It may be too late for bitcoin to fix the problem, but dash can fix the problme before it gets too late.
 
 ##### past discussions
 
@@ -20,14 +20,15 @@ We've had these discussions before in bitcoin, a good solution never really emer
 * [Forum discussion]()
 * [article]()
 
-### Problems
+### The Problem
+The problem is that the generally-used unit of account in the dash ecosystem is too large.  The unit we call `DASH` (comparable to `USD`, `EUR`, `JPY`, etc) represents too much *value*.  The manifestation of the problem is that items purchased, denominated in `DASH` are very small, fractional amounts of a `DASH`.  The problem is much more appraent in everyday, small purchases such as the proverbial cup of coffee.  Already it costs a fraction of a `DASH` to purchase a cup of coffee.  With increased consumer adoption, this problem will get much, much worse, to the point where almost anything someone buys will cost a fraction of one unit of account.  People are not accustomed to thinking in fractional values.   
 
 ##### psychological
 * People (will) think dash is *"expensive"*
 * People feel they *own relatively little dash* after they've paid relatively much in their currency (e.g. dollars)
 
 ##### technical
-* Existing software is tailored to 100 subunits per unit
+* Existing software is tailored to *100 subunits per unit*
 
 ##### practical
 * It's difficult to grasp conceptually how much you are paying when you see a dash price  
@@ -35,8 +36,8 @@ We've had these discussions before in bitcoin, a good solution never really emer
   * some people write `.0123`, some people write `0.1234`
 * It's harder to say "123 thousandths of a dash" than "123 thousand dash"
 
-### Solution
-The solutinon is to re-denominate the units.  This is merely a shift in nomenclature (naming convention).  
+### The Solution
+The solutinon is to **re-denominate the units**.  This is merely a shift in *nomenclature* (naming convention).  
 * We are *not* suggesting expanding the money supply
 * We are *not* doing this to pump the price
 
