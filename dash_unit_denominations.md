@@ -41,8 +41,8 @@ The solutinon is to re-denominate the units.  This is merely a shift in nomencla
 * We are *not* doing this to pump the price
 
 ##### re-denomination
-* `1 dash` --> `1,000,000 dash`
-  * What we now call `1 dash` (equal to `100,000,000 duffs`), will henceforth be identified as `1,000,000 dash` (which will still be equal to `100,000,000 duffs`)
+* `1 DASH` --> `1,000,000 DASH`
+  * What we now call `1 DASH` (equal to `100,000,000 DUFF`), will henceforth be identified as `1,000,000 DASH` (which will still be equal to `100,000,000 DUFF`)
 
 
 ##### key benefits
