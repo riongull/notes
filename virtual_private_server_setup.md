@@ -6,7 +6,7 @@ This guide will walk you through the process of setting up a __Linux__-based vir
 * https://www.youtube.com/watch?v=DbPDraCYju8
 * https://gist.github.com/learncodeacademy/5850f394342a5bfdbfa4
 
-The primary intended use case for this guide is for [setting up a (single) dash masternode](https://github.com/riongull/notes/blob/master/dash_masternode_setup.md).  The steps can, however, be used more generally for various purposes, and need only slight modification to set up multiple masternodes later.
+The primary use case for the server we will set up in this guide is to help [set up a dash masternode](https://github.com/riongull/notes/blob/master/dash_masternode_setup.md).  The server can, however, be more generally used for various purposes.  You would just need to install the correct programs and configure the correct ports.  Some of the generally used ports are shown below for reference.  
 
 For the dash masternode use case, the server you are about to set up *is* your masternode, *not* your local Dash-Qt wallet.  Your local Dash-Qt wallet (set of private and public key pairs) holds the masternode collateral payment, but all of the functions (and required uptime) related to running a masternode is being done on the remote server you are setting up.  Your dash funds are *not* stored on this server.
 

@@ -69,7 +69,7 @@ This step (done properly) requires a lot of steps, so there is a link below to a
 ## 5. Fund your newly created address with 1000 DASH
 You may fund your masternode address by sending dash from any wallet (e.g. Jaxx, Electrum, Poloniex, etc).  These steps assume you are funding from Dash-Qt itself.  Either way, the wallet you are sourcing funds from must have 1000 DASH plus a little extra (~0.01 DASH) to cover the dash network fee.
 
-1. Open the 'Receiving addresses' dialog box if necessary (file > Receiving addresses)
+1. Open the 'Receiving addresses' dialog box (file > Receiving addresses)
 2. Click the Receiving address you made in step 4 (e.g. "MN01") and click the 'copy' button
 3. Click the Send tab on the main Dash-Qt window (or your wallet of choice)
 4. Paste the address you copied on the 'Pay To' field, it should populate your label
@@ -80,7 +80,8 @@ You may fund your masternode address by sending dash from any wallet (e.g. Jaxx,
   * No, you may not send 999.99 DASH
   * No, you may not put in 1 DASH first and then 999 DASH. It must be all at once. You may test the address first, but you will still need to send 1000 DASH later, all in one transaction
   * No, even if you have 1000 DASH in the wallet already, that doesn't count. You must send 1000 DASH to your `<masternodeLabel>` address
-5. Click 'Send' to fund your masternode (you may use/check InstantSend for this)
+6. Click 'Send' to fund your masternode (you may use/check InstantSend for this)
+7. Click 'Transactions' in the main Dash-Qt window.  Your transaction should show "Darksend collateral payment"
 
 ## 6. Prepare your remote VPS
 While we are waiting for the needed 6 confirmations of our 1000 DASH transaction, we can now prepare the remote server.

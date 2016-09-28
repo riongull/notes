@@ -111,12 +111,34 @@ $ strings # displays the contents of a file in string format
 ```sh
 # etymology: global regular expression print
 $ grep # finds regular expression values (or just normal text) within a file and prints results to your shell
+$ grep [OPTIONS] PATTERN [FILE...] # useful OPTIONS: -A|-B|-C <num> - displays <num> lines of context after, before, or around search results for -A, -B, -C, respectively
+$ grep [OPTIONS] [-e PATTERN | -f FILE] [FILE...] # see 'man grep' for description
+```
+
+###### [m]awk
+```sh
+# etymology: awkward way to run C-style programs from within shell scripts - my version of the etymology :)
+$ env # run C-style programs from within shell scripts
+$ env  
+```
+
+###### sed
+```sh
+# etymology: stream editor
+$ sed # display or edit a file (or streamed input from a "|"ed command)
+$ sed  
+```
+
+###### env
+```sh
+# etymology: environment
+$ env # prints your environment variables
 ```
 
 ###### template
 ```sh
 # etymology: where the name comes from (if not obvious)
-$ template -opt <arg> # describe what it does
+$ command -opt <arg> # describe what it does
 ```
 
 ### online resources
