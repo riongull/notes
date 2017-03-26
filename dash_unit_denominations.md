@@ -64,15 +64,25 @@ A lot of software will need to be updated.  It's better now than later.  Some up
 ### Before and After
 
 ##### present values
-|                       Price |  Present Convention | Proposed Convention | Comment                                                                              |
-|----------------------------:|:-------------------:|:-------------------:|--------------------------------------------------------------------------------------|
-| Present money supply (DUFF) | 700,000,000,000,000 | 700,000,000,000,000 | Amount of duffs do not change                                                        |
-| Present money supply (DASH) |      7,000,000      |  7,000,000,000,000  | What we now call 1 DASH will be 1,000,000 DASH after the change                      |
-|    Denomination (DASH/DUFF) |     100,000,000     |         100         | Each DASH will be subdivided into 100 DUFF instead of 100,000,000 DUFF               |
-|            Price (USD/DASH) |         $12         |      $0.000012      | Today's prices (present and proposed convention)                                     |
-|            Price (JPY/DASH) |        ¥1200        |        ¥0.012       | Japan is already in the 4-digit pricing (when USD catches up it will look like this) |
-|            Value (DASH/USD) |   0.08333333 DASH   |    83,333.33 DASH   | 1 USD buys you `x` DASH (at present and proposed conventions)                        |
-|            Value (DASH/JPY) |   0.00083333 DASH   |     833.33 DASH     | 1 JPY buys you `x` DASH (at present and proposed conventions)                        |
+|                 Description |  Present Convention | Proposed Convention | Comment                                                                             |
+|----------------------------:|:-------------------:|:-------------------:|-------------------------------------------------------------------------------------|
+| Present money supply (DASH) |      7,000,000      |  7,000,000,000,000  | What we now call 1 DASH will be 1,000,000 DASH after the change                     |
+| Present money supply (DUFF) | 700,000,000,000,000 | 700,000,000,000,000 | Amount of duffs do not change                                                       |
+|    Denomination (DASH/DUFF) |     100,000,000     |         100         | Each (new) DASH would be subdivided into 100 DUFF instead of 100,000,000 DUFF       |
+|       Dash price (USD/DASH) |         $123        |       $0.000123     | Today's prices (present and proposed convention)                                    |
+|       Dash price (JPY/DASH) |        ¥12,300      |        ¥0.0123      | Japan is already in 5-digit pricing (when USD catches up it will look like this)    |
+|                  1 USD Buys |   0.00813008 DASH   |    8,130.08 DASH    | People would find it much easier to buy small amounts of dash                       |
+|                  1 JPY Buys |   0.00008130 DASH   |     81.30 DASH      | Once people buy, they'll feel like they own more (they won't feel they own nothing) |
+
+
+##### dogecoin comparison
+|           Description |  Value                | Units        | Comment                                                                           |
+|----------------------:|:-------------------:|:------------:|-----------------------------------------------------------------------------------|
+|    Doge money supply  | 110,000,000,000     | DOGE         | This is Dogecoin's actual current money supply                                    |
+|    Dash money supply  | 7,000,000,000,000   | DASH_new     | This would be Dash's money supply after denomination adjustment                   |
+|    US M2 money supply | 14,000,000,000,000  | USD          | This is the United States' actual current (M2) money supply                       |
+|    Doge price         |        ¥0.0334      | JPY/DOGE     | This is the actual current price to buy 1 DOGE with Japanese Yen                  |
+|    Dash price         |        ¥0.0123      | JPY/DASH_new | This would be the rough price to buy 1 DASH with Japanese Yen after adjustment    |
 
 
 ### Freeform Remarks
