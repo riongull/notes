@@ -25,9 +25,10 @@ You may use your own hardware, or any 3rd party hosting service you like (e.g. A
 
 1. [Create a Vultr account](http://www.vultr.com/?ref=6971315-3B)
 2. After signing in to Vultr, deploy a new 'Vultr Cloud Compute (VC2)' instance
+  * [Dash's official wiki](https://dashpay.atlassian.net/wiki/display/DOC/Hardware+Requirements) has information about recommended hardware requirements
   * Location: somewhere near you
   * Server Type: 64 bit OS > Ubuntu > 14.04 x64
-  * Server Size: 20 GB SSD, 1024 MB memory, 2000 GB bandwidth
+  * Server Size: 40 GB SSD, 2048 MB memory, 2000 GB bandwidth
   * No additional features are necessary
 3. Click 'Deploy Now'
 4. Wait for your new server to get to 'running' status
