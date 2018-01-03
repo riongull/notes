@@ -20,13 +20,13 @@ Dash is at a crossroads.  Two distinct paths lie ahead.  On the one hand Dash be
 
 **Bitcoin** got stuck at **store of value**, leaving medium of exchange to separate, off-chain solutions.  **Dash** aimed higher and is committed to being a good **medium of exchange** (in addition to store of value), keeping fees low and scaling on chain.  Will Dash aim even higher and lay the necessary groundwork to become a prominent **unit of account**, culminating in goods and services being priced in `DASH`?  The answer to that will dictate which road we take at this crossroads.
 
-Wait, are we already at that crossroads now; isn't that still a long ways down the road?  It is true that goods and services won't be priced in DASH any time soon, but **the decision to facilitate that is now**.  In fact, it was probably long ago, but I believe it's still not too late to change course (even though it will probably require some heavy bush whacking) to get on the path to making Dash a viable currency.
+Wait, are we already at that crossroads now; isn't that still a long ways down the road?  It is true that goods and services won't be priced in `DASH` any time soon, but **the decision to facilitate that is now**.  In fact, it was probably long ago, but I believe it's still not too late to change course (even though it will probably require some heavy bush whacking) to get on the path to making Dash a viable currency.
 
 So far I haven't justified any of my claims.  In fact, I haven't really even described the problem yet.  I've just given my motivation, so that it's clear why I'm bringing this up at all.  I want Dash to be a currency, not just another PayPal or Venmo that gives deference to the USD and other national currencies.  I will expound on that in later sections.
 
 ##### Summary
 
-With the motivation understood, I will summarize the issue at hand: **Dash's widely used unit of account, the `DASH`, is not conducive to an independently functioning currency.**  This problem won't fix itself, but it can be fixed with targeted actions, taken now.  **The only viable solution I see is to re-denominate (re-define) the DASH**.
+With the motivation understood, I will summarize the issue at hand: **Dash's widely used unit of account, the `DASH`, is not conducive to an independently functioning currency.**  This problem won't fix itself, but it can be fixed with targeted actions, taken now.  **The only viable solution I see is to re-denominate (re-define) the `DASH`**.
 
 There are circumstances when problems arise, and solutions present themselves and gain adoption *organically*, without anyone taking a prominent lead - people gradually adopting gold and silver for monetary use, for example.  Other solutions must be *proactively engineered*, such as building a space ship to get to the moon.  Engineering Dash is an example of the latter; making units suitable for commerce is a key task that requires proactive planning and engineering to implement.
 
@@ -57,11 +57,11 @@ The problem gets compounded when we consider not just the **spend** side of the 
 
 What about when a crypto vetran wants to help friends or family members get into Dash by offering to **give** them some?  You don't want to give too much because these people are new and may lose it.  Plus, you want to give Dash to a bunch of people, so it can't be too much.  You start off by throwing them a few bucks worth.  They look at their wallet and see `.0026087 DASH`.  An underwhelming gesture - they forget about it, or worse, are put off by it.
 
-**Dash will struggle to gain (or even maintain) market share with other coins entering the space offering more attractive units of account**.  So, what specifically do I mean by "more attractive"?  For most people that's likely something with a much lower nominal value to the currency they presently use, or at least smaller than the value of the things they would buy with it.  This isn't some arbitrary, illogical consumer demand.  It's perfectly reasonable for users to expect a currency to price normal goods and services in whole numbers.  Also, it seems intuitive that a fledgling currency unit (e.g. DASH) should carry a value much lower than a widely used currency unit (e.g. USD), because people generally have no concept of money supply, and ideally they wouldn't have to.
+**Dash will struggle to gain (or even maintain) market share with other coins entering the space offering more attractive units of account**.  So, what specifically do I mean by "more attractive"?  For most people that's likely something with a much lower nominal value to the currency they presently use, or at least smaller than the value of the things they would buy with it.  This isn't some arbitrary, illogical consumer demand.  It's perfectly reasonable for users to expect a currency to price normal goods and services in whole numbers.  Also, it seems intuitive that a fledgling currency unit (e.g. `DASH`) should carry a value much lower than a widely used currency unit (e.g. USD), because people generally have no concept of money supply, and ideally they wouldn't have to.
 
 Similar to how Bitcoin will not be able to continue functioning as a store of value if it does not fix its medium of exchange problems (high transaction fees), **Dash will find it hard to continue functioning as a medium of exchange and hence store of value if it does not fix its unit of account problems**.  Yes, people *do* consider the unit of account aspects of money right now, even if subconscious, in their evaluations of which coin they want to buy and transact with.  It's not necessarily that they want to try to get rich off a penny currency.  I believe it's because it makes more intuitve sense to them.  It's user friendly.  Less "expensive" coins seem to them less likely to be "in a bubble".  They look at coins over $1,000 and intuitively assume they've "missed the boat".  Sure, that may be a misconception, but that's the psychological reality, so that's what we should deal with.  Why fight human nature?
 
-To summarize the problem, Dash faces serious challenges because of its unit of account, the DASH.  There are psychological, technical, and practical issues involved. 
+To summarize the problem, Dash faces serious challenges because of its unit of account, the `DASH`.  There are psychological, technical, and practical issues involved. 
 
 ##### psychological
 
@@ -90,7 +90,7 @@ As seen from the links above, many solutions have been proposed.  One somewhat p
 2. support supplemental existing unit
   * i.e. `DUFF` ("duff" - the actual technological base unit in Dash)
 3. create supplemental new units
-  * e.g. `DOT` ("dot", possibly equal in value to a uDASH)
+  * e.g. `DOT` ("dot", possibly equal in value to a `uDASH`)
 4. defer to fiat/national units
   * e.g. `USD`, `EUR`, `JPY` (hide Dash's native units in favor of displaying existing fiat units)
   
@@ -168,7 +168,7 @@ We have the money, we have the technical team to pull it off, we have a powerful
 | 1 USD Buys               |   0.00081037 DASH   |     813.37 DASH     | People would find it much easier to buy small amounts of dash                       |
 | 1 JPY Buys               |   0.00000810 DASH   |       8.13 DASH     | Once people buy, they'll feel like they own more (they won't feel they own nothing) |
 
-*Note: The table above uses rough estimates, for illustrative purposes.  Dash money supply is actually slightly lower than indicated.  `USD/DASH` is actually currenly slighly lower.  JPY/DASH is currenly slightly higher.  JPY/USD = 100 above, but is actually closer to 113.*
+*Note: The table above uses rough estimates, for illustrative purposes.  Dash money supply is actually slightly lower than indicated.  `USD/DASH` is actually currenly slighly lower.  `JPY/DASH` is currenly slightly higher.  `JPY/USD` = 100 above, but is actually closer to 113.*
 
 ### Closing
 Bitcoin just turned 9 years old on January 3, 2018.  Satoshi's first mined block was the dawn of an entirely new industry, that of cryptographically-secured, open-source, free-market money.  Ever since the first fork into a new competing currency, Bitcoin's position in terms of market share has dwindled.  Bitcoin has not achieved "digital cash" status.  It seems to have given up on that goal, settling for a simple **store of value**.
