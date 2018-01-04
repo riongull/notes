@@ -87,22 +87,22 @@ As seen from the links above, many solutions have been proposed.  One somewhat p
 
 First, to summarize Dash's potential solutions (which largely parallel Bitcoin's, none of which will likely work), we can:
 
-* support scientific units based on `DASH`
+* support **scientific units** based on `DASH`
   * i.e. `mDASH` ("milidash"), `uDASH` ("microdash")
-* support the base unit
+* support the **base unit**
   * i.e. `DUFF` ("duff" - the actual technological base unit in Dash, which the code already uses)
-* create new units
+* create **new unit(s)**
   * e.g. `DOT` ("dot", possibly equal in value to a `uDASH`)
-* defer to fiat/national units
+* promote/defer to **fiat/national units**
   * e.g. `USD`, `EUR`, `JPY` (hide Dash's native units in favor of displaying existing fiat units)
 
 What do all of these solutions have in common? They all allow for the continued use of `DASH` and `DUFF`.  Even if Dash Core Group, Inc. decides to move forward with one of the above options, say using `DOT`, there will be large contingents of people who oppose that and will continue to use `DASH` and `DUFF`, because those options likely won't get deprecated.  The existing `DASH` will remain the transaction unit on exchanges, leaving most of the benefits of this proposal behind.
 
 ##### Sample Objections
 
-* Scientific names (e.g. `uDASH` are too technical for mass global adoption, they will never catch on
-* `DUFF` sounds too much like duff beer from the Simpsons, very unprofessional
-* `DOT` would have to overcome massive social inertia and would result in not one or two, but three units
+* Scientific names (`mDASH` and `uDASH`) are too technical for mass mass adoption and lead to disunity of pricing
+* `DUFF` is unprofessional, sounding too much like duff beer from the Simpsons
+* `DOT` would have to overcome massive social inertia and would result in disunity of pricing (three units now!)
 
 Any change that isn't made at the protocol level will result in **long-term** confusion about units.  **There will be no clear consensus** regarding which unit system is used around the globe.  This is happening with Bitcoin, some users are trying to push for `bits`, others hate that and want to use scientific units, others hate that and want to create different names for every denomination, which both former groups hate.  Long-term confusion and division.
 
