@@ -36,7 +36,7 @@ This topic is not new in cryptocurrency.  The Bitcoin community has had these di
 
 It may be too late for Bitcoin to fix the problem, and Ethereum doesn't really need a fix.  Dash on the other hand, *must* come up with a unit that normal people will feel comfortable with, because Dash is supposed to be digital cash.  Fortunately, Dash has been successful with re-brands and major innovations - Mid-flight adaptation is the norm for Dash.  Fixing this issue is definitely possible with the right planning.
 
-###### past discussions
+###### Past Discussions
 
 * [r/bitcoin discussion]()
 * [bitcoin article]()
@@ -63,16 +63,16 @@ Similar to how Bitcoin will not be able to continue functioning as a store of va
 
 To summarize the problem, Dash faces serious challenges because of its unit of account, the `DASH`.  There are psychological, technical, and practical issues involved.
 
-##### psychological
+##### Psychological
 
 * People think dash is *"expensive"*
 * People feel they *own relatively little dash*, even after they've paid a lot for it
 
-##### technical
+##### Technical
 
 * Existing software is tailored to *100 subunits per unit*
 
-##### practical
+##### Practical
 
 * It's difficult to grasp conceptually how much you are paying when you see a dash price
 * It can be difficult to see where the decimal is, and it's inconsistent from person to person
@@ -83,20 +83,30 @@ To summarize the problem, Dash faces serious challenges because of its unit of a
 
 ### The Solution
 
-As seen from the links above, many solutions have been proposed.  One somewhat popular solution for Bitcoin has been the somewhat organic introduction of the term "bits", where `1 BTC` is split into `1,000,000 bits`.  This movement has seen considerable opposition, which in turn has split the community.  Some people want to promote the scientific terms derived from `BTC` (`mBTC` and `uBTC`). Still others have proposed new names for the scientific denominations.  **None of these solutions are ideal, and I believe none of them will work**.  I will explain my reasoning below.  First, to summarize Dash's potential solutions (which largely parallel Bitcoin's, none of which will likely work), we can:
+As seen from the links above, many solutions have been proposed.  One somewhat popular solution for Bitcoin has been the somewhat organic introduction of the term "bits", where `1 BTC` is split into `1,000,000 bits`.  This movement has seen considerable opposition, which in turn has split the community.  Some people want to promote the scientific terms derived from `BTC` (`mBTC` and `uBTC`). Still others have proposed new names for the scientific denominations.  **None of these solutions are ideal, and I believe none of them will work**.  I will explain my reasoning below.
 
-1. support supplemental scientific units based on `DASH`
-* i.e. `mDASH` ("milidash"), `uDASH` ("microdash")
-1. support supplemental existing unit
-* i.e. `DUFF` ("duff" - the actual technological base unit in Dash)
-1. create supplemental new units
-* e.g. `DOT` ("dot", possibly equal in value to a `uDASH`)
-1. defer to fiat/national units
-* e.g. `USD`, `EUR`, `JPY` (hide Dash's native units in favor of displaying existing fiat units)
+First, to summarize Dash's potential solutions (which largely parallel Bitcoin's, none of which will likely work), we can:
 
-What do all of these solutions have in common? They will allow for the continued use of `DASH` and `DUFF`.  Even if Dash Core Group, Inc. decides we're moving forward with one of the above options, there will be large contingents of people who will continue to use `DASH` and `DUFF`, because those options likely won't get deprecated.  You will also have contingents of people who continue to push for their favorite option above.  Because the change isn't made at the protocol level people will continue to make even more options, being unsatisfied with any of the proposed options (e.g. "scientific units will never catch on in the mainstream", "DUFF sounds too much like duff beer from the Simpsons", "`DOT` doesn't sound professional enough, it's too close in value to the `DUFF`, and then we'd have at three or more units to keep track of", etc).  **This will all result in no clear consensus** regarding which unit system is used around the globe.  This is exactly what's happening with Bitcoin.
+* support scientific units based on `DASH`
+  * i.e. `mDASH` ("milidash"), `uDASH` ("microdash")
+* support the base unit
+  * i.e. `DUFF` ("duff" - the actual technological base unit in Dash, which the code already uses)
+* create new units
+  * e.g. `DOT` ("dot", possibly equal in value to a `uDASH`)
+* defer to fiat/national units
+  * e.g. `USD`, `EUR`, `JPY` (hide Dash's native units in favor of displaying existing fiat units)
 
-The only solution I see is to **re-denominate (re-define) the `DASH`**.  In my experience, most people like, even love, the term "`DASH`".  They have somewhat demonstrated that by the fact that they acquired some.  I think few would say that they actually *like* the very small fractions they encounter with the typical small-value transaction.  Hence, I think **sticking with the term `DASH` is the least controversial option** for unit we use most in Dash.
+What do all of these solutions have in common? They all allow for the continued use of `DASH` and `DUFF`.  Even if Dash Core Group, Inc. decides to move forward with one of the above options, say using `DOT`, there will be large contingents of people who oppose that and will continue to use `DASH` and `DUFF`, because those options likely won't get deprecated.  The existing `DASH` will remain the transaction unit on exchanges, leaving most of the benefits of this proposal behind.
+
+##### Sample Objections
+
+* Scientific names (e.g. `uDASH` are too technical for mass global adoption, they will never catch on
+* `DUFF` sounds too much like duff beer from the Simpsons, very unprofessional
+* `DOT` would have to overcome massive social inertia and would result in not one or two, but three units
+
+Any change that isn't made at the protocol level will result in **long-term** confusion about units.  **There will be no clear consensus** regarding which unit system is used around the globe.  This is happening with Bitcoin, some users are trying to push for `bits`, others hate that and want to use scientific units, others hate that and want to create different names for every denomination, which both former groups hate.  Long-term confusion and division.
+
+The only solution I see is to **re-denominate (re-define) the `DASH`**.  In my experience, most people like, even love, the term "`DASH`".  They have implicitly demonstrated that by the fact that they acquired some.  I think few would say that they actually *like* the very small fractions they encounter with the typical small-value transaction.  Hence, I think **sticking with the term `DASH` is the least controversial option** for the unit to promote for mass adoption.
 
 So, if we agree that we want to continue using the term "`DASH`", but refine it so that it's more comfortable to use, the main question would be what order of magnitude to choose for the new definition.  For example, we could redefine the `DASH` to equal `100,000 DUFF`, so that `1 DASH` is now 1,000 times smaller, resulting in a new `DASH/USD` price of about `$1.20` (instead of `$1,200`).  Or, we could move it one more order of magnitude so that the price would be `$0.12`.  But this is not very forward thinking.  A few years down the road we might find ourselves in the same position we are in now.
 
