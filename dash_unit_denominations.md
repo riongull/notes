@@ -104,8 +104,8 @@ What do all of these solutions have in common? They all allow for the continued 
 * `DUFF` is unprofessional, sounding too much like duff beer from the Simpsons
 * `DOT` would have to overcome massive social inertia and would result in disunity of pricing (three units now!)
 * Relying solely on fiat seems to be admitting two things:
-  * 1) Dash's units are confusing and need to be hidden away
-  * 2) We don't intend to be our own independent currency.
+  * \1. Dash's units are confusing and need to be hidden away
+  * \2. We don't intend to be our own independent currency.
   * The solution isn't to hide `DASH`, it's to fix it!
 
 Any change that isn't made at the protocol level will result in **long-term** confusion about units.  **There will be no clear consensus** regarding which unit system is used around the globe.  This is happening with Bitcoin, some users are trying to push for `bits`, others hate that and want to use scientific units, others hate that and want to create different names for every denomination, which both former groups hate.  Long-term confusion and division.
