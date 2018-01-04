@@ -182,12 +182,12 @@ The following table presents a summary of the proposed denomination.
 |              Description |  Present            | Proposed            | Comment                                                                             |
 |-------------------------:|:-------------------:|:-------------------:|-------------------------------------------------------------------------------------|
 | Money supply (`DUFF`)      | 800,000,000,000,000 | 800,000,000,000,000 | Amount of base does not change                                                      |
-| Denomination (`DASH/DUFF`) |     100,000,000     |         100         | Each (new) DASH would be subdivided into 100 DUFF instead of 100,000,000 DUFF       |
-| Convention units (`DASH`)  |      8,000,000      |  8,000,000,000,000  | What we now call 1 DASH will be 1,000,000 DASH after the change                     |
+| Denomination (`DASH/DUFF`) |     100,000,000     |         100         | Each (new) `DASH` would be subdivided into `100 DUFF` instead of `100,000,000 DUFF`       |
+| Convention units (`DASH`)  |      8,000,000      |  8,000,000,000,000  | What we now call `1 DASH` will be `1,000,000 DASH` after the change                     |
 | Dash price (`USD/DASH`)    |         $1,234      |       $0.001234      | Today's prices (present and proposed convention)                                    |
-| Dash price (`JPY/DASH`)     |        ¥123,400     |        ¥0.1234       | Japan is already in 6-digit pricing (when USD catches up it will look like this)    |
-| 1 `USD` buys (`DASH`)               |   D0.00081037    |     D810.37   | People would find it much easier to buy small amounts of dash                       |
-| 1 `JPY` buys (`DASH`)              |   D0.00000814 |       D8.137   | Once people buy, they'll feel like they own more (they won't feel they own nothing) |
+| Dash price (`JPY/DASH`)     |        ¥123,400     |        ¥0.1234       | Japan is already in 6-digit pricing (when `USD` catches up it will look like this)    |
+| `1 USD` buys (`DASH`)               |   D0.00081037    |     D810.37   | People would find it much easier to buy small amounts of `DASH`                       |
+| `1 JPY` buys (`DASH`)              |   D0.00000814 |       D8.137   | Once people buy, they'll feel like they own more (they won't feel they own nothing) |
 
 *Note: The table above uses rough estimates, for illustrative purposes.  Dash money supply is actually slightly lower than indicated.  `USD/DASH` is actually currently slightly lower.  `JPY/DASH` is currently slightly higher.  `JPY/USD` = 100 above, but is actually closer to 113.*
 
