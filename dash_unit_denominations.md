@@ -18,7 +18,7 @@ Dash is at a crossroads.  Two distinct paths lie ahead.  On the one hand Dash be
 1. Medium of exchange
 1. Unit of account
 
-**Bitcoin** got stuck at **store of value**, leaving medium of exchange to separate, off-chain solutions.  **Dash** aimed higher and is committed to being a good **medium of exchange** (in addition to store of value), keeping fees low and scaling on chain.  Will Dash aim even higher and lay the necessary groundwork to become a prominent **unit of account**, culminating in goods and services being priced in `DASH`?  The answer to that will dictate which road we take at this crossroads.
+**Bitcoin** got stuck at **store of value**, leaving medium of exchange to separate, off-chain solutions.  **Dash** aimed higher and is committed to being a good **medium of exchange** (in addition to store of value), keeping fees low and scaling on chain.  Will Dash aim even higher and lay the necessary groundwork to become a prominent **unit of account**, culminating in goods and services being priced in `DASH`?  The answer to that will dictate which path we take at this crossroads.
 
 Wait, are we already at that crossroads now; isn't that still a long ways down the road?  It is true that goods and services won't be priced in `DASH` any time soon, but **the decision to facilitate that is now**.  In fact, it was probably long ago, but I believe it's still not too late to change course (even though it will probably require some heavy bush whacking) to get on the path to making Dash a viable currency.
 
@@ -32,9 +32,9 @@ There are circumstances when problems arise, and solutions present themselves an
 
 ##### Background
 
-This topic is not new in cryptocurrency.  The Bitcoin community has had these discussions before.  It has been, and continues to be, a lengthy debate, and to this point no good solution has emerged.  Bitcoin didn't see and plan for the problem ahead of time, and it wasn't unable to organize and decide on a solution when various proposals were put forth.  Ethereum too has been plagued by this problem, although the issue is not as stark there since the their community doesn't seem to be targeting the money use case - Because their smart contract interfacing mostly from computer to computer they don't need a unit that normal people are expected to use in daily conversation.
+This topic is not new in cryptocurrency.  The Bitcoin community has had these discussions before.  It has been, and continues to be, a lengthy debate, and to this point no good solution has emerged.  Bitcoin didn't see and plan for the problem ahead of time, and it wasn't unable to organize and decide on a solution when various proposals were put forth.  Ethereum too has been plagued by this problem, although the issue is not as stark there since the their community doesn't seem to be targeting the money use case - their smart contracts interface mostly from computer to computer, so they don't need a unit that normal people are expected to use in daily conversation.
 
-It may be too late for Bitcoin to fix the problem, and Ethereum doesn't really need a fix.  Dash on the other hand, *must* come up with a unit that normal people will feel comfortable with, because Dash is supposed to be digital cash.  Fortunately, Dash has been successful with re-brands and major innovations - Mid-flight adaptation is the norm for Dash.  Fixing this issue is definitely possible with the right planning.
+It may be too late for Bitcoin to fix their unit problem.  Ethereum doesn't really need a fix.  Dash on the other hand, *must* come up with a unit that normal people will feel comfortable with, because Dash is supposed to be digital cash.  Fortunately, Dash has been successful with re-brands and major innovations; mid-flight adaptation is the norm for Dash.  Fixing this issue is definitely possible with the right planning.
 
 ###### Past Discussions
 
@@ -49,7 +49,11 @@ It may be too late for Bitcoin to fix the problem, and Ethereum doesn't really n
 
 ### The Problem
 
-Any functioning currency must be capable of operating smoothly and comfortably on its own, **independent** from other currencies.  Although Dash is functioning well as a store of value and medium of exchange, it is not a good unit of account.  This is due partly to volatility against national currencies, and because it is new and adoption is still low.  But even at this early stage, **`1 DASH` represents too much value** (measured in other currencies, but also in terms of goods and services).  This problem would remain even if its exchange rate were stable.
+##### Currency Viability
+
+For any currency to be vaible long term, it must be capable of operating smoothly and comfortably on its own, **independent** from other currencies.  Although Dash is functioning well as a store of value and medium of exchange, it is not a good unit of account.  This is due partly to volatility against national currencies, and because it is new and adoption is still low.  But even at this early stage, **`1 DASH` represents too much value** (measured in other currencies, but also in terms of goods and services).  This problem would remain even if its exchange rate were stable.
+
+##### Buying, Spending, & Giving Dash
 
 The problem is apparent in everyday, small purchases, such as the proverbial cup of coffee.  Already it costs a very small fraction of a unit to purchase a cup of coffee, something like `0.00417 DASH`.  With increased consumer adoption, this problem will get much, much worse, to the point where almost anything someone buys will cost a fraction of one unit of account.  **People are not accustomed to thinking in fractional values**.
 
@@ -57,9 +61,25 @@ The problem gets compounded when we consider not just the **spend** side of the 
 
 What about when a crypto veteran wants to help friends or family members get into Dash by offering to **give** them some?  You don't want to give too much because these people are new and may lose it.  Plus, you want to give Dash to a bunch of people, so it can't be too much.  You start off by throwing them a few bucks worth.  They look at their wallet and see `.0026087 DASH`.  An underwhelming gesture - they forget about it, or worse, are put off by it.
 
-**Dash will struggle to gain (or even maintain) market share with other coins entering the space offering more attractive units of account**.  So, what specifically do I mean by "more attractive"?  For most people that's likely something with a much lower nominal value to the currency they presently use, or at least smaller than the value of the things they would buy with it.  This isn't some arbitrary, illogical consumer demand.  It's perfectly reasonable for users to expect a currency to price normal goods and services in whole numbers.  Also, it seems intuitive that a fledgling currency unit (e.g. `DASH`) should carry a value much lower than a widely used currency unit (e.g. USD), because people generally have no concept of money supply, and ideally they wouldn't have to.
+##### Maintaining Competitive Advantage
 
-Similar to how Bitcoin will not be able to continue functioning as a store of value if it does not fix its medium of exchange problems (high transaction fees), **Dash will find it hard to continue functioning as a medium of exchange and hence store of value if it does not fix its unit of account problems**.  Yes, people *do* consider the unit of account aspects of money right now, even if subconscious, in their evaluations of which coin they want to buy and transact with.  It's not necessarily that they want to try to get rich off a penny currency.  I believe it's because it makes more intuitive sense to them.  It's user friendly.  Less "expensive" coins seem to them less likely to be "in a bubble".  They look at coins over $1,000 and intuitively assume they've "missed the boat".  Sure, that may be a misconception, but that's the psychological reality, so that's what we should deal with.  Why fight human nature?
+Despite Dash being a technologically superior currency in almost every way, Dash is struggling to maintain (let alone gain) market share against the competition.  Incumbents above Dash have largely retained their positions, and emerging competition has been overtaking Dash.  Why?  I submit three observations for consideration:
+
+1. Some coins are still riding on name recognition
+1. Some coins are playing nice with the traditional monetary and financial incumbents
+1. Some coins have very attractive units of account
+
+I'm not worried about the first category (including Bitcoin, Bitcoin Cash, and Litecoin) over the long term.  These coins are largely floating by on yesterdays achievements, name recognition, and early mover advantage, but they will lose market share over time.  The coins in the second category (including Ripple and Stellar) will continue to receive investment from deep-pocketed incumbent financial players.  Nothing we can do about that short of selling out and trying to *aid* rather than *compete with* fiat currencies (which I hope nobody is considering).
+
+It's the third category that has me wondering.  What does NEM, Cardano, and IOTA offer that can justify a valuation higher than Dash?  What pushed others above Dash in the past, if even for a short time (e.g. EOS, NEO)?  **One can't help but notice that the tokens overtaking Dash are generally priced 2 to 4 orders of magnitude lower than `DASH`**.  What is the market trying to tell us?
+
+##### Key Takeaways
+
+All three sections above are pointing in the same direction:  **we would do well to re-engineer our coin to have a low nominal value**.  People want this, and it isn't some arbitrary, illogical consumer demand.  It's perfectly reasonable for users to want a currency where the cost for the unit is small and the resulting prices of goods and services are whole numbers.
+
+Consumer demand aside, it seems intuitive that a fledgling currency (such as Dash) should have a unit (i.e. `DASH`) whose value is much lower than a widely-used currency's unit (e.g. USD).  People generally have no concept of money supply, so we should accommodate that and design a unit that makes intuitive sense.
+
+Similar to how Bitcoin will not be able to continue functioning as a store of value if it does not fix its medium of exchange problems (high transaction fees), **Dash will find it hard to continue functioning as a medium of exchange, and hence store of value, if it does not fix its unit of account problems**.  People *do* consider the unit of account aspects of money, even if subconsciously, in their evaluations of which coin they want to buy and transact with.  It's not necessarily that they want to try to get rich off a penny currency.  Chances are it just makes more intuitive sense to buy the lower cost coin.  It's user friendly.  Less "expensive" coins seem to them less likely to be "in a bubble".  They look at coins over $1,000 and instinctively assume they've "missed the boat".  Sure, that may be a misconception, but that's the psychological reality, so that's what we should deal with.  Why fight human nature?
 
 To summarize the problem, Dash faces serious challenges because of its unit of account, the `DASH`.  There are psychological, technical, and practical issues involved.
 
@@ -67,10 +87,6 @@ To summarize the problem, Dash faces serious challenges because of its unit of a
 
 * People think dash is *"expensive"*
 * People feel they *own relatively little dash*, even after they've paid a lot for it
-
-##### Technical
-
-* Existing software is tailored to *100 subunits per unit*
 
 ##### Practical
 
@@ -80,6 +96,10 @@ To summarize the problem, Dash faces serious challenges because of its unit of a
 * It's harder to speak in fractions and small decimals:
   * "point zero, zero, zero, one, two, three, four, five dash" - awkward
   * "one twenty three point forty five dash" - much better
+
+##### Technical
+
+* Existing software is tailored to *100 subunits per unit*
 
 ### The Solution
 
