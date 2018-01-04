@@ -98,7 +98,7 @@ First, to summarize Dash's potential solutions (which largely parallel Bitcoin's
 
 What do all of these solutions have in common? They all allow for the continued use of `DASH` and `DUFF`.  Even if Dash Core Group, Inc. decides to move forward with one of the above options, say using `DOT`, there will be large contingents of people who oppose that and will continue to use `DASH` and `DUFF`, because those options likely won't get deprecated.  The existing `DASH` will remain the transaction unit on exchanges, leaving most of the benefits of this proposal behind.
 
-##### Sample Objections
+##### Sample Objections to Existing Solutions
 
 * Scientific names (`mDASH` and `uDASH`) are too technical for mass mass adoption and lead to disunity of pricing
 * `DUFF` is unprofessional, sounding too much like duff beer from the Simpsons
@@ -114,13 +114,15 @@ The only solution I see is to **re-denominate (re-define) the `DASH`**.  In my e
 
 So, if we agree that we want to continue using the term "`DASH`", but refine it so that it's more comfortable to use, the main question would be what order of magnitude to choose for the new definition.  For example, we could redefine the `DASH` to equal `100,000 DUFF`, so that `1 DASH` is now 1,000 times smaller, resulting in a new `DASH/USD` price of about `$1.20` (instead of `$1,200`).  Or, we could move it one more order of magnitude so that the price would be `$0.12`.  But this is not very forward thinking.  A few years down the road we might find ourselves in the same position we are in now.
 
-**I propose the following new definition: `1 DASH` = `100 DUFF`**.
+##### Proposed Solution
+
+I propose the following new denomination: **`1 DASH` = `100 DUFF`**.
 
 This gives us a **denomination that facilitates using whole numbers** even when dealing with small value transfers.  As an added bonus it puts us **on par with all major national currencies, where the popular unit is comprised of 100 subunits**.  That's very user-friendly, and user-friendly is Dash's jam.
 
-Note that this would *not* expand the money supply, this is merely a shift in *nomenclature* (naming convention).  It is redefining the `DASH`, but `DASH` has nothing to do with the money supply.  The true money supply is how many `DUFF`s exist, and that number isn't changing.  To summarize the re-denomination:
+Note that this would *not* expand the money supply, this is merely a shift in *nomenclature* (naming convention).  It is redefining the `DASH`, but `DASH` has nothing to do with the money supply.  The true money supply is how many `DUFF`s exist, and that number isn't changing.
 
-##### New Denomination
+To summarize:
 
 * Before/Now: `1 DASH` = `100,000,000 DUFF` (by definition)
 * After/Future: `1 DASH` = `100 DUFF` (new definition)
@@ -140,7 +142,7 @@ Note that this would *not* expand the money supply, this is merely a shift in *n
   * Even though merchants may be *pricing* their goods in `USD`, Dash consumers can recall their costs in `DASH`
   * Last month this coffee cost me `200 DASH`, now this same coffee costs only `130 DASH`
 
-##### Implementation Costs
+##### Implementation Considerations
 
 If you could wave a magic wand that immediately fixed the `DASH` unit as explained above, would you wave that wand?  If so, the question isn't "should we make that change", but rather:
 
