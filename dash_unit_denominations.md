@@ -120,14 +120,14 @@ This gives us a **denomination that facilitates using whole numbers** even when 
 
 Note that this would *not* expand the money supply, this is merely a shift in *nomenclature* (naming convention).  It is redefining the `DASH`, but `DASH` has nothing to do with the money supply.  The true money supply is how many `DUFF`s exist, and that number isn't changing.  To summarize the re-denomination:
 
-##### re-denomination
+##### New Denomination
 
 * Before/Now: `1 DASH` = `100,000,000 DUFF` (by definition)
 * After/Future: `1 DASH` = `100 DUFF` (new definition)
 * Implication: `1 DASH` --> `1,000,000 DASH`
   * What we now call `1 DASH`, would henceforth be `1,000,000 DASH`
 
-##### key benefits
+##### Key Benefits
 
 * Working with whole numbers is better than decimal units
   * Instead of seeing `0.00123456 DASH` you see `1,234.56 DASH`
@@ -140,7 +140,7 @@ Note that this would *not* expand the money supply, this is merely a shift in *n
   * Even though merchants may be *pricing* their goods in `USD`, Dash consumers can recall their costs in `DASH`
   * Last month this coffee cost me `200 DASH`, now this same coffee costs only `130 DASH`
 
-##### implementation costs
+##### Implementation Costs
 
 If you could wave a magic wand that immediately fixed the `DASH` unit as explained above, would you wave that wand?  If so, the question isn't "should we make that change", but rather:
 
@@ -162,7 +162,7 @@ Foreseeable software updates include:
 * Peripheral software (e.g. moocowmoo tools, masternode tools, paper wallet tools, etc.)
 * Documentation updates
 
-##### timing
+##### Timing
 
 When should we implement the fix?  It seems to make sense to roll out this change with Evolution, concurrent with a re-brand.
 
@@ -170,9 +170,11 @@ Dash has a unique opportunity to shine here.  Here we have a problem (that almos
 
 We have the money, we have the technical team to pull it off, we have a powerful marketing firm that can ensure that this is delivered as a huge achievement, and we have a community and governance mechanism to pull it all together.  I can't think of better timing than concurrent with Evolution and the re-brand.  If we wait til after that, it's likely a non-starter.
 
-### Before and After
+### Closing
 
-##### present values
+The following table presents a summary of the proposed denomination
+
+##### Comparison Table
 
 |              Description |  Present            | Proposed            | Comment                                                                             |
 |-------------------------:|:-------------------:|:-------------------:|-------------------------------------------------------------------------------------|
@@ -185,8 +187,6 @@ We have the money, we have the technical team to pull it off, we have a powerful
 | 1 JPY Buys               |   0.00000810 DASH   |       8.13 DASH     | Once people buy, they'll feel like they own more (they won't feel they own nothing) |
 
 *Note: The table above uses rough estimates, for illustrative purposes.  Dash money supply is actually slightly lower than indicated.  `USD/DASH` is actually currently slightly lower.  `JPY/DASH` is currently slightly higher.  `JPY/USD` = 100 above, but is actually closer to 113.*
-
-### Closing
 
 Bitcoin just turned 9 years old on January 3, 2018.  Satoshi's first mined block was the dawn of an entirely new industry, that of cryptographically-secured, open-source, free-market money.  Ever since the first fork into a new competing currency, Bitcoin's position in terms of market share has dwindled.  Bitcoin has not achieved "digital cash" status.  It seems to have given up on that goal, settling for a simple **store of value**.
 
