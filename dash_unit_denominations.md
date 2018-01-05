@@ -113,7 +113,7 @@ First, to summarize Dash's potential solutions (which largely parallel Bitcoin's
   * i.e. `DUFF` (the actual technological base unit in Dash, which the code already uses)
 * promote **new unit name(s)**.
   * e.g. `DOT` ("dot", possibly equal in value to a `uDASH`)
-* promote **fiat/national units**.
+* promote **national units**.
   * e.g. `USD`, `EUR`, `JPY` (hide Dash's native units in favor of displaying existing fiat units)
 
 What do all of these solutions have in common? They all allow for the continued use of `DASH` and `DUFF`.  Even if Dash Core Group, Inc (DCG) decides to move forward with one of the above options, say, using the `DOT`, there will be large contingents of people who oppose that and will continue to use `DASH` and `DUFF`, because those options likely won't get deprecated.  The existing `DASH` will remain the transaction unit on exchanges, leaving most of the benefits of this proposal behind.
