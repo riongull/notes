@@ -32,7 +32,7 @@ There are circumstances when problems arise, and solutions present themselves an
 
 ##### Background
 
-This topic is not new in cryptocurrency.  The Bitcoin community has had these discussions before.  It has been, and continues to be, a lengthy debate, and to this point no good solution has emerged.  Bitcoin didn't see and plan for the problem ahead of time, and it wasn't unable to organize and decide on a solution when various proposals were put forth.  Ethereum too has been plagued by this problem, although the issue is not as stark there since the their community doesn't seem to be targeting the money use case - their smart contracts interface mostly from computer to computer, so they don't need a unit that normal people are expected to use in daily conversation.
+This topic is not new in cryptocurrency.  The Bitcoin community has had these discussions before.  It has been, and continues to be, a lengthy debate, and to this point no good solution has emerged.  Bitcoin didn't plan for the problem ahead of time, and hasn't been able to organize and decide on a solution even after various proposals have been put forth.  Ethereum too has been plagued by this problem, although the issue is not as stark there since their community doesn't seem to be targeting the money use case - their smart contracts interface mostly computer-to-computer, so they don't need a unit that normal people are expected to use in daily conversation.
 
 It may be too late for Bitcoin to fix their unit problem.  Ethereum doesn't really need a fix.  Dash on the other hand, *must* come up with a unit that normal people will feel comfortable with, because Dash is supposed to be digital cash.  Fortunately, Dash has been successful with re-brands and major innovations; mid-flight adaptation is the norm for Dash.  Fixing this issue is definitely possible with the right planning.
 
@@ -79,18 +79,18 @@ All three sections above are pointing in the same direction:  **we would do well
 
 Consumer demand aside, it seems intuitive that a fledgling currency (such as Dash) should have a unit (i.e. `DASH`) whose value is much lower than a widely-used currency's unit (e.g. USD).  People generally have no concept of money supply, so we should accommodate that and design a unit that makes intuitive sense.
 
-Similar to how Bitcoin will not be able to continue functioning as a store of value if it does not fix its medium of exchange problems (high transaction fees), **Dash will find it hard to continue functioning as a medium of exchange, and hence store of value, if it does not fix its unit of account problems**.  People *do* consider the unit of account aspects of money, even if subconsciously, in their evaluations of which coin they want to buy and transact with.  It's not necessarily that they want to try to get rich off a penny currency.  Chances are it just makes more intuitive sense to buy the lower cost coin.  It's user friendly.  Less "expensive" coins seem to them less likely to be "in a bubble".  They look at coins over $1,000 and instinctively assume they've "missed the boat".  Sure, that may be a misconception, but that's the psychological reality, so that's what we should deal with.  Why fight human nature?
+Similar to how Bitcoin will not be able to continue functioning as a store of value if it does not fix its medium of exchange problems (high transaction fees), **Dash will find it hard to continue functioning as a medium of exchange, and hence store of value, if it does not fix its unit of account problems**.  People *do* consider the unit of account aspects of money, even if subconsciously, in their evaluations of which coin they want to buy and transact with.  It's not necessarily that they want to try to get rich off a penny currency.  Chances are it just makes more intuitive sense to buy the lower cost coin.  It's user friendly.  Less "expensive" coins seem to them less likely to be "in a bubble".  They look at coins over $1,000 and instinctively assume they've "missed the boat" or that "the bubble will pop anytime now".  Sure, that may be a misconception, but that's the psychological reality, so that's what we should deal with.  Why fight human nature?
 
-To summarize the problem, Dash faces serious challenges because of its unit of account, the `DASH`.  There are psychological, technical, and practical issues involved.
+To summarize the problem, **Dash faces serious challenges because of its unit of account, the `DASH`**.  There are psychological, technical, and practical issues involved.
 
 ##### Psychological
 
-* People think dash is *"expensive"*
-* People feel they *own relatively little dash*, even after they've paid a lot for it
+* People think it is **too "expensive or risky" to buy** `DASH`
+* The **units are too confusing** when people are transacting `DASH`
+* People feel they **own relatively little**, when they've purchased or been gifted `DASH`
 
 ##### Practical
 
-* It's difficult to grasp conceptually how much you are paying when you see a dash price.
 * It can be difficult to see where the decimal is, and it's inconsistent from person to person:
   * some people write `.00012345`, some people write `0.00012345`
 * It's harder to speak in fractions and small decimals:
@@ -99,7 +99,7 @@ To summarize the problem, Dash faces serious challenges because of its unit of a
 
 ##### Technical
 
-* Existing software is tailored to *100 subunits per unit*
+* Existing software is tailored to 100 subunits per unit
 
 ### The Solution
 
@@ -207,7 +207,7 @@ The following table presents a summary of the proposed denomination.
 | Dash price (`USD/DASH`)    |         $1,234      |       $0.001234      | Today's prices (present and proposed convention)                                    |
 | Dash price (`JPY/DASH`)     |        ¥123,400     |        ¥0.1234       | Japan is already in 6-digit pricing (when `USD` catches up it will look like this)    |
 | `1 USD` buys (`DASH`)               |   Đ0.00081037    |     Đ810.37   | People would find it much easier to buy small amounts of `DASH`                       |
-| `1 JPY` buys (`DASH`)              |   Đ0.00000814 |       Đ8.137   | Once people buy, they'll feel like they own more (they won't feel they own nothing) |
+| `1 JPY` buys (`DASH`)              |   Đ0.00000810 |       Đ8.1037   | Once people buy, they'll feel like they own more (they won't feel they own nothing) |
 
 *Note: The table above uses rough estimates, for illustrative purposes.  Dash money supply is actually slightly lower than indicated.  `USD/DASH` is actually currently slightly lower.  `JPY/DASH` is currently slightly higher.  `JPY/USD` = 100 above, but is actually closer to 113.*
 
