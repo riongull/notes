@@ -120,7 +120,7 @@ What do all of these solutions have in common? They all allow the continued use 
 
 ##### Sample Objections to Existing Solutions
 
-* Scientific names (`mDASH` and `uDASH`) are too technical for mass mass adoption and lead to disunity of pricing (5 units now!).
+* Scientific names (`mDASH` and `uDASH`) are too technical for mass mass adoption and lead to disunity of pricing (4 units now!).
 * `DUFF` is too unprofessional for the main unit, sounding too much like duff beer from the Simpsons.
 * `DOT` would have to overcome massive social inertia and would also result in disunity of pricing (3 units now!).
 * Relying solely on fiat seems to be admitting two things:
