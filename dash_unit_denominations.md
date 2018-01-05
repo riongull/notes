@@ -111,7 +111,7 @@ First, to summarize Dash's potential solutions (which largely parallel Bitcoin's
   * i.e. `mDASH` ("milidash"), `uDASH` ("microdash")
 * support the **base unit**.
   * i.e. `DUFF` ("duff" - the actual technological base unit in Dash, which the code already uses)
-* create **new unit(s)**.
+* create **new unit name(s)**.
   * e.g. `DOT` ("dot", possibly equal in value to a `uDASH`)
 * promote/defer to **fiat/national units**.
   * e.g. `USD`, `EUR`, `JPY` (hide Dash's native units in favor of displaying existing fiat units)
