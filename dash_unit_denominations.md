@@ -2,13 +2,11 @@
 
 ### Introduction
 
-*Note: In this document, "`DASH`" (in all caps) refers specifically to the unit of account, presently `100,000,000 DUFF`, whereas "Dash" can refer to the software project, the community, or the overall ecosystem.*
+> *Note: In this document, "`DASH`" (in all caps) refers specifically to the unit of account, presently `100,000,000 DUFF`, whereas "Dash" can refer to the software project, the community, or the overall ecosystem.*
 
-What is Dash's target market?  Who are Dash's competitors?
+What is Dash's target market?  The answer to this question forms the premise of the discussion below.
 
-Give those questions some serious thought before reading on.  How would you answer them?  What is your ultimate goal and vision for Dash?  The answers to these questions form the premise of the discussion and arguments below.
-
-If you consider Dash's target market to be limited to **payment processing**, with competitors such as Visa, Mastercard, Paypal, Venmo, and Stripe, then you may find this document to be an uninteresting or even dangerous proposition.  If, on the other hand, you consider Dash (as I do) to be a free-market **money**, an electronic **currency**, a digital **cash**, with competition including the `YEN`, `EURO`, and `USD`, then this document is for you.  After reading it, I hope you will feel a sense of urgency to bring this issue into wider discussion in the Dash community.
+If Dash's target market is limited to **payment processing**, with competitors such as Visa, Mastercard, Paypal, Venmo, and Stripe, then the propositino herein may be uninteresting.  If, on the other hand, Dash aims to be a free-market **money**, an electronic **currency**, a digital **cash**, with competition including the `YEN`, `EURO`, and `USD`, then the information in this document is vital to consider.
 
 ##### Motivation
 
@@ -69,7 +67,7 @@ Despite Dash being a technologically superior currency in almost every way, Dash
 1. Some coins are playing nice with the traditional monetary and financial incumbents
 1. Some coins have very attractive units of account
 
-I'm not worried about the first category (including Bitcoin, Bitcoin Cash, and Litecoin) over the long term.  These coins are largely floating by on yesterdays achievements, name recognition, and early mover advantage, but they will lose market share over time.  The coins in the second category (including Ripple and Stellar) will continue to receive investment from deep-pocketed incumbent financial players.  Nothing we can do about that short of selling out and trying to *aid* rather than *compete with* fiat currencies (which I hope nobody is considering).
+I'm not worried about the first category (including Bitcoin, Bitcoin Cash, and Litecoin) over the long term.  These coins are largely floating by on yesterday's achievements, name recognition, and early mover advantage, but they will lose market share over time.  The coins in the second category (including Ripple and Stellar) will continue to receive investment from deep-pocketed incumbent financial players.  Nothing we can do about that short of selling out and trying to *aid* rather than *compete with* fiat currencies (which I hope nobody is considering).
 
 It's the third category that has me wondering.  What does NEM, Cardano, and IOTA offer that can justify a valuation higher than Dash?  What pushed others above Dash in the past, if even for a short time (e.g. EOS, NEO)?  **One can't help but notice that the tokens overtaking Dash are generally priced 2 to 4 orders of magnitude lower than `DASH`**.  What is the market trying to tell us?
 
@@ -103,44 +101,51 @@ To summarize the problem, **Dash faces serious challenges because of its unit of
 
 ### The Solution
 
-As seen from the links above, many solutions have been proposed.  One somewhat popular solution for Bitcoin has been the somewhat organic introduction of the term "bits", where `1 BTC` is split into `1,000,000 bits`.  This movement has seen considerable opposition, which in turn has split the community.  Some people want to promote the scientific terms derived from `BTC` (`mBTC` and `uBTC`). Still others have proposed new names for the scientific denominations.  **None of these solutions are ideal, and I believe none of them will work**.  I will explain my reasoning below.
+##### Proposed Options
 
-First, to summarize Dash's potential solutions (which largely parallel Bitcoin's, none of which will likely work), we can:
+As seen from the links above, many options have been proposed to solve the unit problem.  One attempted solution for Bitcoin has been the organic adoption of the term "bits", where `1 BTC` is split into `1,000,000 bits`.  While somewhat popular, this movement has also seen considerable opposition, which in turn has split the community.  Some people hate `bits`, and would rather promote scientific terms derived from `BTC` (`mBTC` and `uBTC`). Others hate those, and have proposed various new names for scientific denominations.  Still others hate those, or anything besides plain old `BTC`.  The disunity ultimately results in confusion and fails to solve the underlying problem.
+
+Dash is seeing the same unit problem as Bitcoin, and we have many of the same options to try to fix the units.  We can, for example:
 
 * support **scientific units** based on `DASH`.
   * i.e. `mDASH` ("milidash"), `uDASH` ("microdash")
 * support the **base unit**.
-  * i.e. `DUFF` (the actual technological base unit in Dash, which the code already uses)
+  * i.e. `DUFF` (the actual base unit in the Dash core software, from which `DASH` is derived)
 * promote **new unit name(s)**.
-  * e.g. `DOT` ("dot", possibly equal in value to a `uDASH`)
+  * e.g. `DOT` (possibly equal in value to a `uDASH`)
 * promote **national units**.
-  * e.g. `USD`, `EUR`, `JPY` (hide Dash's native units in favor of displaying existing fiat units)
+  * e.g. `USD`, `EUR`, `JPY` (hide the `DASH` unit in favor of displaying existing fiat units)
 
-What do all of these solutions have in common? They all allow the continued use of `DASH` and `DUFF`.  Even if Dash Core Group, Inc (DCG) decides to move forward with one of the above options, say, using the `DOT`, there will be large contingents who oppose it (or simply ignore it).  They will continue to use `DASH` and `DUFF`, because those options likely won't get deprecated.  This leads to confusion (in pricing, branding, software development, etc).  The existing `DASH` will remain the transaction unit on exchanges, which would forever work against any push to adopt the alternative unit, in this hypothetical case the `DOT`.  This illustrates the general reality that promoting *any* unit other than one single unit across the board will lead to long-term confusion and frustration amongst all parties.
+##### Objections to Proposed Options
 
-##### Sample Objections to Existing Solutions
+What do all of the above options have in common?  They are all informal conventions that rely on disorganized social adoption.  Further, all allow the continued use of `DASH` and `DUFF`.  Even if Dash Core Group, Inc (DCG) decided to promote one of the above options, say, using `DOT`, there would be large contingents who would oppose it (or simply ignore it).  In addition to `DOT`, people would continue using `DASH` and `DUFF`, because those options likely won't get deprecated.
+
+Any campaign (formal or informal) to introduce and promote a new unit through social convention alone will fail.  This is because `DASH` would remain the transactional unit on exchanges, which would forever work against the alternative unit(s) (e.g. `DOT`).  **Any change that isn't made at the *exchange* level will result in long-term confusion** about units (in pricing, branding, software development, etc).  There will be **no clear consensus** regarding which unit system is used around the globe.  Further, using any unit other than `DASH` dilutes the Dash brand.  Even if Core managed to get the `DOT` into social convention (or even traded at exchanges), would the product then be "Dash", or "Dot"?  The more widely `DOT` gets adopted, the more diluted the Dash brand becomes - mutually exclusive and conflicting goals.
+
+Additional objections include (but are not limited to) the following:
 
 * Scientific names (`mDASH` and `uDASH`) are too technical for mass mass adoption and lead to disunity of pricing (4 units now!).
 * `DUFF` is too unprofessional for the main unit, sounding too much like duff beer from the Simpsons.
-* `DOT` would have to overcome massive social inertia and would also result in disunity of pricing (3 units now!).
-* Relying solely on fiat seems to be admitting two things:
+* `DOT` would have to overcome massive social inertia and would result in disunity of pricing (3 units now!).
+* Relying on fiat (e.g `USD`) seems to be admitting two things:
   * 1\. Dash's units are confusing and need to be hidden away.
-  * 2\. We don't intend to be our own independent currency.
-  * The solution isn't to hide `DASH`, it's to fix it!
+  * 2\. Dash does not intend to be an independent currency.
 
-Any change that isn't made at the protocol level will result in **long-term** confusion about units.  **There will be no clear consensus** regarding which unit system is used around the globe.  This is happening with Bitcoin, some users are trying to push for `bits`, others hate that and want to use scientific units, others hate that and want to create different names for every denomination, which both former groups hate.  Long-term confusion and division.
+##### Guiding Rationale
 
-The only solution I see is to **re-denominate (re-define) the `DASH`**.  In my experience, most people like, even love, the term "`DASH`".  They have implicitly demonstrated that by the fact that they acquired some.  I think few would say that they actually *like* the very small fractions they encounter with the typical small-value transaction.  Hence, I think **sticking with the term `DASH` is the least controversial option** for the unit to promote for mass adoption.
+In my experience, most people like, even love, the term "`DASH`".  They have implicitly demonstrated that by holding and using it.  If there's one unit we want to promote for mass adoption, it seems that **sticking with the term `DASH` is the least controversial option**.
 
-So, if we agree that we want to continue using the term "`DASH`", but refine it so that it's more comfortable to use, the main question would be what order of magnitude to choose for the new definition.  For example, we could redefine the `DASH` to equal `100,000 DUFF`, so that `1 DASH` is now 1,000 times smaller, resulting in a new `DASH/USD` price of about `$1.20` (instead of `$1,200`).  Or, we could move it one more order of magnitude so that the price would be `$0.12`.  But this is not very forward thinking.  A few years down the road we might find ourselves in the same position we are in now.
+I've also found that very few people like the tiny fractions they encounter with the typical small-value transaction.  So if the term `DASH` is the least controversial, but people are not satisfied with the value that the `DASH` represents, the only solution I see is to **re-denominate (re-define) the `DASH`**.  In other words, the solution is not to *supplement*, *replace*, or *hide* the `DASH`, rather, it's to *fix* the `DASH`.
+
+So, if we agree that we want to continue using the term "`DASH`", refining it so that it's more comfortable to use, the main question would be what order of magnitude to choose for the new definition.  For example, we could redefine the `DASH` to equal `100,000 DUFF` (rather than the existing `100,000,000 DUFF`), so that `1 DASH` is now 1,000 times smaller, resulting in a new `DASH/USD` price of about `$1.20` (instead of `$1,200`).  Or, we could move it one more order of magnitude so that the price would be `$0.12`.  But this is not very forward thinking.  A few years down the road we might find ourselves in the same position we are in now.
 
 ##### Proposed Solution
 
 I propose the following new denomination: **`1 DASH` = `100 DUFF`**.
 
-This gives us a **denomination that facilitates using whole numbers** even when dealing with small value transfers.  As an added bonus it puts us **on par with all major national currencies, where the popular unit is comprised of 100 subunits**.  That's very user-friendly, and user-friendly is Dash's jam.
+This gives us a **denomination that facilitates using whole numbers** even when dealing with very small value transfers.  As an added bonus it puts us **on par with all major national currencies, where the popular unit is comprised of 100 subunits**.  That's very user-friendly, and user-friendly is Dash's primary goal.
 
-Note that this would *not* expand the money supply, this is merely a shift in *nomenclature* (naming convention).  It is redefining the `DASH`, but `DASH` has nothing to do with the money supply.  The true money supply is how many `DUFF`s exist, and that number isn't changing.
+> Note that **this would *not* expand the money supply**, this is merely a shift in *nomenclature* (naming convention).  It is redefining the `DASH`, but `DASH` has nothing to do with the money supply.  `DASH` is a cosmetic unit build on top of the fundamental protocol-level `DUFF` unit.  The true money supply is how many `DUFF`s exist, and that number would *not* change.
 
 To summarize:
 
@@ -159,7 +164,7 @@ To summarize:
 * We end up with 100 subunits per main unit, just like most traditional currencies.
   * Hence, it will be more compatible with existing financial software.
 * People will be more cognizant of purchasing power increases over time:
-  * Even though merchants may be *pricing* their goods in `USD`, Dash consumers can recall their costs in `DASH`.
+  * Even though merchants may be *pricing* their goods in `USD`, consumers can recall their costs in `DASH`.
   * "Last month this coffee cost me `200 DASH`, now this same coffee costs only `130 DASH`."
 
 ##### Implementation Considerations
@@ -175,11 +180,11 @@ Some might object saying, this is not technically possible.  To which I would sa
 
 Fortunately, we have a governance system designed exactly for this kind of thing.  We can put it up to a vote to see whether we want to pursue this.  The first question might be whether we should fund a feasibility study.  Subsequent proposals can then be submitted to pay for implementation costs.
 
-A lot of software will need to be updated, but what is the alternative?  It's better now than later.  **The opportunity *costs* are likely much, much higher than the implementation costs**.
+A lot of software will need to be updated, but what is the alternative?  It's better now than later.  **The *opportunity costs* are likely much, much higher than the *implementation costs***.
 
 Foreseeable work includes:
 
-* Core software updates (DCG, mobile wallets, etc.)
+* DCG software updates (Dash Core, mobile wallets, etc.)
 * Exchange software updates (Poloniex, Bittrex, etc)
 * Peripheral tooling updates (moocowmoo tools, masternode tools, paper wallet tools, etc.)
 * Documentation updates
@@ -189,7 +194,7 @@ Foreseeable work includes:
 
 When should we implement the fix?  It seems to make sense to roll out this change with Evolution, concurrent with the expected Dash re-brand.
 
-Dash has a unique opportunity to shine here.  Here we have a problem (that almost everyone in Bitcoin, Ethereum, and other communities admits is a problem) that Dash can solve.  That's yet another feather in our cap, along with InstantSend, PrivateSend, and our governance/treasury system (which, as a side note, could use a catchyName like the other two major features Dash boasts).  Imagine the bragging rights alone that Dash would have, not that we would necessarily use said bragging rights, this is Dash after all.  We solved yet another problem Bitcoin couldn't.
+Dash has a unique opportunity to shine here.  Here we have a problem (that almost everyone in Bitcoin, Ethereum, and other communities admits is a problem) that Dash can solve.  That's yet another feather in our cap, along with InstantSend, PrivateSend, and our governance/treasury system (which, as a side note, could use a "catchyName" like the other two major features Dash boasts).  Imagine the bragging rights alone that Dash would have.  We solved yet another problem Bitcoin couldn't.
 
 We have the money, we have the technical team to pull it off, we have a powerful marketing firm that can ensure that this is delivered as a huge achievement, and we have a community and governance mechanism to pull it all together.  I can't think of better timing than concurrent with Evolution and the re-brand.  If we wait til after that, it's likely a non-starter.
 
