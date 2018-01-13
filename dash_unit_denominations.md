@@ -6,7 +6,7 @@
 
 What is Dash's target market?  The answer to this question forms the premise of the discussion below.
 
-If Dash's target market is limited to **payment processing**, with competitors such as Visa, Mastercard, Paypal, Venmo, and Stripe, then the propositino herein may be uninteresting.  If, on the other hand, Dash aims to be a free-market **money**, an electronic **currency**, a digital **cash**, with competition including the `YEN`, `EURO`, and `USD`, then the information in this document is vital to consider.
+If Dash's target market is limited to **payment processing**, with competitors such as Visa, Mastercard, Paypal, Venmo, and Stripe, then the proposition herein may be uninteresting.  If, on the other hand, Dash aims to be a free-market **money**, an electronic **currency**, a digital **cash**, with competition including the `YEN`, `EURO`, and `USD`, then the information in this document is vital to consider.
 
 ##### Motivation
 
