@@ -34,7 +34,7 @@ This topic is not new in cryptocurrency.  The Bitcoin community has had these di
 
 It may be too late for Bitcoin to fix their unit problem.  Ethereum doesn't really need a fix.  Dash on the other hand, *must* come up with a unit that normal people will feel comfortable with, because Dash is supposed to be digital cash.  Fortunately, Dash has been successful with re-brands and major innovations; mid-flight adaptation is the norm for Dash.  Fixing this issue is definitely possible with the right planning.
 
-###### Past Discussions
+###### Reference Links
 
 * [r/bitcoin discussion]()
 * [bitcoin article]()
@@ -44,6 +44,7 @@ It may be too late for Bitcoin to fix their unit problem.  Ethereum doesn't real
 * [r/dashpay discussion]()
 * [dash forum discussion]()
 * [dash forum discussion]()
+* [Bitcoin Improvement Proposal (BIP) 176](https://github.com/bitcoin/bips/blob/master/bip-0176.mediawiki)
 
 ### The Problem
 
